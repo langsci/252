@@ -1,0 +1,40 @@
+
+% % my packages:
+% \usepackage{linguex}
+% % begin ----------------for (1') labels in linguex
+% \usepackage{refcount}
+% \makeatletter
+% \newcommand{\Vref}[2]{% #1 is the label, #2 is the modifier
+%   \begingroup\edef\Vref@temp{\endgroup
+%     \noexpand\Vref@\getrefnumber{#1}(\getrefnumber{#1})\noexpand\@nil%
+%   }(\Vref@temp#2)%
+% }
+% \def\Vref@ #1(#2)#3\@nil{#2}
+% \makeatother
+% % end ----------------for (1') labels in linguex
+
+\usepackage[normalem]{ulem} % for strike through text
+\usepackage{csquotes} %for block-paragraph quotes
+\usepackage{tablefootnote}
+\usepackage{graphicx}
+\usepackage{diagbox}
+\usepackage[graphicx]{realboxes}
+
+\usepackage{tabularx} 
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,tabsize=2,breaklines=true}
+
+\usepackage{langsci-optional}
+\usepackage{./langsci/styles/langsci-lgr}
+\usepackage{pgfplots,pgfplotstable}
+
+\definecolor{lsDOIGray}{cmyk}{0,0,0,0.45}
+
+\usepackage{xassoccnt}
+\newcounter{realpage}
+\DeclareAssociatedCounters{page}{realpage}
+\AtBeginDocument{%
+  \stepcounter{realpage}
+}
+\usepackage{langsci-gb4e}

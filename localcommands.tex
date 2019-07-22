@@ -1,0 +1,100 @@
+\newcommand{\appref}[1]{Appendix \ref{#1}}
+\newcommand{\fnref}[1]{Footnote \ref{#1}} 
+
+\newenvironment{langscibars}{\begin{axis}[ybar,xtick=data, xticklabels from table={\mydata}{pos}, 
+        width  = \textwidth,
+	height = .3\textheight,
+    	nodes near coords, 
+	xtick=data,
+	x tick label style={},  
+	ymin=0,
+	cycle list name=langscicolors
+        ]}{\end{axis}}
+        
+\newcommand{\langscibar}[1]{\addplot+ table [x=i, y=#1] {\mydata};\addlegendentry{#1};}
+
+\newcommand{\langscidata}[1]{\pgfplotstableread{#1}\mydata;}
+
+% \makeatletter
+% \let\thetitle\@title
+% \let\theauthor\@author 
+% \makeatother
+
+% \newcommand{\togglepaper}[1][0]{ 
+% %   \bibliography{../localbibliography}
+%   \papernote{\scriptsize\normalfont
+%     \theauthor.
+%     \thetitle. 
+%     To appear in: 
+%     Change Volume Editor \& in localcommands.tex 
+%     Change volume title in localcommands.tex
+%     Berlin: Language Science Press. [preliminary page numbering]
+%   }
+%   \pagenumbering{roman}
+%   \setcounter{chapter}{#1}
+%   \addtocounter{chapter}{-1}
+% }
+
+
+%add all your local new commands to this file
+
+\newcommand{\smiley}{:)}
+
+\renewbibmacro*{index:name}[5]{%
+  \usebibmacro{index:entry}{#1}
+    {\iffieldundef{usera}{}{\thefield{usera}\actualoperator}\mkbibindexname{#2}{#3}{#4}{#5}}}
+
+% \newcommand{\noop}[1]{}
+
+\newcommand{\exemph}[1]{\textbf{#1}} % BeispeilÃŒberschrift
+	\newcommand{\exhead}[1]{\textbf{#1}} % Hervorhebung bei Beispielen
+	\newcommand{\gcat}[1]{\textsc{#1}}   % Kategorien in Glossen
+
+
+	\newcommand{\glossformat}[1]{\textsc{#1}}
+
+	\newcommand{\firstperson}{\glossformat{1}\xspace}
+	\newcommand{\secondperson}{\glossformat{2}\xspace}
+	\newcommand{\thirdperson}{\glossformat{3}\xspace}
+	\newcommand{\acc}{\glossformat{acc}\xspace}
+	\newcommand{\adj}{\glossformat{adj}\xspace}
+	\newcommand{\aor}{\glossformat{aor}\xspace}
+	\newcommand{\correl}{\glossformat{correl}\xspace}
+	\newcommand{\dat}{\glossformat{dat}\xspace}
+	\newcommand{\discp}{\glossformat{discp}\xspace}
+	\newcommand{\fem}{\glossformat{f}\xspace}
+	\newcommand{\gen}{\glossformat{gen}\xspace}
+	\newcommand{\gerund}{\glossformat{gerund}\xspace}
+	\newcommand{\hab}{\glossformat{hab}\xspace}
+	\newcommand{\imp}{\glossformat{imp}\xspace}
+	\newcommand{\infv}{\glossformat{inf}\xspace}
+	\newcommand{\ins}{\glossformat{ins}\xspace}
+	\newcommand{\intenp}{\glossformat{intenp}\xspace}
+	\newcommand{\ipfv}{\glossformat{ipfv}\xspace}
+	\newcommand{\KonjI}{\glossformat{KonjI}\xspace}
+	\newcommand{\KonjII}{\glossformat{KonjII}\xspace}
+	\newcommand{\negation}{\glossformat{neg}\xspace}
+	\newcommand{\nom}{\glossformat{nom}\xspace}
+	\newcommand{\lptcp}{\glossformat{\textit{l}-ptcp}\xspace}
+	\newcommand{\masc}{\glossformat{m}\xspace}
+	\newcommand{\n}{\glossformat{n}\xspace}
+	\newcommand{\nvir}{\glossformat{n-vir}\xspace}
+	\newcommand{\passaux}{\glossformat{pass.aux}\xspace}
+	\newcommand{\purcomp}{\glossformat{pur.comp}\xspace}
+	\newcommand{\pst}{\glossformat{pst}\xspace}
+	\newcommand{\ptcp}{\glossformat{ptcp}\xspace}
+	\newcommand{\pfv}{\glossformat{pfv}\xspace}
+	\newcommand{\pl}{\glossformat{pl}\xspace}
+	\newcommand{\refl}{\glossformat{refl}\xspace}
+	\newcommand{\sg}{\glossformat{sg}\xspace}
+	\newcommand{\vir}{\glossformat{vir}\xspace}
+	\newcommand{\vptcl}{\glossformat{vptcl}\xspace}
+
+	\newcommand{\quelle}[1]{\hfill(#1)}
+	\newcommand{\nquelle}[1]{\newline\phantom{x}\hfill(#1)}	
+	
+	\newcommand{\glhead}[1]{#1:\vspace{-6pt}}
+
+	\usetikzlibrary{calc}
+	\newcommand{\movesquare}[4][-1]{\draw [thick,black,->] let \p{E} = (#2), \p{D} = (#3), \p{M} = ($(#2) + (0,#1)$) in (#2) -- (\x{M},\y{M}) -- node [label,above] {#4} (\x{D},\y{M}) -- (#3)} 
+
