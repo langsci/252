@@ -17,17 +17,20 @@
 \usepackage{csquotes} %for block-paragraph quotes
 \usepackage{tablefootnote}
 \usepackage{graphicx}
-\usepackage{diagbox}
-\usepackage[graphicx]{realboxes}
+% \usepackage[graphicx]{realboxes}
 
 \usepackage{tabularx} 
 
 \usepackage{listings}
 \lstset{basicstyle=\ttfamily,tabsize=2,breaklines=true}
 
-\usepackage{langsci-optional}
+\usepackage{./langsci/styles/langsci-optional}
 \usepackage{./langsci/styles/langsci-lgr}
-\usepackage{pgfplots,pgfplotstable}
+\makeatletter
+\let\pgfmathModX=\pgfmathMod@
+\usepackage{pgfplots,pgfplotstable}%
+\let\pgfmathMod@=\pgfmathModX
+\makeatother
 
 \definecolor{lsDOIGray}{cmyk}{0,0,0,0.45}
 
@@ -37,4 +40,37 @@
 \AtBeginDocument{%
   \stepcounter{realpage}
 }
+
+%move the following commands to the "local..." files of the master project when integrating this chapter
+\usepackage{tabulary}
+
+%CG: what follows are packages that I added and need for correct formatting
+\usepackage{multirow} %to merge cells vertically in a table
+\usepackage{multicol}
+%\usepackage{tabulary} % to wrap text in tables
+\usepackage{framed}
+% \usepackage{tipa} %allows stacking diacritics
+\usepackage{qtree}
+\usepackage{bbding} %for \Checkmark and \XSolid
+
+
+\usepackage{covington}
+
+\usepackage{stmaryrd}
+\usepackage{subdepth}
+\usepackage[version=3]{mhchem}
+
+%\setotherlanguage{german, polish}
+
+\usepackage{soul}
+\usepackage{xspace}
+\usepackage{tikz-qtree}
+\usepackage{tree-dvips}
+
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={.},detect-weight=true, detect-family=true, detect-all, input-symbols={\%}, free-standing-units, input-open-uncertainty= , input-close-uncertainty= ,table-align-text-pre=false,uncertainty-separator={\,},group-digits=false,detect-inline-weight=math}
+\DeclareSIUnit[number-unit-product={}]{\percent}{\%}
+\makeatletter \def\new@fontshape{} \makeatother
+\robustify\bfseries % For detect weight to work
+
 \usepackage{langsci-gb4e}

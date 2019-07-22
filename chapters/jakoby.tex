@@ -1,128 +1,18 @@
 \documentclass[output=paper
 ,modfonts
 ,nonflat]{langsci/langscibook} 
-\bibliography{localbibliography} 
 
-\usepackage{fontspec}
-%\setmainfont{}
-
-\usepackage{libertine}
-
-\usepackage{polyglossia}
-\setmainlanguage{english}
-%\setotherlanguage{german, polish}
-
-	
-	\usepackage[normalem]{ulem}
-	\usepackage[style=english]{csquotes}
-	\usepackage{booktabs}
-
-	\usepackage{graphicx}
-
-	\usepackage{amsmath}
-
-
-	
-\usepackage{soul}
-		
-	\usepackage{xspace,linguex}
-	\usepackage{tikz-qtree}
-	\usepackage{tree-dvips}
-	
-	\renewcommand{\firstrefdash}{} %% kommentar ?
-
-
-	% Eigene Befehler
-	\newcommand{\exemph}[1]{\textbf{#1}} % BeispeilÃŒberschrift
-	\newcommand{\exhead}[1]{\textbf{#1}} % Hervorhebung bei Beispielen
-	\newcommand{\gcat}[1]{\textsc{#1}}   % Kategorien in Glossen
-
-
-	\newcommand{\glossformat}[1]{\textsc{#1}}
-
-	\newcommand{\firstperson}{\glossformat{1}\xspace}
-	\newcommand{\secondperson}{\glossformat{2}\xspace}
-	\newcommand{\thirdperson}{\glossformat{3}\xspace}
-	\newcommand{\acc}{\glossformat{acc}\xspace}
-	\newcommand{\add}{\glossformat{add}\xspace}
-	\newcommand{\adj}{\glossformat{adj}\xspace}
-	\newcommand{\an}{\glossformat{an}\xspace}
-	\newcommand{\aor}{\glossformat{aor}\xspace}
-	\newcommand{\comp}{\glossformat{comp}\xspace}
-	\newcommand{\correl}{\glossformat{correl}\xspace}
-	\newcommand{\dat}{\glossformat{dat}\xspace}
-	\newcommand{\discp}{\glossformat{discp}\xspace}
-	\newcommand{\fem}{\glossformat{f}\xspace}
-	\newcommand{\gen}{\glossformat{gen}\xspace}
-	\newcommand{\gerund}{\glossformat{gerund}\xspace}
-	\newcommand{\hab}{\glossformat{hab}\xspace}
-	\newcommand{\illa}{\glossformat{illa}\xspace}
-	\newcommand{\imp}{\glossformat{imp}\xspace}
-	\newcommand{\impr}{\glossformat{impr}\xspace}
-	\newcommand{\incl}{\glossformat{incl}\xspace}
-	\newcommand{\infv}{\glossformat{inf}\xspace}
-	\newcommand{\ins}{\glossformat{ins}\xspace}
-	\newcommand{\intenp}{\glossformat{intenp}\xspace}
-	\newcommand{\ipfv}{\glossformat{ipfv}\xspace}
-	\newcommand{\KonjI}{\glossformat{KonjI}\xspace}
-	\newcommand{\KonjII}{\glossformat{KonjII}\xspace}
-	\newcommand{\loc}{\glossformat{loc}\xspace}
-	\newcommand{\negation}{\glossformat{neg}\xspace}
-	\newcommand{\nom}{\glossformat{nom}\xspace}
-	\newcommand{\lptcp}{\emph{l}\glossformat{-ptcp}\xspace}
-	\newcommand{\masc}{\glossformat{m}\xspace}
-	\newcommand{\n}{\glossformat{n}\xspace}
-	\newcommand{\nvir}{\glossformat{n-vir}\xspace}
-	\newcommand{\object}{\glossformat{o}\xspace}
-	\newcommand{\passaux}{\glossformat{pass.aux}\xspace}
-	\newcommand{\pred}{\glossformat{pred}\xspace}
-	\newcommand{\purcomp}{\glossformat{pur.comp}\xspace}
-	\newcommand{\pst}{\glossformat{pst}\xspace}
-	\newcommand{\ptcp}{\glossformat{ptcp}\xspace}
-	\newcommand{\pfv}{\glossformat{pfv}\xspace}
-	\newcommand{\pl}{\glossformat{pl}\xspace}
-	\newcommand{\prog}{\glossformat{prog}\xspace}
-	\newcommand{\refl}{\glossformat{refl}\xspace}
-	\newcommand{\rep}{\glossformat{rep}\xspace}
-	\newcommand{\sg}{\glossformat{sg}\xspace}
-	\newcommand{\subj}{\glossformat{subj}\xspace}
-	\newcommand{\topi}{\glossformat{top}\xspace}
-	\newcommand{\vir}{\glossformat{vir}\xspace}
-	\newcommand{\vptcl}{\glossformat{vptcl}\xspace}
-
-	\newcommand{\quelle}[1]{\hfill(#1)}
-	\newcommand{\nquelle}[1]{\newline\phantom{x}\hfill(#1)}
-	
-	
-	\newcommand{\glhead}[1]{#1:\vspace{-6pt}}
-
-	\usetikzlibrary{calc}
-	\newcommand{\movesquare}[4][-1]{\draw [thick,black,->] let \p{E} = (#2), \p{D} = (#3), \p{M} = ($(#2) + (0,#1)$) in (#2) -- (\x{M},\y{M}) -- node [label,above] {#4} (\x{D},\y{M}) -- (#3)} 
-
-	\usepackage{hyperref}
-	%\hypersetup{breaklinks,
-				%colorlinks,
-                %linkcolor=RawSienna, 
-                %urlcolor=RawSienna, 
-                %citecolor=RawSienna,
-                %filecolor=RawSienna,
-                %plainpages=false,
-                %pdfpagelabels,
-                %bookmarks=false,}
-
-\title{On the semantic change of evidential argument \emph{jakoby}-clauses in Polish} 
-\author{%
- Łukasz Jędrzejowski \affiliation{Universität zu Köln}
-}
+\markuptitle{On the semantic change of evidential argument \emph{jakoby}-clauses in Polish}{On the semantic change of evidential argument jakoby-clauses in Polish}
+\renewcommand{\lsChapterFooterSize}{\small} %footers in editedvolumes
+\renewcommand{\lsCollectionPaperFooterTitle}{On the semantic change of evidential argument \noexpand\emph{jakoby}-clauses in Polish}
+\author{Łukasz Jędrzejowski \affiliation{Universität zu Köln}}
 % \chapterDOI{} %will be filled in at production
 
 % \epigram{}
 
-\abstract{
-The main aim of this chapter is to examine the semantic change of evidential argument clauses headed by the complementizer \emph{jakoby} in the history of Polish. Mainly, I argue that \emph{jakoby} developed from a hypothetical comparative complementizer meaning `as if' into a hearsay complementizer, and provide empirical evidence showing that this process happened in the late Old Polish period, i.e. around 1500. To begin with, I compare \emph{jakoby}-clauses with complement \emph{że}-clauses (`that'-clauses) at the syntax-semantics interface, elaborate on their selected differences, and account for the source of these differences. Diachronically, I show that two factors in the lexical meaning of \emph{jakoby} were responsible for the semantic change that it underwent: i) equative comparison and ii) counterfactual meaning. Both factors are taken to have paved the way for inferences from reportative or hearsay information and, simultaneously, for the compatibility with an informational conversational background. \\
+\abstract{The main aim of this chapter is to examine the semantic change of evidential argument clauses headed by the complementizer \emph{jakoby} in the history of Polish. Mainly, I argue that \emph{jakoby} developed from a hypothetical comparative complementizer meaning `as if' into a hearsay complementizer, and provide empirical evidence showing that this process happened in the late Old Polish period, i.e. around 1500. To begin with, I compare \emph{jakoby}-clauses with complement \emph{że}-clauses (`that'-clauses) at the syntax-semantics interface, elaborate on their selected differences, and account for the source of these differences. Diachronically, I show that two factors in the lexical meaning of \emph{jakoby} were responsible for the semantic change that it underwent: i) equative comparison and ii) counterfactual meaning. Both factors are taken to have paved the way for inferences from reportative or hearsay information and, simultaneously, for the compatibility with an informational conversational background. \\
 
-\noindent \textbf{Keywords}: evidentiality, inference, hearsay, Polish, diachrony, semantic change
-}
+\noindent \textbf{Keywords}: evidentiality, inference, hearsay, Polish, diachrony, semantic change}
 
 \begin{document}
 
@@ -130,40 +20,40 @@ The main aim of this chapter is to examine the semantic change of evidential arg
 
 \section{The puzzle} \label{intro}
 
-Compare the two following sentences from Polish introduced by the complementizer \emph{jakoby}. Whereas the example given in \ref{tee} is from Old Polish, \ref{kaffee} illustrates how argument \emph{jakoby}-clauses are mainly used in Present-day Polish: 
+Compare the two following sentences from Polish introduced by the complementizer \emph{jakoby}. Whereas the example given in \REF{tee} is from Old Polish, \REF{kaffee} illustrates how argument \emph{jakoby}-clauses are mainly used in Present-day Polish: 
 
-\ex.	\ag.		iżeć się jest ludziem na ziemi tako było widziało, \textbf{jakoby} się ono na nie obalić było chciało \label{tee} \\
+\ea \ea \gll		iżeć się jest ludziem na ziemi tako było widziało, \textbf{jakoby} się ono na nie obalić było chciało \label{tee} \\
 			that {\refl} be.{\thirdperson}{\sg} people.{\dat} on earth.{\loc} so be.{\lptcp}.{\sg}.{\n} seem.{\lptcp}.{\sg}.{\n} jakoby {\refl} it on them.{\acc} slay.{\infv} be.{\lptcp}.{\sg}.{\n} want.{\lptcp}.{\sg}.{\n} \\
-			`that it seemed to the people on earth as if it wanted to slay all of them' \nquelle{KG, \emph{Kazanie I: Na Boże Naordzenie}, 26-27}
-	\bg.		Firma zaprzeczyła, \textbf{jakoby} były zgłoszenia o wadliwych kartach. \label{kaffee} \\
+	\glt	`that it seemed to the people on earth as if it wanted to slay all of them' \nquelle{KG, \emph{Kazanie I: Na Boże Naordzenie}, 26--27}
+	\ex\gll		Firma zaprzeczyła, \textbf{jakoby} były zgłoszenia o wadliwych kartach. \label{kaffee} \\
 			company deny.{\lptcp}.{\sg}.{\fem} jakoby be.{\lptcp}.{\nvir}.{\pl} reports about faulty cards.{\loc} \\
-			`The company denied that there were supposedly reports about faulty prepaid cards.'    \nquelle{NKJP, \emph{Dziennik Zachodni}, 27/9/2006}
+	\glt		`The company denied that there were supposedly reports about faulty prepaid cards.'    \nquelle{NKJP, \emph{Dziennik Zachodni}, 27/9/2006}
+\z\z
+In \REF{tee}, the dependent clause is introduced by the hypothetical comparative complementizer \emph{jakoby} corresponding to the meaning of the English complex complementizer \emph{as if}, as the English paraphrase of \REF{tee} indicates, and it is embedded under the matrix verb \emph{widzieć} `seem'. In \REF{kaffee}, in turn, the \emph{jakoby}-clause is embedded under the speech verb \emph{zaprzeczać} `deny'.\footnote{\emph{Jakoby} can also be used as a hearsay adverb:
 
-In \ref{tee}, the dependent clause is introduced by the hypothetical comparative complementizer \emph{jakoby} corresponding to the meaning of the English complex complementizer \emph{as if}, as the English paraphrase of \ref{tee} indicates, and it is embedded under the matrix verb \emph{widzieć} `seem'. In \ref{kaffee}, in turn, the \emph{jakoby}-clause is embedded under the speech verb \emph{zaprzeczać} `deny'.\footnote{\emph{Jakoby} can also be used as a hearsay adverb:
-
-\exg.		Sąsiedzi kupili \textbf{jakoby} nowy samochód. \label{adverb} \\
+\ea \gll Sąsiedzi kupili \textbf{jakoby} nowy samochód. \label{adverb} \\
 		neighbors buy.{\lptcp}.{\vir}.{\pl} jakoby new car \\
-		`Supposedly, our neighbors have bought a new car.'
-
+\glt	`Supposedly, our neighbors have bought a new car.'
+\z
 I am not concerned with \emph{jakoby} used as an adverb in this chapter; for more details see \textcite{Jedrzejowski2012}, \textcite{Socka2010}, \textcite{Stepien2008}, \textcite{Wiemer2015}, \citeauthor{Wiemer-Socka2017} (\citeyear{Wiemer-Socka2017}, \citeyear{Wiemer-Socka2017a}), \textcite{Zabowska2008}, among many others.
 } 
-What both clauses have in common is that they occupy one of the argument positions of the matrix verb (= argument clauses). However, in \ref{kaffee} \emph{jakoby} itself does not render the meaning of what English \emph{as if} expresses; instead it comprises the compositional meaning of a complementizer introducing a dependent declarative clause (= \emph{that}) and, at the same time, of a hearsay adverb (e.g. \emph{allegedly}, \emph{supposedly} or \emph{reportedly}), giving rise to a hearsay or a reportative interpretation. The meaning of \emph{jakoby} must have changed because in Present-day Polish \emph{jakoby}-clauses are unembeddable under verbs of seeming, as was the case in Old Polish, see \ref{tee} above:
+What both clauses have in common is that they occupy one of the argument positions of the matrix verb (= argument clauses). However, in \REF{kaffee} \emph{jakoby} itself does not render the meaning of what English \emph{as if} expresses; instead it comprises the compositional meaning of a complementizer introducing a dependent declarative clause (= \emph{that}) and, at the same time, of a hearsay adverb (e.g. \emph{allegedly}, \emph{supposedly} or \emph{reportedly}), giving rise to a hearsay or a reportative interpretation. The meaning of \emph{jakoby} must have changed because in Present-day Polish \emph{jakoby}-clauses are unembeddable under verbs of seeming, as was the case in Old Polish, see \REF{tee} above:
 
 
-\exg.		*Firmie wydaje się, \textbf{jakoby} były zgłoszenia o wadliwych kartach. \label{seem_jakoby} \\       
+\ea \gll *Firmie wydaje się, \textbf{jakoby} były zgłoszenia o wadliwych kartach. \label{seem_jakoby} \\       
 		company.{\dat} seem.{\thirdperson}{\sg} {\refl} jakoby be.{\lptcp}.{\nvir}.{\pl} reports about faulty cards.{\loc} \\
-		Intended meaning: `It seems to the company as if there were any reports about faulty prepaid cards.'    
-
+\glt	Intended meaning: `It seems to the company as if there were any reports about faulty prepaid cards.'    
+\z
 Remarkably, other West-Slavic languages like Czech have not experienced this change: 
 
-\ex.	Czech, Radek Šimík (pc.):
-	\ag.	Zdálo se, \textbf{jako} \textbf{by} byl opilý. \\
+\ea Czech, Radek Šimík (pc.):\\
+	\ea\gll	Zdálo se, \textbf{jako} \textbf{by} byl opilý. \\
 		seem.{\lptcp}.{\sg}.{\n} {\refl} as {\subj} be.{\lptcp}.{\sg}.{\masc} drunk \\
-		`It seemed as though he were drunk.'
-	\bg.	*Firma popřela, \textbf{jako} \textbf{by} byly nahlášeny jakékoliv vadné karty. \label{nogo} \\
+	\glt`It seemed as though he were drunk.'
+	\ex\gll		*Firma popřela, \textbf{jako} \textbf{by} byly nahlášeny jakékoliv vadné karty. \label{nogo} \\
 		company deny.{\lptcp}.{\sg}.{\fem} as {\subj} be.{\lptcp}.{\nvir}.{\pl} reports any faulty cards \\
-		 Intended meaning: `The company denied that there were reports about any faulty cards.' 
-
+	\glt Intended meaning: `The company denied that there were reports about any faulty cards.' 
+\z\z
 The main objective of this study is to figure out to what extent and under what circumstances \emph{jakoby} used as a complementizer changed in the history of Polish.
 
 The structure of this chapter is as follows. Section 2 is concerned with the question of how argument \emph{jakoby}-clauses are used in Present-day Polish. In this context, I will compare \emph{jakoby}-clauses with canonical subordinate clauses headed by the complementizer \emph{że} `that', and point out several striking differences between both clause types at the syntax-semantics interface. In Section 3, I will give an overview of how \emph{jakoby}-clauses could be used in older stages of Polish. A formal account of to what extent and under what circumstances \emph{jakoby} changed is presented in Section 4. In modeling this change, I will make use of the possible worlds semantics initiated by \citeauthor{Kratzer1981} (\citeyear{Kratzer1981, Kratzer1991, Kratzer2012}) and developed further for evidential expressions by \citeauthor{Faller2002} (\citeyear{Faller2002, Faller2011}) and \textcite{Lisa-Matthewson-Davis2017}.  Finally, I conclude the findings in Section 5. 
@@ -176,113 +66,111 @@ In this section, I examine selected properties of \emph{jakoby}-clauses in Prese
 
 Complement clauses in Polish are usually headed by the complementizer \emph{że} `that'.\footnote{Note that in some environments a more complex complementizer is required, i.e. \emph{żeby}:
 
-\exg.		Każda matka chce, \textbf{żeby} jej syn chodził do przedszkola. \\
+\ea \gll Każda matka chce, \textbf{żeby} jej syn chodził do przedszkola. \\
 		every mother want.{\thirdperson}{\sg} żeby her son go.{\lptcp}.{\sg}.{\masc} to kindergarten.{\gen} \\
-		`Every mother wants her son to go to the kindergarten.'
+\glt	`Every mother wants her son to go to the kindergarten.'
+\z
+Complements embedded under volitional or desiderative predicates require the presence of the complex complementizer \emph{żeby}, consisting of the simple complementizer \emph{że} `that' and the conditional\slash subjunctive clitic \emph{by}. The clitic has to occur adjacent to \emph{że} and cannot be omitted:
 
-Complements embedded under volitional or desiderative predicates require the presence of the complex complementizer \emph{żeby}, consisting of the simple complementizer \emph{że} `that' and the conditional / subjunctive clitic \emph{by}. The clitic has to occur adjacent to \emph{że} and cannot be omitted:
-
-\exg.		*Każda matka chce, \textbf{że} jej syn chodził do przedszkola. \\
+\ea \gll *Każda matka chce, \textbf{że} jej syn chodził do przedszkola. \\
 		every mother want.{\thirdperson}{\sg} że her son go.{\lptcp}.{\sg}.{\masc} to kindergarten.{\gen} \\
-		Intended meaning: `Every mother wants her son to go to the kindergarten.'
-
+\glt	Intended meaning: `Every mother wants her son to go to the kindergarten.'
+\z
 Following the generative mainstream literature on Polish complex clauses going back to \textcite{Tajsner1989}, \textcite{Willim1989}, \textcite{Witkos1998}, \textcite{Bondaruk2004}, among many others, I take \emph{żeby} to be a complex C-head. Alternatively, one could argue for a more fine-grained C-layer analysis along the lines of \textcite{Rizzi1997} and postulate two different structural positions - one for \emph{że} and one for \emph{by} - within the C-domain, as \textcite{Szczegielniak1999} does. Alternative analyses are offered by \citeauthor{Migdalski2016} (\citeyear{Migdalski2006, Migdalski2009, Migdalski2016}) and \textcite{Tomaszewicz2012}. As nothing hinges on whether one compares \emph{jakoby} with \emph{że} or with \emph{żeby}, I restrict myself to the former in the present chapter.    
 }
-In this connection, I propose the following descriptive condition: If a \emph{jakoby}-clause occupies an argument slot of a clause-embedding predicate, it can always be replaced by a \emph{że}-clause. Correspondingly, the embedded \emph{jakoby}-clause  given in \ref{kaffee} – repeated here for convenience as \ref{kaffeec} – is supposed to be replaceable by a \emph{że}-clause. This prediction is borne out: 
+In this connection, I propose the following descriptive condition: If a \emph{jakoby}-clause occupies an argument slot of a clause-embedding predicate, it can always be replaced by a \emph{że}-clause. Correspondingly, the embedded \emph{jakoby}-clause  given in \REF{kaffee} – repeated here for convenience as \REF{kaffeec} – is supposed to be replaceable by a \emph{że}-clause. This prediction is borne out: 
 
-\ex.	\ag.		Firma zaprzeczyła, \textbf{jakoby} były zgłoszenia o wadliwych kartach. \label{kaffeec} \\
+\ea \ea \gll		Firma zaprzeczyła, \textbf{jakoby} były zgłoszenia o wadliwych kartach. \label{kaffeec} \\
 			company deny.{\lptcp}.{\sg}.{\fem} jakoby be.{\lptcp}.{\nvir}.{\pl} reports about faulty cards.{\loc} \\
-			`The company denied that there were supposedly reports about faulty prepaid cards.'  
-	\bg.		Firma zaprzeczyła, \textbf{że} były zgłoszenia o wadliwych kartach. \\
+	\glt	`The company denied that there were supposedly reports about faulty prepaid cards.'  
+	\ex\gll			Firma zaprzeczyła, \textbf{że} były zgłoszenia o wadliwych kartach. \\
 			company deny.{\lptcp}.{\sg}.{\fem} that be.{\lptcp}.{\nvir}.{\pl} reports about faulty cards.{\loc} \\
-			`The company denied that there were any reports about faulty prepaid cards.'
-
+	\glt	`The company denied that there were any reports about faulty prepaid cards.'
+\z\z
 However, not every \emph{że}-clause can be replaced by a \emph{jakoby}-clause. In other words, the condition proposed above is not bidirectional:
 
-\ex.	\ag.		Dziwi mnie, \textbf{że} były zgłoszenia o wadliwych kartach. \\
+\ea \ea \gll		Dziwi mnie, \textbf{że} były zgłoszenia o wadliwych kartach. \\
 			be.amazed.{\thirdperson}{\sg} me.{\acc} that be.{\lptcp}.{\nvir}.{\pl} reports about faulty cards.{\loc} \\
-			 `I'm amazed/surprised that there were any reports about faulty prepaid cards.'
-	\bg.		 *Dziwi mnie, \textbf{jakoby} były zgłoszenia o wadliwych kartach. \\
+	\glt		 `I'm amazed/surprised that there were any reports about faulty prepaid cards.'
+	\ex\gll		 *Dziwi mnie, \textbf{jakoby} były zgłoszenia o wadliwych kartach. \\
 			be.amazed.{\thirdperson}{\sg} me.{\acc} jakoby be.{\lptcp}.{\nvir}.{\pl} reports about faulty cards.{\loc} \\ 
+\z\z
+Based on this contrast, we observe that \emph{jakoby}-clauses cannot be embedded under exclamative predicates like \emph{dziwić} (\emph{się})  `be amazed'\slash `be surprised'. Such a restriction does not occur with regard to  \emph{że}-clauses. A similar conclusion can be drawn as to perception verbs being used metaphorically. \textcite{Ibarretxe-Antunano1999} points out, based on \textcite{Sweetser1990}, that olfactory verbs, e.g. \emph{smell}, in English, Spanish and Basque can have a non-literal meaning that, in turn, depending on the language can be paraphrased as \emph{trail something}, \emph{suspect}, \emph{guess} or \emph{investigate}. They are often connoted with negative situations, as the following example illustrates: 
 
-Based on this contrast, we observe that \emph{jakoby}-clauses cannot be embedded under exclamative predicates like \emph{dziwić} (\emph{się})  `be amazed' / `be surprised'. Such a restriction does not occur with regard to  \emph{że}-clauses. A similar conclusion can be drawn as to perception verbs being used metaphorically. \textcite{Ibarretxe-Antunano1999} points out, based on \textcite{Sweetser1990}, that olfactory verbs, e.g. \emph{smell}, in English, Spanish and Basque can have a non-literal meaning that, in turn, depending on the language can be paraphrased as \emph{trail something}, \emph{suspect}, \emph{guess} or \emph{investigate}. They are often connoted with negative situations, as the following example illustrates: 
-
-\ex.	I smell something fishy about this deal. \nquelle{\citealt[37]{Sweetser1990}}
+\ea I smell something fishy about this deal. \nquelle{\citealt[37]{Sweetser1990}} \z
 
 The Polish olfactory verb \emph{czuć} `smell' (lit. `feel') behaves in a similar way. If it is used metaphorically, it means `suspect' and can embed \emph{że}-clauses: 
 
-\exg.		Jeden z polityków czuje, \textbf{że} niebawem wybuchnie wielki skandal na arenie międzynarodowej. \\
+\ea \gll Jeden z polityków czuje, \textbf{że} niebawem wybuchnie wielki skandal na arenie międzynarodowej. \\
 		one {of:the} politicians feel.{\thirdperson}{\sg} that soon {break:out}.{\thirdperson}{\sg} huge scandal on arena.{\loc} international \\  
-		`One of the politicians suspects that a huge scandal will soon break out in the international arena.'  
-  
+\glt	`One of the politicians suspects that a huge scandal will soon break out in the international arena.'  
+\z  
 Similar to the situation with exclamative predicates outlined above, the use of \emph{jakoby}-clauses leads to ill-formed results:
 
-\exg.		*Jeden z polityków czuje, \textbf{jakoby} niebawem wybuchnie wielki skandal na arenie międzynarodowej. \label{czuc} \\
+\ea \gll *Jeden z polityków czuje, \textbf{jakoby} niebawem wybuchnie wielki skandal na arenie międzynarodowej. \label{czuc} \\
 		one {of:the} politicians feel.{\thirdperson}{\sg} jakoby soon {break:out}.{\thirdperson}{\sg} huge scandal on arena.{\loc} international \\    
-  
- \ref{czuc} appears to be appropriate only in a context in which the sentence subject, i.e., one of the politicians, literally uttered that a huge scandal will break out. The speaker wants to distance himself / herself from what the politician said by using the complementizer \emph{jakoby}. On the other hand,  \ref{czuc} is infelicitous in the context in which the speaker describes what the politician might suspect without having written or said it. In other words, the content of the proposition must be known to the speaker from a foreign source. This also accounts for why \ref{seem_jakoby} is ungrammatical: Using verbs of seeming, the speaker mainly draws conclusions based on what (s)he has perceived, and not based on what (s)he has heard from others. As \emph{jakoby}-clauses tend to occur in the context of speech / report expressions, they can disambiguate or specify the meaning of a clause-embedding predicate, cf. \ref{wiedziec} below:
+\z  
+\REF{czuc} appears to be appropriate only in a context in which the sentence subject, i.e., one of the politicians, literally uttered that a huge scandal will break out. The speaker wants to distance himself\slash herself from what the politician said by using the complementizer \emph{jakoby}. On the other hand,  \REF{czuc} is infelicitous in the context in which the speaker describes what the politician might suspect without having written or said it. In other words, the content of the proposition must be known to the speaker from a foreign source. This also accounts for why \REF{seem_jakoby} is ungrammatical: Using verbs of seeming, the speaker mainly draws conclusions based on what (s)he has perceived, and not based on what (s)he has heard from others. As \emph{jakoby}-clauses tend to occur in the context of speech\slash report expressions, they can disambiguate or specify the meaning of a clause-embedding predicate, cf. \REF{wiedziec} below:
 
-\exg.		Niektóre kluby nie wiedzą, \textbf{jakoby} zgłaszały graczy. \label{wiedziec} \\
+\ea \gll Niektóre kluby nie wiedzą, \textbf{jakoby} zgłaszały graczy. \label{wiedziec} \\
 		some clubs {\negation} know.{\thirdperson}{\pl} jakoby propose.{\lptcp}.{\nvir}.{\pl} players.{\acc} \\
-		`Some sports clubs admit not knowing that they supposedly proposed players.'  \nquelle{NKJP, \emph{Gazeta Krakowska}, 25/6/2007; slightly modified by author: ŁJ}
-
-The semi-factive matrix verb \emph{wiedzieć} `know' is usually used as a verb of retaining knowledge. In \ref{wiedziec}, the embedded \emph{jakoby}-clause adds an additional layer of meaning to it, turning it into a verbum dicendi.\footnote{\textcite[142-148]{Reis1977} has already observed for German \emph{wissen} `know' that it can be used in a similar way.
-} 
+\glt	`Some sports clubs admit not knowing that they supposedly proposed players.'  \nquelle{NKJP, \emph{Gazeta Krakowska}, 25/6/2007; slightly modified by author: ŁJ}
+\z
+The semi-factive matrix verb \emph{wiedzieć} `know' is usually used as a verb of retaining knowledge. In \REF{wiedziec}, the embedded \emph{jakoby}-clause adds an additional layer of meaning to it, turning it into a verbum dicendi.\footnote{\textcite[142--148]{Reis1977} has already observed for German \emph{wissen} `know' that it can be used in a similar way.} 
 Accordingly, we have to conclude that \emph{że} and \emph{jakoby} as complementizers differ in meaning and that their licensing conditions depend on lexical properties of clause-embedding predicates. Following the well-known classification of embedding verbs proposed in \textcite{Karttunen1977}, the most frequent \emph{jakoby}-embedders are verbs of one-way communication, e.g. \emph{twierdzić} `claim', \emph{zaprzeczać}, \emph{dementować} both: `deny', \emph{powiedzieć} `say' or \emph{sugerować} `suggest'.
 
 A final note is in order here concerning the licensing conditions of \emph{jakoby}-clauses. Remarkably, they can also be attached to DPs: 
 
-\exg.		Absurdalne jest [\textsubscript{DP} twierdzenie]\textsubscript{i}, [\textbf{jakoby} {okulary przeciwsłoneczne} miały ograniczać widoczność]\textsubscript{i}. \label{DP} \\ 
+\ea \gll Absurdalne jest [\textsubscript{DP} twierdzenie]\textsubscript{i}, [\textbf{jakoby} {okulary przeciwsłoneczne} miały ograniczać widoczność]\textsubscript{i}. \label{DP} \\ 
 		absurd be.{\thirdperson}{\sg} {} claim jakoby sunglasses have.{\lptcp}.{\nvir}.{\pl}  restrict.{\infv} visibility.{\acc} \\
-		`The claim that sunglasses supposedly restrict visibility is absurd.' \nquelle{NKJP, \emph{Gazeta Ubezpieczeniowa}, 7/3/2006}  
-
-In \ref{DP}, the DP \emph{twierdzenie} `claim' is derived from the verb \emph{twierdzić} and its content is modified or specified by the following \emph{jakoby}-clause. For the sake of convenience, I restrict myself in the present study to \emph{jakoby}-clauses that are selected by verbs. Currently, there are different technical possibilities for how one could analyze examples as given in \ref{DP}. For an overview the interested reader is referred to \textcite{Moulton2009}, \textcite{Haegeman-Urogdi2010}, and \textcite{deCuba2017}, among many others.   
+\glt	`The claim that sunglasses supposedly restrict visibility is absurd.' \nquelle{NKJP, \emph{Gazeta Ubezpieczeniowa}, 7/3/2006}  
+\z
+In \REF{DP}, the DP \emph{twierdzenie} `claim' is derived from the verb \emph{twierdzić} and its content is modified or specified by the following \emph{jakoby}-clause. For the sake of convenience, I restrict myself in the present study to \emph{jakoby}-clauses that are selected by verbs. Currently, there are different technical possibilities for how one could analyze examples as given in \REF{DP}. For an overview the interested reader is referred to \textcite{Moulton2009}, \textcite{Haegeman-Urogdi2010}, and \textcite{deCuba2017}, among many others.   
 
 \subsection{Previous descriptions}
 
-The view on licensing conditions presented in this subsection sharply contrasts with what \textcite[110-115, 156-157]{Taborek2008} claims about \emph{jakoby}-clauses:
+The view on licensing conditions presented in this subsection sharply contrasts with what \textcite[110--115, 156--157]{Taborek2008} claims about \emph{jakoby}-clauses:
 
-\begin{displayquote}
-Als die letzte Kategorie gilt hier der mit der Subjunktion \emph{jakoby} (und ihren Alternaten \emph{jakby} und \emph{jak gdyby} eingeleitete Komplementsatz in der Subjekt\-funktion. Die \emph{jakoby}-Sätze werden von Verben des Sagens selegiert und implizieren Zweifel des Sprechers. \\ `As the last category, one should mention here the subjunction \emph{jakoby} (and its alternative subjunctions \emph{jakby} and \emph{jak gdyby}) introducing complement clauses in the subject position. The \emph{jakoby}-clauses are selected by verbs of saying and imply speaker's doubts.' (my translation: ŁJ)   \newline \textcite[100-101]{Taborek2008}
-\end{displayquote}
+\begin{quote}
+Als die letzte Kategorie gilt hier der mit der Subjunktion \emph{jakoby} (und ihren Alternaten \emph{jakby} und \emph{jak gdyby} eingeleitete Komplementsatz in der Subjekt\-funktion. Die \emph{jakoby}-Sätze werden von Verben des Sagens selegiert und implizieren Zweifel des Sprechers. \\ `As the last category, one should mention here the subjunction \emph{jakoby} (and its alternative subjunctions \emph{jakby} and \emph{jak gdyby}) introducing complement clauses in the subject position. The \emph{jakoby}-clauses are selected by verbs of saying and imply speaker's doubts.' (my translation: ŁJ)   \newline \textcite[100--101]{Taborek2008}
+\end{quote}
 
 \noindent Although \textcite{Taborek2008} correctly observes that \emph{jakoby}-clauses are selected by verbs of saying, he does not discuss any appropriate examples from Present-day Polish. Instead, he cites examples from older stages of Polish with  \emph{jakoby}-clauses occurring after verbs of seeming. The second problem concerns the replaceability of \emph{jakoby} by  \emph{jakby} and \emph{jak gdyby}, both meaning `as if'. As the following example illustrates, neither \emph{jakby} nor \emph{jak gdyby} can replace \emph{jakoby}:  
 
-\exg.		Firma zaprzeczyła, \textbf{jakoby} / *\textbf{jakby} / *\textbf{jak gdyby} były zgłoszenia o wadliwych kartach. \label{Taborek2} \\
+\ea \gll Firma zaprzeczyła, \textbf{jakoby} / *\textbf{jakby} / *\textbf{jak gdyby} były zgłoszenia o wadliwych kartach. \label{Taborek2} \\
 		company deny.{\lptcp}.{\sg}.{\fem} jakoby / {as if} / {as if} be.{\lptcp}.{\nvir}.{\pl} reports about faulty cards.{\loc} \\
-		Intended meaning: `The company denied that there were supposedly any reports about faulty prepaid cards.' 
+\glt	Intended meaning: `The company denied that there were supposedly any reports about faulty prepaid cards.' 
+\z
+If one continues \REF{Taborek2} with \emph{jakby} or \emph{jak gdyby}, the dependent clause modifies the way the company denied (= adjunct clause), not what the company denied (= complement clause). In other words, the embedded clause headed by \emph{jakby} or \emph{jak gdyby} does not occupy the internal argument position of the matrix verb \emph{zaprzeczać} `deny'. Instead, it forms an A-bar dependency with the matrix clause, giving rise to a hypothetical comparative interpretation. Independent evidence for this argument follows from the observation that \emph{jakby}- and \emph{jak gdyby}-clauses (contrary to \emph{jakoby}-clauses) cannot modify DPs derived from speech\slash report expressions:
 
-If one continues \ref{Taborek2} with \emph{jakby} or \emph{jak gdyby}, the dependent clause modifies the way the company denied (= adjunct clause), not what the company denied (= complement clause). In other words, the embedded clause headed by \emph{jakby} or \emph{jak gdyby} does not occupy the internal argument position of the matrix verb \emph{zaprzeczać} `deny'. Instead, it forms an A-bar dependency with the matrix clause, giving rise to a hypothetical comparative interpretation. Independent evidence for this argument follows from the observation that \emph{jakby}- and \emph{jak gdyby}-clauses (contrary to \emph{jakoby}-clauses) cannot modify DPs derived from speech / report expressions:
-
-\exg.		Absurdalne jest [\textsubscript{DP} twierdzenie]\textsubscript{i}, [\textbf{jakoby} / *\textbf{jakby} / *\textbf{jak gdyby}  {okulary przeciwsłoneczne} miały ograniczać widoczność]\textsubscript{i}. \\ 
+\ea \gll Absurdalne jest [\textsubscript{DP} twierdzenie]\textsubscript{i}, [\textbf{jakoby} / *\textbf{jakby} / *\textbf{jak gdyby}  {okulary przeciwsłoneczne} miały ograniczać widoczność]\textsubscript{i}. \\ 
 		absurd be.{\thirdperson}{\sg} {} claim jakoby / {as if} / {as if} sunglasses have.{\lptcp}.{\nvir}.{\pl}  restrict.{\infv} visibility.{\acc} \\
-		Intended meaning: `The claim that  sunglasses supposedly restrict visibility is absurd.'    
-
+\glt	Intended meaning: `The claim that  sunglasses supposedly restrict visibility is absurd.'    
+\z
 
 Likewise, \textcite{Wiemer2005} assumes \emph{jakoby}-clauses to be still embeddable under verbs of seeming. Empirically, this view cannot be upheld, though. I was not able to find solid evidence from Present-day Polish in the \emph{National Corpus of Polish} illustrating the usage of \emph{jakoby}-clauses after verbs of seeming.\footnote{I built queries looking for all morphological forms of both perfective and imperfective verbs of seeming; compare, for example, the aspectual pair \emph{zdać się} vs. \emph{zdawać się}. As verbs of seeming are reflexive in Polish, I also built queries with syntactic interveners between the verb and the reflexive pronoun \emph{się}. One of such interveners is, for example, a DP argument marked for the Dative case and stemming from the matrix verb, giving rise to such results as \emph{wydaje mi się} `it seems to me'. I was able to find only one example from an internet forum:
 
-\exg.		Zdaje mi się, \textbf{jakoby} Hobbit uważał inaczej. \\
+\ea \gll Zdaje mi się, \textbf{jakoby} Hobbit uważał inaczej. \\
 		seem.{\thirdperson}{\sg} me.{\dat} {\refl} jakoby Hobbit think.{\lptcp}.{\sg}.{\masc} differently \\
-		`It seems to me as if Hobbit would think differently.' \nquelle{NKJP, an internet forum, 19/8/1999}
-
-Personally, I judge this example as ungrammatical and would use \emph{jakby} instead of \emph{jakoby}.       
-}
+\glt	`It seems to me as if Hobbit would think differently.' \nquelle{NKJP, an internet forum, 19/8/1999}
+\z
+Personally, I judge this example as ungrammatical and would use \emph{jakby} instead of \emph{jakoby}.}
 Based on \textcite{ojasiewicz1992}, \textcite{Wiemer2005} elaborates on the following example:
 
-\exg.		Zdaje mi się, \textbf{jakobym} słyszał jakieś wołanie. \\
+\ea \gll Zdaje mi się, \textbf{jakobym} słyszał jakieś wołanie. \\
 		seem.{\thirdperson}{\sg} me.{\dat} {\refl} jakoby.{\firstperson}{\sg} hear.{\lptcp}.{\sg}.{\masc} some crying.{\acc} \\
-		`It seems to me as if I heard someone crying.' \nquelle{\citealt[105]{ojasiewicz1992}}
-
-It is not clear, however, how old this example is. Moreover, I judge it as ungrammatical and would use the hypothetical comparative complementizer \emph{jakby} `as if' instead of \emph{jakoby} in this context. In addition, \textcite[122-124]{Wiemer2005} notices that \emph{jakoby} clauses can be embedded under speech verbs. However, he discusses only one example with the matrix verb \emph{śnić się} `dream':\footnote{Glosses and English paraphrases are mine: ŁJ.
+\glt	`It seems to me as if I heard someone crying.' \nquelle{\citealt[105]{ojasiewicz1992}}
+\z
+It is not clear, however, how old this example is. Moreover, I judge it as ungrammatical and would use the hypothetical comparative complementizer \emph{jakby} `as if' instead of \emph{jakoby} in this context. In addition, \textcite[122--124]{Wiemer2005} notices that \emph{jakoby} clauses can be embedded under speech verbs. However, he discusses only one example with the matrix verb \emph{śnić się} `dream':\footnote{Glosses and English paraphrases are mine: ŁJ.
 }
 
-\exg.		Przeszłej nocy śniło mu się, \textbf{jakoby} gruszki z drzewa rwał. \label{gruszki} \\
+\ea \gll Przeszłej nocy śniło mu się, \textbf{jakoby} gruszki z drzewa rwał. \label{gruszki} \\
 		last night dream.{\lptcp}.{\sg}.{\n} him.{\dat} {\refl} jakoby pears.{\acc} from tree.{\gen} pluck.{\lptcp}.{\sg}.{\fem} \\
-		i) `Last night he dreamt as if he were plucking pears from a tree.' \\
-		ii) `Last night he dreamt that he was supposedly plucking pears from a tree.' \\
-		iii) `Last night he is supposed to have dreamt that he was plucking pears from a tree.'   \nquelle{\citealt[123, ex. 22]{Wiemer2005}}
-		
-Three issues deserve to be addressed in connection with the example given in \ref{gruszki}. Firstly, \ref{gruszki} is taken from the Positivist novel \emph{Nad Niemnem} `On the Niemen', which was written in the New Polish period in 1888 by Eliza Orzeszkowa. Secondly, \emph{śnić się} `dream' is not an inherent verb of saying. In essence, dream reports allow a multiplicity of readings. If someone dreams, (s)he can dream that (s)he is someone else. In this sense, one reports what (s)he dreamt about and VP denotes a set of situations in which someone had a dream / dreams. Though  \emph{śnić się} `dream' does not necessarily involve a speech context (for more details on dream reports, see \textcite{Shanon1980}, \textcite{Percus-Sauerland2003} or \textcite{Kauf2017}). Thirdly, in my opinion \ref{gruszki} is ambiguous and has three different readings. \emph{Jakoby} can be interpreted either as the hypothetical comparative complementizer `as if' or as a reported speech complementizer in the Present-day Polish sense. In the former case, it is used because the matrix subject cannot remember what he exactly dreamt about. He has the impression that he were plucking pears from a tree, but he is not sure. In the latter case, two readings have to be distinguished. It can be either the subject himself who reports about his dreams or someone else who tries to render the content of subject's dreams. Both scenarios are imaginable; see also the discussion in Section \ref{diachrony}.                    
+	\glt	i) `Last night he dreamt as if he were plucking pears from a tree.' \\
+	\glt	ii) `Last night he dreamt that he was supposedly plucking pears from a tree.' \\
+	\glt	iii) `Last night he is supposed to have dreamt that he was plucking pears from a tree.'   \nquelle{\citealt[123, ex. 22]{Wiemer2005}}
+\z		
+Three issues deserve to be addressed in connection with the example given in \REF{gruszki}. Firstly, \REF{gruszki} is taken from the Positivist novel \emph{Nad Niemnem} `On the Niemen', which was written in the New Polish period in 1888 by Eliza Orzeszkowa. Secondly, \emph{śnić się} `dream' is not an inherent verb of saying. In essence, dream reports allow a multiplicity of readings. If someone dreams, (s)he can dream that (s)he is someone else. In this sense, one reports what (s)he dreamt about and VP denotes a set of situations in which someone had a dream\slash dreams. Though  \emph{śnić się} `dream' does not necessarily involve a speech context (for more details on dream reports, see \textcite{Shanon1980}, \textcite{Percus-Sauerland2003} or \textcite{Kauf2017}). Thirdly, in my opinion \REF{gruszki} is ambiguous and has three different readings. \emph{Jakoby} can be interpreted either as the hypothetical comparative complementizer `as if' or as a reported speech complementizer in the Present-day Polish sense. In the former case, it is used because the matrix subject cannot remember what he exactly dreamt about. He has the impression that he were plucking pears from a tree, but he is not sure. In the latter case, two readings have to be distinguished. It can be either the subject himself who reports about his dreams or someone else who tries to render the content of subject's dreams. Both scenarios are imaginable; see also the discussion in \sectref{diachrony}.                    
 
 \subsection{Syntax}
 
@@ -290,36 +178,36 @@ If lexical licensing conditions of \emph{jakoby}-clauses differ from those of \e
 
 \emph{Left periphery}: One of the differences between \emph{że}- and \emph{jakoby}-clauses refers to movement to the left periphery of the matrix clause. Consider the following pair:
 
-\ex.	\ag.	Dorota twierdziła, \textbf{że} Jan był szczęśliwy. \\  
+\ea \ea \gll	Dorota twierdziła, \textbf{że} Jan był szczęśliwy. \\  
 		Dorota claim.{\lptcp}.{\sg}.{\fem} that Jan be.{\lptcp}.{\sg}.{\masc} happy \\
-		`Dorota claimed that Jan was happy.' 
-	\bg.	Dorota twierdziła, \textbf{jakoby} Jan był szczęśliwy. \\  
-		Dorota claim.{\lptcp}.{\sg}.{\fem} jakoby Jan be.{\lptcp}.{\sg}.{\masc} happy \\
-		`Dorota claimed that Jan supposedly was happy.'
-
+		\glt`Dorota claimed that Jan was happy.' 
+		\ex\gll		Dorota twierdziła, \textbf{jakoby} Jan był szczęśliwy. \\  
+			Dorota claim.{\lptcp}.{\sg}.{\fem} jakoby Jan be.{\lptcp}.{\sg}.{\masc} happy \\
+		\glt`Dorota claimed that Jan supposedly was happy.'
+\z\z
 What distinguishes both clause types is that only \emph{że}-clauses can be A-bar-moved to the left periphery. As the following contrast illustrates, movement of \emph{jakoby}-clauses is prohibited:
 
-\ex.	\ag.	\textbf{Że} Jan był szczęśliwy, twierdziła Dorota. \\  
+\ea \ea \gll	\textbf{Że} Jan był szczęśliwy, twierdziła Dorota. \\  
 		 that Jan be.{\lptcp}.{\sg}.{\masc} happy  claim.{\lptcp}.{\sg}.{\fem} Dorota \\
-		`That Jan was happy, Dorota claimed.' 
-	\bg.	*\textbf{Jakoby} Jan był szczęśliwy, twierdziła Dorota. \\  
+    \glt`That Jan was happy, Dorota claimed.' 
+	\ex\gll		*\textbf{Jakoby} Jan był szczęśliwy, twierdziła Dorota. \\  
 		 jakoby Jan be.{\lptcp}.{\sg}.{\masc} happy  claim.{\lptcp}.{\sg}.{\fem} Dorota \\
-		Intended meaning: `That supposedly Jan was happy, Dorota claimed.' 
-
+	\glt Intended meaning: `That supposedly Jan was happy, Dorota claimed.' 
+    \z\z
 At this moment, I have no explanation for why \emph{jakoby}-clauses are banned from a higher structural position in the Polish clause structure. There must be a conflict between the meaning of the complementizer and an information-structural movement.
 
 \emph{Future tense form}: Another difference is connected to the use of the future auxiliary verb \emph{będzie} `will'; for its detailed analysis see in particular \textcite{Baszczak-Jabonskaetal2014}. Interestingly enough, \emph{jakoby}-clauses cannot combine with \emph{będzie}, whereas no such restrictions occur with regard to \emph{że}-clauses:
 
-\ex.	\ag.	Dorota twierdziła, \textbf{że} Jan będzie biegać codziennie. \\
+\ea \ea \gll	Dorota twierdziła, \textbf{że} Jan będzie biegać codziennie. \\
 		Dorota claim.{\lptcp}.{\sg}.{\fem} that Jan will.{\thirdperson}{\sg} run.{\infv} daily \\
-		`Dorota claimed that Jan will go jogging every day.'
-	\bg. 	*Dorota twierdziła, \textbf{jakoby} Jan będzie biegać codziennie. \label{czasprzyszyl} \\
-		Dorota claim.{\lptcp}.{\sg}.{\fem} jakoby Jan will.{\thirdperson}{\sg} run.{\infv} daily \\
-		Intended meaning: `Dorota claimed that Jan will supposedly go jogging every day.'
+		\glt`Dorota claimed that Jan will go jogging every day.'
+		\ex\gll	 	*Dorota twierdziła, \textbf{jakoby} Jan będzie biegać codziennie. \label{czasprzyszyl} \\
+			Dorota claim.{\lptcp}.{\sg}.{\fem} jakoby Jan will.{\thirdperson}{\sg} run.{\infv} daily \\
+    \glt Intended meaning: `Dorota claimed that Jan will supposedly go jogging every day.'
+\z\z
+The questionability of \REF{czasprzyszyl} is surprising in the light of the rigid hierarchy of functional projections developed in \citeauthor{Cinque1999} (\citeyear{Cinque1999, Cinque2006, Cinque2017}):
 
-The questionability of \ref{czasprzyszyl} is surprising in the light of the rigid hierarchy of functional projections developed in \citeauthor{Cinque1999} (\citeyear{Cinque1999, Cinque2006, Cinque2017}):
-
-\ex.	[\emph{frankly} Mood\textsubscript{speech act} [\emph{fortunately} Mood\textsubscript{evaluative} [\textbf{\emph{allegedly} Mood\textsubscript{evidential}}
+\ea\relax	[\emph{frankly} Mood\textsubscript{speech act} [\emph{fortunately} Mood\textsubscript{evaluative} [\textbf{\emph{allegedly} Mood\textsubscript{evidential}}
 	\newline [\emph{probably} Mod\textsubscript{epistemic} [\emph{once} T(Past) [\textbf{\emph{then} T(Future)} [\emph{perhaps} Mood\textsubscript{irrealis}
 	\newline [\emph{necessarily} Mod\textsubscript{necessity} [\emph{possibly} Mod\textsubscript{possibility} [\emph{usually} Asp\textsubscript{habitual}
 	\newline [\emph{again} Asp\textsubscript{repetitive(I)} [\emph{often} Asp\textsubscript{freuentative(I)} [\emph{intentionally} Mod\textsubscript{volitional}
@@ -329,256 +217,263 @@ The questionability of \ref{czasprzyszyl} is surprising in the light of the rigi
 	\newline [\emph{completely} Asp\textsubscript{SgCompletive(I)} [\emph{tutto} Asp\textsubscript{PlCompletive} [\emph{well} Voice
 	\newline [\emph{fast/early} Asp\textsubscript{celerative(II)} [\emph{again} Asp\textsubscript{repetitive(II)} [\emph{often} Asp\textsubscript{frequentative(II)} 
 	\newline[\emph{completely} Asp\textsubscript{SgCompletive(II)} ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]   \label{Cinque}
-
+\z
 Accordingly, we expect \emph{jakoby} as an evidential complementizer to merge as a functional head in Mood\textsubscript{evidential}, meaning that it should be able to take scope over all other functional material associated with lower functional projections including T(Future). This is not the case, though. It still needs to be accounted for why \emph{będzie} is incompatible with \emph{jakoby}-clauses.
 
-\emph{Conditional mood}: In contrast to \emph{że}-clauses, \emph{jakoby}-clauses cannot contain a verbal head to which the conditional / subjunctive clitic \emph{by} is attached, triggering a counterfactual interpretation of the embedded proposition:          
+\emph{Conditional mood}: In contrast to \emph{że}-clauses, \emph{jakoby}-clauses cannot contain a verbal head to which the conditional\slash subjunctive clitic \emph{by} is attached, triggering a counterfactual interpretation of the embedded proposition:          
  
- \ex.	\ag.	Dorota twierdziła, \textbf{że} Jan poszedł-\textbf{by} do kina. \\
+ \ea \ea \gll	Dorota twierdziła, \textbf{że} Jan poszedł-\textbf{by} do kina. \\
  		Dorota claim.{\lptcp}.{\sg}.{\fem} that Jan go.{\lptcp}.{\sg}.{\masc}-{\subj} to cinema.{\gen} \\
-		`Dorota claimed that Jan would have gone to the cinema.' 
-	\bg.	*Dorota twierdziła, \textbf{jakoby} Jan poszedł-\textbf{by} do kina. \\
- 		Dorota claim.{\lptcp}.{\sg}.{\fem} jakoby Jan go.{\lptcp}.{\sg}.{\masc}-{\subj} to cinema.{\gen} \\
-		Intended meaning: `Dorota claimed that Jan would supposedly have gone to the cinema.' 	
-
+		\glt`Dorota claimed that Jan would have gone to the cinema.' 
+		\ex\gll		*Dorota twierdziła, \textbf{jakoby} Jan poszedł-\textbf{by} do kina. \\
+ 			Dorota claim.{\lptcp}.{\sg}.{\fem} jakoby Jan go.{\lptcp}.{\sg}.{\masc}-{\subj} to cinema.{\gen} \\
+		\glt Intended meaning: `Dorota claimed that Jan would supposedly have gone to the cinema.' 	
+\z\z
 This difference might be due to the fact that \emph{jakoby} as as an evidential complementizer has not been fully bleached yet and that the clitic \emph{by} still contributes to the compositional evidential meaning of what \emph{jakoby} expresses in Present-day Polish. It straightforwardly follows that the second occurrence of \emph{by} appears to be redundant in this context. I will come back to this issue later on. 
 
 \emph{The discourse particle `chyba'}: According to \textcite{SWJP1998}, \emph{chyba} `presumably' is defined as follows:
 
-\begin{displayquote}
+\begin{quote}
 \textbf{chyba}: tym słowem mówiący sygnalizuje, że nie wie czegoś dokładnie, nie jest czegoś pewien, ale decyduje się to powiedzieć, sądząc, że to prawda; przypuszczalnie; być może, prawdopodobnie, bodaj; \\ \textbf{chyba}: using this word, the speaker signals that (s)he doesn't know something exactly, that (s)he is not certain about something, but at the same time (s)he decides to say it, claiming it is true; assumedly; maybe, probably, perhaps;  (my translation: ŁJ).  \newline \textcite[117]{SWJP1998}
-\end{displayquote}
+\end{quote}
 
-\noindent Consider the example given in \ref{chyba}, illustrating the use of \emph{chyba} in a declarative clause:
+\noindent Consider the example given in \REF{chyba}, illustrating the use of \emph{chyba} in a declarative clause:
 
-\exg.		\textbf{Chyba} jest pani niesprawiedliwa. \label{chyba} \\
+\ea \gll \textbf{Chyba} jest pani niesprawiedliwa. \label{chyba} \\
 		\emph{chyba} be.{\thirdperson}{\sg} lady unjust \\
-		`Miss, I think you are unjust.' \nquelle{FP, p. 140}
+\glt	`Miss, I think you are unjust.' \nquelle{FP, p. 140}
+\z
+Using the discourse particle \emph{chyba} `presumably', the speaker establishes a particular common ground relationship among discourse interlocutors. Concretely, the speaker indicates that her\slash his commitment towards the truth of what is embedded is speculative. Accordingly, I analyze \emph{chyba} as a modifier of assertive speech acts, contributing to a weaker commitment of the speaker to the proposition, cf. \citeauthor{Zimmermann2004} (\citeyear{Zimmermann2004, Zimmermann2011a})  for a similar analysis of the German discourse particle \emph{wohl}.
 
-Using the discourse particle \emph{chyba} `presumably', the speaker establishes a particular common ground relationship among discourse interlocutors. Concretely, the speaker indicates that her / his commitment towards the truth of what is embedded is speculative. Accordingly, I analyze \emph{chyba} as a modifier of assertive speech acts, contributing to a weaker commitment of the speaker to the proposition, cf. \citeauthor{Zimmermann2004} (\citeyear{Zimmermann2004, Zimmermann2011a})  for a similar analysis of the German discourse particle \emph{wohl}.
-
-\ex.	Meaning of \emph{chyba}(p): \newline
+\ea	Meaning of \emph{chyba}(p): \newline
 	\([\![\emph{chyba} \; p]\!]\) = $f^{w}$ assume(\( x,p \)), whereby \(x\) = speaker
+\z
        
 \noindent Usually, it is the speaker who is uncertain about the content of the embedded proposition using \emph{chyba}: 
 
-\exg.		Zamówił piwo. Ale \textbf{chyba} mu nie smakuje, bo ledwie umoczył usta. \\
+\ea \gll Zamówił piwo. Ale \textbf{chyba} mu nie smakuje, bo ledwie umoczył usta. \\
 		order.{\lptcp}.{\sg}.{\masc} beer but \emph{chyba} him.{\dat} {\negation} {be:tasty}.{\thirdperson}{\sg} because barely soak.{\lptcp}.{\sg}.{\masc} lips \\  
-		`He ordered a beer. But he probably doesn't like it because he barely soaked his lips in it.' \nquelle{FP, p. 44}
-
+\glt	`He ordered a beer. But he probably doesn't like it because he barely soaked his lips in it.' \nquelle{FP, p. 44}
+\z
 However, in reported speech the attitude holder can be shifted to the clause subject itself (for more details on discourse particles in shifted contexts, see \textcite{Doring2013} and references cited therein):
 
-\exg.		Adam twierdzi, że piwo mu \textbf{chyba} nie smakuje. \\
+\ea \gll Adam twierdzi, że piwo mu \textbf{chyba} nie smakuje. \\
 		Adam claim.{\thirdperson}{\sg} that beer him.{\dat} \emph{chyba} {\negation} {be:tasty}.{\thirdperson}{\sg} \\
-		`Adam claims that he probably doesn't like the beer.' 
-
+\glt	`Adam claims that he probably doesn't like the beer.' 
+\z
 What is interesting about \emph{jakoby}-clauses is that they cannot license the discourse particle \emph{chyba}, contrary to \emph{że}-clauses: 
 
-\ex.	\ag.	Dorota powiedziała, \textbf{że} \textbf{chyba} pójdzie do kina. \\
+\ea \ea \gll	Dorota powiedziała, \textbf{że} \textbf{chyba} pójdzie do kina. \\
 		Dorota say.{\lptcp}.{\sg}.{\fem} that chyba go.{\thirdperson}{\sg} to cinema.{\gen} \\
-		`Dorota said that she presumably will go to the cinema.' 
-	\bg.	*Dorota powiedziała, \textbf{jakoby} \textbf{chyba} pójdzie do kina. \label{kanapka} \\
-		Dorota say.{\lptcp}.{\sg}.{\fem} jakoby chyba go.{\thirdperson}{\sg} to cinema.{\gen} \\
-		Intended meaning: `Dorota said that supposedly she presumably will go to the cinema.'  
-
-The speaker questions the truth value of the embedded proposition using \emph{jakoby}. If we shift the attitude holder to the clause subject, it should be possible to combine \emph{jakoby} and \emph{chyba}, as the latter is not attributed to the speaker. \ref{kanapka} is ruled out, though. A possible explanation comes from the fact that \emph{chyba} as a speech act modifier takes a wider scope: It involves the matrix subject and its subjective attitude. \emph{Jakoby}, in turn, does not take scope over the matrix subject leading to a clash. This is to be expected if we assume Mood\textsubscript{evidential} to outscope Mod\textsubscript{epistemic}, see \ref{Cinque} above. 
+		\glt`Dorota said that she presumably will go to the cinema.' 
+		\ex\gll	*Dorota powiedziała, \textbf{jakoby} \textbf{chyba} pójdzie do kina. \label{kanapka} \\
+			Dorota say.{\lptcp}.{\sg}.{\fem} jakoby chyba go.{\thirdperson}{\sg} to cinema.{\gen} \\
+		\glt Intended meaning: `Dorota said that supposedly she presumably will go to the cinema.'  
+\z\z
+The speaker questions the truth value of the embedded proposition using \emph{jakoby}. If we shift the attitude holder to the clause subject, it should be possible to combine \emph{jakoby} and \emph{chyba}, as the latter is not attributed to the speaker. \REF{kanapka} is ruled out, though. A possible explanation comes from the fact that \emph{chyba} as a speech act modifier takes a wider scope: It involves the matrix subject and its subjective attitude. \emph{Jakoby}, in turn, does not take scope over the matrix subject leading to a clash. This is to be expected if we assume Mood\textsubscript{evidential} to outscope Mod\textsubscript{epistemic}, see \REF{Cinque} above. 
 
 \emph{Modal verb `musieć' (`must')}: It is a well-known fact that modal verbs can occur in embedded environments resulting in a shift of the attitude holder, cf. \textcite{Hacquard2006} and \textcite{Hacquard-Wellwood2012}:  
 
-\exg.		Dorota powiedziała, \textbf{że} Jan \textbf{musi} być chory. \label{must} \\
+\ea \gll Dorota powiedziała, \textbf{że} Jan \textbf{musi} być chory. \label{must} \\
 		Dorota say.{\lptcp}.{\sg}.{\fem} that Jan must.{\thirdperson}{\sg} be.{\infv} sick \\
-		a) deontic: `Dorota said that Jan has to be sick.' \newline
-		b) epistemic: `Dorota said that Jan must be sick (now).'
-   
-In \ref{must}, the modal verb \emph{musieć} can be interpreted in two different ways. Imagine a situation in which Dorota is a stage director of a play and determines how the stage play should be. According to this interpretation, \emph{musieć} is evaluated against a bouletic modal base and narrowed down by a deontic conversational background. If, on the other hand, Dorota supposes Jan to be ill, but she is not sure about this, \emph{musieć} is interpreted epistemically. In both cases, the attitude holder is the matrix subject, i.e. Dorota. \emph{Jakoby}-clauses restrict the quantification domain of \emph{musieć}: 
+\glt	a) deontic: `Dorota said that Jan has to be sick.' \newline
+\glt	b) epistemic: `Dorota said that Jan must be sick (now).'
+\z   
+In \REF{must}, the modal verb \emph{musieć} can be interpreted in two different ways. Imagine a situation in which Dorota is a stage director of a play and determines how the stage play should be. According to this interpretation, \emph{musieć} is evaluated against a bouletic modal base and narrowed down by a deontic conversational background. If, on the other hand, Dorota supposes Jan to be ill, but she is not sure about this, \emph{musieć} is interpreted epistemically. In both cases, the attitude holder is the matrix subject, i.e. Dorota. \emph{Jakoby}-clauses restrict the quantification domain of \emph{musieć}: 
  
-\exg.		Dorota powiedziała, \textbf{jakoby} Jan \textbf{musi} być chory. \\
+\ea \gll Dorota powiedziała, \textbf{jakoby} Jan \textbf{musi} być chory. \\
 		Dorota say.{\lptcp}.{\sg}.{\fem} that Jan must.{\thirdperson}{\sg} be.{\infv} sick \\
-		a) deontic: `Dorota said that supposedly Jan has to be sick.' \newline
-		b) ?/*epistemic: `Dorota said that supposedly Jan must be sick (now).'
-
+\glt	a) deontic: `Dorota said that supposedly Jan has to be sick.' \newline
+\glt	b) ?/*epistemic: `Dorota said that supposedly Jan must be sick (now).'
+\z
 It is very hard to imagine a scenario in which \emph{musieć} would be interpreted epistemically, even though the attitude holder has shifted to the matrix subject.\footnote{Interestingly enough, this constraint is weakened as soon as the modal verb \emph{musieć} occurs in a complex past tense structure:
 
-\exg.		?Dorota powiedziała, \textbf{jakoby} Jan \textbf{musiał} być chory. \label{bluh} \\
+\ea \gll ?Dorota powiedziała, \textbf{jakoby} Jan \textbf{musiał} być chory. \label{bluh} \\
 		Dorota say.{\lptcp}.{\sg}.{\fem} that Jan must.{\lptcp}.{\sg}.{\masc} be.{\infv} sick \\
-		Intended meaning: `Dorota said that supposedly Jan must have been sick.'
-
-Still, \ref{bluh} sounds marked. 
+\glt	Intended meaning: `Dorota said that supposedly Jan must have been sick.'
+\z
+Still, \REF{bluh} sounds marked. 
 }
- Remarkably, this problem disappears as soon as \emph{musieć} is replaced by the existential modal verb \emph{móc} `can' / `may':
+ Remarkably, this problem disappears as soon as \emph{musieć} is replaced by the existential modal verb \emph{móc} `can'\slash `may':
 
-\exg.		Dorota powiedziała, \textbf{jakoby} Jan \textbf{może} być chory. \\
+\ea \gll Dorota powiedziała, \textbf{jakoby} Jan \textbf{może} być chory. \\
 		Dorota say.{\lptcp}.{\sg}.{\fem} that Jan can.{\thirdperson}{\sg} be.{\infv} sick \\
-		a) deontic: `Dorota said that supposedly Jan is to be allowed to be sick.' \newline
-		b) epistemic: `Dorota said that supposedly Jan may be sick (now).'
-
+\glt	a) deontic: `Dorota said that supposedly Jan is to be allowed to be sick.' \newline
+\glt	b) epistemic: `Dorota said that supposedly Jan may be sick (now).'
+\z
 It still needs to be figured out why the complementizer \emph{jakoby} and the epistemic modal verb \emph{musieć} cannot co-occur.
 
 \emph{Matrix subject constraint}: If \emph{jakoby}-clauses occupy one of the arguments of a clause-embedding predicate, the matrix subject usually occurs in the third person. 1st and 2nd person subjects, on the other hand, disprefer \emph{jakoby}-clauses:
 
-  \ex.		\ag.	?Wczoraj powiedział-e-\textbf{ś}, \textbf{jakoby} pójdziesz dzisiaj do kina. \label{drugaosoba} \\
+\ea \ea \gll	?Wczoraj powiedział-e-\textbf{ś}, \textbf{jakoby} pójdziesz dzisiaj do kina. \label{drugaosoba} \\
   			yesterday say.{\lptcp}.{\sg}-{\masc}-{\secondperson}{\sg} jakoby go.{\secondperson}{\sg} today to cinema.{\gen} \\
-			Intended meaning: `Yesterday you said that  you will supposedly go to the cinema today.'
-		\bg.	*Wczoraj powiedział-e-\textbf{m}, \textbf{jakoby} pójdę dzisiaj do kina. \label{pierwszy} \\
-  			yesterday say.{\lptcp}.{\sg}-{\masc}-{\firstperson}{\sg} jakoby go.{\firstperson}{\sg} today to cinema.{\gen} \\
-			Intended meaning: `Yesterday I said that I will supposedly go to the cinema today.'
+	\glt		Intended meaning: `Yesterday you said that  you will supposedly go to the cinema today.'
+		\ex \gll	*Wczoraj powiedział-e-\textbf{m}, \textbf{jakoby} pójdę dzisiaj do kina. \label{pierwszy} \\
+  			yesterday say.{\lptcp}.{\sg}-{\masc}-{\firstperson}{\sg} jakoby go.{\firstperson}{\sg} today to cinema.{\gen}\\
+	\glt		Intended meaning: `Yesterday I said that I will supposedly go to the cinema today.'
+\z\z
+\REF {drugaosoba} appears to be appropriate in one specific context. Let assume that A is the speaker, whereas B is the matrix subject. Imagine that B uttered \emph{p} to C, i.e., to another discourse interlocutor, but not to A. It is natural to utter \REF {drugaosoba} provided that C reported to A that B is supposed to have said \emph{p}. The incompatibility of the 1st person with \emph{jakoby}-clauses can, in turn, be accounted for by assuming that the speaker cannot question the truth value of what is embedded if \emph{jakoby} presupposes the existence of a foreign information source and if (s)he herself\slash himself is the information source (see also the discussion in \cite{Curnow2002}). No such restrictions occur with respect to \emph{że}-clauses:
 
-\ref {drugaosoba} appears to be appropriate in one specific context. Let assume that A is the speaker, whereas B is the matrix subject. Imagine that B uttered \emph{p} to C, i.e., to another discourse interlocutor, but not to A. It is natural to utter \ref {drugaosoba} provided that C reported to A that B is supposed to have said \emph{p}. The incompatibility of the 1st person with \emph{jakoby}-clauses can, in turn, be accounted for by assuming that the speaker cannot question the truth value of what is embedded if \emph{jakoby} presupposes the existence of a foreign information source and if (s)he herself / himself is the information source (see also the discussion in \cite{Curnow2002}). No such restrictions occur with respect to \emph{że}-clauses:
-
- \ex.		\ag.	Wczoraj powiedział-e-\textbf{ś}, \textbf{że} pójdziesz dzisiaj do kina. \\
+ \ea \ea \gll Wczoraj powiedział-e-\textbf{ś}, \textbf{że} pójdziesz dzisiaj do kina. \\
   			yesterday say.{\lptcp}.{\sg}-{\masc}-{\secondperson}{\sg} that go.{\secondperson}{\sg} today to cinema.{\gen} \\
-			`Yesterday you said that you will go to the cinema today.'
-		\bg.	Wczoraj powiedział-e-\textbf{m}, \textbf{że} pójdę dzisiaj do kina. \\
+	\glt		`Yesterday you said that you will go to the cinema today.'
+	\ex \gll Wczoraj powiedział-e-\textbf{m}, \textbf{że} pójdę dzisiaj do kina. \\
   			yesterday say.{\lptcp}.{\sg}-{\masc}-{\firstperson}{\sg} that go.{\firstperson}{\sg} today to cinema.{\gen} \\
-			`Yesterday I said that I will go to the cinema today.'      
+    \glt `Yesterday I said that I will go to the cinema today.'      
+\z
+\z
 
 Interestingly enough, this constraint is not absolute and depends on the semantics of the clause-embedding verb. It can be overwritten, as soon as the matrix verb is an inherent negative verb, e.g. \emph{zaprzeczać} `deny':
 
- \ex.		\ag.	Zaprzeczył-e-\textbf{ś}, \textbf{jakoby} wygrał-e-ś w lotka.\\
+ \ea \ea \gll Zaprzeczył-e-\textbf{ś}, \textbf{jakoby} wygrał-e-ś w lotka.\\
   			deny.{\lptcp}.{\sg}-{\masc}-{\secondperson}{\sg} jakoby win.{\lptcp}.{\sg}-{\masc}-{\secondperson}{\sg} in lottery \\
-			 `You denied that you have supposedly won the lottery.'
-		\bg.	Zaprzeczył-e-\textbf{m}, \textbf{jakoby} wygrał-e-m w lotka.\\
+	\glt	 `You denied that you have supposedly won the lottery.'
+		\ex\gll	Zaprzeczył-e-\textbf{m}, \textbf{jakoby} wygrał-e-m w lotka.\\
   			deny.{\lptcp}.{\sg}-{\masc}-{\firstperson}{\sg} jakoby win.{\lptcp}.{\sg}-{\masc}-{\firstperson}{\sg} in lottery \\
-			 `I denied that I have supposedly won the lottery.'
+	\glt		 `I denied that I have supposedly won the lottery.'
+\z\z
 
 The use of inherent negative verbs presupposes the existence of a covert negation resulting in $\lnot$\emph{p}. In this context, \emph{p} is known to the speaker from hearsay. Using an inherent negative verb in combination with an \emph{jakoby}-clause opens up the possibility for the speaker to question the validity of \emph{p}.
 
 A final note is in order here about the status of \emph{jakoby} occurring as an evidential complementizer. One of the anonymous reviewers objects that \emph{jakoby} as a complementizer can co-occur with other complementizers, e.g. with \emph{że} `that', posing a challenge for my account:
 
-\exg.		Mój przyjaciel mówi, \textbf{że} \textbf{podobno} / \textbf{jakoby} / \textbf{rzekomo} faszyści zniszczyli jakieś biblioteki.  \label{challenge} \\
+\ea \gll Mój przyjaciel mówi, \textbf{że} \textbf{podobno} / \textbf{jakoby} / \textbf{rzekomo} faszyści zniszczyli jakieś biblioteki.  \label{challenge} \\
 		my friend say.{\thirdperson}{\sg} {\comp} {\comp} / {\comp} / {\comp}  fascists destroy.{\lptcp}.{\vir}.{\pl} some libraries. \\
-		 `My friend keeps saying that apparently / allegedly / reportedly fascists destroyed some libraries.'
-
-The anonymous reviewer assumes \ref{challenge} to be a case of complementizer doubling, a phenomenon which is taken to be absent in the grammar of Polish in general. I disagree with the view that \ref{challenge} exemplifies complementizer doubling and analyze \emph{jakoby}  as an evidential adverb (see also footnote 1 above and references cited there). There are several arguments showing why \emph{jakoby}  `supposedly' – as well as \emph{podobno} `apparently' and \emph{rzekomo} `reportedly' – in \ref{challenge} cannot be analyzed as  complementizers. In what follows, I discuss some of them. 
+\glt	 `My friend keeps saying that apparently / allegedly / reportedly fascists destroyed some libraries.'
+\z
+The anonymous reviewer assumes \REF{challenge} to be a case of complementizer doubling, a phenomenon which is taken to be absent in the grammar of Polish in general. I disagree with the view that \REF{challenge} exemplifies complementizer doubling and analyze \emph{jakoby}  as an evidential adverb (see also footnote 1 above and references cited there). There are several arguments showing why \emph{jakoby}  `supposedly' – as well as \emph{podobno} `apparently' and \emph{rzekomo} `reportedly' – in \REF{challenge} cannot be analyzed as  complementizers. In what follows, I discuss some of them. 
 
 Firstly, neither \emph{podobno}  `apparently' nor \emph{rzekomo} `reportedly' can introduce embedded clauses:  
 
-\ex.	\ag.	*Mój przyjaciel mówi, \textbf{podobno} faszyści zniszczyli jakieś biblioteki.  \label{podobno} \\
+\ea \ea \gll	*Mój przyjaciel mówi, \textbf{podobno} faszyści zniszczyli jakieś biblioteki.  \label{podobno} \\
 		my friend say.{\thirdperson}{\sg} {\comp}  fascists destroy.{\lptcp}.{\vir}.{\pl} some libraries. \\
-	\bg.	*Mój przyjaciel mówi, \textbf{rzekomo} faszyści zniszczyli jakieś biblioteki. \label{rzekomo} \\
+	\ex\gll	*Mój przyjaciel mówi, \textbf{rzekomo} faszyści zniszczyli jakieś biblioteki. \label{rzekomo} \\
 		my friend say.{\thirdperson}{\sg} {\comp}  fascists destroy.{\lptcp}.{\vir}.{\pl} some libraries. \\
+          \z\z
+\REF{podobno} and \REF{rzekomo} are only well-formed when \emph{podobno} and \emph{rzekomo} are analyzed as evidential adverbs expressing matrix subject's attitude towards what is embedded. In this case, direct speech complements are embedded, and not subordinate clauses.  This mainly follows from concord relations: 
 
-\ref{podobno} and \ref{rzekomo} are only well-formed when \emph{podobno} and \emph{rzekomo} are analyzed as evidential adverbs expressing matrix subject's attitude towards what is embedded. In this case, direct speech complements are embedded, and not subordinate clauses.  This mainly follows from concord relations: 
-
-\ex.	\ag.	Świadek twierdzi, \textbf{jakoby} morderca był \textbf{rzekomo} wysoki. \label{tall1} \\
+\ea \ea \gll	Świadek twierdzi, \textbf{jakoby} morderca był \textbf{rzekomo} wysoki. \label{tall1} \\
 		witness claim.{\thirdperson}{\sg} {\comp} murderer be.{\lptcp}.{\thirdperson}{\sg}.{\masc} reportedly tall \\
-		 `The witness claims that allegedly the murderer was reportedly tall.' 
-	\bg.	Świadek twierdzi, \textbf{jakoby} morderca był \textbf{podobno} wysoki. \label{tall2} \\
+	\glt	 `The witness claims that allegedly the murderer was reportedly tall.' 
+	\ex\gll	Świadek twierdzi, \textbf{jakoby} morderca był \textbf{podobno} wysoki. \label{tall2} \\
 		witness claim.{\thirdperson}{\sg} {\comp} murderer be.{\lptcp}.{\thirdperson}{\sg}.{\masc} apparently tall \\
-		 `The witness claims that allegedly the murderer was apparently tall.'
-	\cg.	*Świadek twierdzi, \textbf{rzekomo} morderca był \textbf{jakoby} wysoki. \label{tall3} \\
+	\glt	 `The witness claims that allegedly the murderer was apparently tall.'
+	\ex\gll	*Świadek twierdzi, \textbf{rzekomo} morderca był \textbf{jakoby} wysoki. \label{tall3} \\
 		witness claim.{\thirdperson}{\sg} {\comp} murderer be.{\lptcp}.{\thirdperson}{\sg}.{\masc} allegedly tall \\
-	\dg.	*Świadek twierdzi, \textbf{podobno} morderca był \textbf{jakoby} wysoki. \label{tall4} \\
+	\ex\gll	*Świadek twierdzi, \textbf{podobno} morderca był \textbf{jakoby} wysoki. \label{tall4} \\
 		witness claim.{\thirdperson}{\sg} {\comp} murderer be.{\lptcp}.{\thirdperson}{\sg}.{\masc} allegedly tall \\
-
-If \emph{jakoby} introduces evidential subordinate clauses as given in \ref{tall1} and \ref{tall2} taking a propositional scope, it is also possible to use additional evidential adverbs having a narrow scope.\footnote{Appropriate prosodic contours are required for the concord reading. 
+\z\z
+If \emph{jakoby} introduces evidential subordinate clauses as given in \REF{tall1} and \REF{tall2} taking a propositional scope, it is also possible to use additional evidential adverbs having a narrow scope.\footnote{Appropriate prosodic contours are required for the concord reading. 
 }
-Concretely, it is \emph{rzekomo}  `reportedly' in \ref{tall1} and \emph{podobno} `apparently' in \ref{tall2} taking scope over the adjective \emph{wysoki} `tall'. I refer to such cases as evidential concord in the sense claimed by \textcite{Schenner2007}. However, it is impossible to reverse the order of the evidential expressions. As \ref{tall3} and \ref{tall4} illustrate, \emph{podobno} and \emph{rzekomo} cannot be employed as complementizers and glossed as {\comp}, as suggested by the reviewer. Correspondingly, I exclude \emph{podobno} and \emph{rzekomo} from further investigation here. 
+Concretely, it is \emph{rzekomo}  `reportedly' in \REF{tall1} and \emph{podobno} `apparently' in \REF{tall2} taking scope over the adjective \emph{wysoki} `tall'. I refer to such cases as evidential concord in the sense claimed by \textcite{Schenner2007}. However, it is impossible to reverse the order of the evidential expressions. As \REF{tall3} and \REF{tall4} illustrate, \emph{podobno} and \emph{rzekomo} cannot be employed as complementizers and glossed as {\comp}, as suggested by the reviewer. Correspondingly, I exclude \emph{podobno} and \emph{rzekomo} from further investigation here. 
 
 \noindent  Secondly, as mentioned above \emph{jakoby}-complements are banned from the matrix prefield position. If \emph{że} `that' precedes \emph{jakoby}, the embedded clause can move though: 
 
-\exg.		\textbf{Że} \textbf{jakoby} Jan był szczęśliwy, twierdziła Dorota. \\  
+\ea \gll \textbf{Że} \textbf{jakoby} Jan był szczęśliwy, twierdziła Dorota. \\  
 		 that allegedly Jan be.{\lptcp}.{\sg}.{\masc} happy  claim.{\lptcp}.{\sg}.{\fem} Dorota \\
-		`That supposedly Jan was happy, Dorota claimed.' 
-
+\glt	`That supposedly Jan was happy, Dorota claimed.' 
+\z
 This clearly indicates that \emph{jakoby} is an adverb, not a complementizer. 
 
 \noindent  Thirdly, if a \emph{że}-clause hosts \emph{jakoby}, future reference in the embedded clause itself becomes possible: 
 
-\ex.	\ag. 	*Dorota twierdziła, \textbf{jakoby} Jan będzie biegać codziennie. \\
+\ea \ea \gll 	*Dorota twierdziła, \textbf{jakoby} Jan będzie biegać codziennie. \\
 		Dorota claim.{\lptcp}.{\sg}.{\fem} jakoby Jan will.{\thirdperson}{\sg} run.{\infv} daily \\
-		Intended meaning: `Dorota claimed that Jan will go jogging every day.'
-	\bg.	Dorota twierdziła, \textbf{że} \textbf{jakoby} Jan będzie biegać codziennie. \\
+	\glt	Intended meaning: `Dorota claimed that Jan will go jogging every day.'
+	\ex\gll	Dorota twierdziła, \textbf{że} \textbf{jakoby} Jan będzie biegać codziennie. \\
 		Dorota claim.{\lptcp}.{\sg}.{\fem} that allegedly Jan will.{\thirdperson}{\sg} run.{\infv} daily \\
-		`Dorota claimed that allegedly Jan will go jogging every day.'
+	\glt	`Dorota claimed that allegedly Jan will go jogging every day.'
+\z\z
 
 \noindent  Furthermore, conditional mood is also allowed:
 
-\ex.	\ag.		*Dorota twierdziła, \textbf{jakoby} Jan poszedł-\textbf{by} do kina. \\
+\ea \ea \gll		*Dorota twierdziła, \textbf{jakoby} Jan poszedł-\textbf{by} do kina. \\
  			Dorota claim.{\lptcp}.{\sg}.{\fem} jakoby Jan go.{\lptcp}.{\sg}.{\masc}-{\subj} to cinema.{\gen} \\
-			Intended meaning: `Dorota claimed that supposedly Jan would have gone to the cinema.' 
-	\bg.		Dorota twierdziła, \textbf{że} \textbf{jakoby} Jan poszedł-\textbf{by} do kina. \\
+	\glt		Intended meaning: `Dorota claimed that supposedly Jan would have gone to the cinema.' 
+	\ex\gll		Dorota twierdziła, \textbf{że} \textbf{jakoby} Jan poszedł-\textbf{by} do kina. \\
  			Dorota claim.{\lptcp}.{\sg}.{\fem} that allegedly Jan go.{\lptcp}.{\sg}.{\masc}-{\subj} to cinema.{\gen} \\
-			`Dorota claimed that allegedly Jan would have gone to the cinema.'
+	\glt		`Dorota claimed that allegedly Jan would have gone to the cinema.'
+\z\z
 
-\noindent  Lastly, \ref{pierwszy} illustrates that evidential \emph{jakoby}-complements cannot be embedded if the matrix verb is inflected for the first person. No such constraint occurs with regard to the combination of \emph{że} `that' and \emph{jakoby} `allegedly': 
+\noindent  Lastly, \REF{pierwszy} illustrates that evidential \emph{jakoby}-complements cannot be embedded if the matrix verb is inflected for the first person. No such constraint occurs with regard to the combination of \emph{że} `that' and \emph{jakoby} `allegedly': 
 
-\exg.		Wczoraj powiedział-e-\textbf{m}, \textbf{że} \textbf{jakoby} pójdę dzisiaj do kina. \label{plecak} \\
-  		yesterday say.{\lptcp}.{\sg}-{\masc}-{\firstperson}{\sg} that allegedly go.{\firstperson}{\sg} today to cinema.{\gen} \\
-		`Yesterday I said that  I will supposedly go to the cinema today.'
-
-\ref{plecak} convincingly demonstrates that \emph{jakoby} as an evidential adverb can be in the scope of the declarative complementizer \emph{że} `that'. 
+\ea  \label{plecak} \gll Wczoraj powiedział-e-\textbf{m}, \textbf{że} \textbf{jakoby} pójdę dzisiaj do kina.\\
+  		yesterday say.{\lptcp}.{\sg}-{\masc}-{\firstperson}{\sg} that allegedly go.{\firstperson}{\sg} today to cinema.{\gen}\\
+\glt	`Yesterday I said that  I will supposedly go to the cinema today.'
+\z
+\REF{plecak} convincingly demonstrates that \emph{jakoby} as an evidential adverb can be in the scope of the declarative complementizer \emph{że} `that'. 
 
 \noindent Finally, the diachrony of Polish provides abundant evidence showing that \emph{jakoby} `supposedly' as an evidential adverb came into being in Middle Polish, whereas \emph{jakoby} as a complementizer existed already in the early Old Polish period. 
 
 In other words, the co-occurrence of \emph{że} and \emph{jakoby} does not instantiate complementizer doubling. Instead, they ought to be analyzed as a declarative complementizer and an evidential adverb, respectively. In this context, the same reviewer asks what the difference is between evidential \emph{jakoby}-complements, on the one hand, and complement clauses headed by the complementizer \emph{że} `that' and containing the evidential adverb \emph{jakoby}, on the other hand. Importantly, the main difference refers to embedding restrictions and selection.\footnote{As there are many structural differences between \emph{jakoby} used as a complementizer and as an adverb, it seems reasonable to assume the restrictions on the use as a complementizer to be syntactic by nature. I thank Todor Koev for drawing my attention to this issue.
 }
-As illustrated in Section \ref{licensing_conditions} above, \emph{jakoby}-complements are not embeddable under, for example, exclamative verbs. This restriction disappears as soon as a \emph{że}-complement clause contains the evidential adverb \emph{jakoby}  `allegedly':
+As illustrated in \sectref{licensing_conditions} above, \emph{jakoby}-complements are not embeddable under, for example, exclamative verbs. This restriction disappears as soon as a \emph{że}-complement clause contains the evidential adverb \emph{jakoby}  `allegedly':
 
-\ex.	\ag.		*Dziwi mnie, \textbf{jakoby} były zgłoszenia o wadliwych kartach. \\
+\ea \ea \gll		*Dziwi mnie, \textbf{jakoby} były zgłoszenia o wadliwych kartach. \\
 			be.amazed.{\thirdperson}{\sg} me.{\acc} jakoby be.{\lptcp}.{\nvir}.{\pl} reports about faulty cards.{\loc} \\
-			Intended meaning: `I'm amazed that there supposedly were any reports about faulty prepaid cards.' 
-	\bg.		Dziwi mnie, \textbf{że} \textbf{jakoby} były zgłoszenia o wadliwych kartach. \\
+	\glt		Intended meaning: `I'm amazed that there supposedly were any reports about faulty prepaid cards.' 
+	\ex \gll		Dziwi mnie, \textbf{że} \textbf{jakoby} były zgłoszenia o wadliwych kartach. \\
 			be.amazed.{\thirdperson}{\sg} me.{\acc} that allegedly be.{\lptcp}.{\nvir}.{\pl} reports about faulty cards.{\loc} \\
-			`I'm amazed that there allegedly were any reports about faulty prepaid cards.' 
-	
+	\glt		`I'm amazed that there allegedly were any reports about faulty prepaid cards.' 
+\z\z	
 Based on the syntactic differences between \emph{jakoby}- and \emph{że}-clauses pointed out above, one needs to examine semantic properties of the complementizer \emph{jakoby}.
 
 \subsection{Semantics}
 
 \emph{Speaker commitment}: Cross-linguistically, there are two types of reportatives, depending on whether they involve some kind of speaker commitment to the reported proposition, cf. \textcite{Faller2011}, \textcite{Kratzer2012}, \textcite{Murray2017}, among many others:
 
-\ex.	\a.	\textbf{Given the rumour}, Roger must have been elected chief (\#but I wouldn't be surprised if he wasn't).
-	\b.	\textbf{According to the rumour}, Roger must have been elected chief (but I wouldn't be surprised if he wasn't). \nquelle{\citealt[679]{Faller2011}}
+\ea	\ea	\textbf{Given the rumour}, Roger must have been elected chief (\#but I wouldn't be surprised if he wasn't).
+	\ex	\textbf{According to the rumour}, Roger must have been elected chief (but I wouldn't be surprised if he wasn't). \nquelle{\citealt[679]{Faller2011}}
+\z\z
 
 \noindent \emph{Jakoby} clearly does not require any degree of speaker commitment (for a possible analysis of similar cases cross-linguistically, see \textcite{AnderBois2014}):
 
-\exg.		Mówi się, \textbf{jakoby} Jacek został wybrany na naczelnika, ale ja w to nie wierzę. \\
+\ea \gll Mówi się, \textbf{jakoby} Jacek został wybrany na naczelnika, ale ja w to nie wierzę. \\
 		say.{\thirdperson}{\sg} {\refl} jakoby Jacek  {\passaux}.{\lptcp}.{\sg}.{\masc} elect.{\ptcp}.{\masc} on chief.{\acc} but I in this {\negation} believe.{\firstperson}{\sg} \\
-		`It is said that supposedly Jacek was elected chief, but I don't believe that.' \nquelle{\citealt[14]{JedrzejowskiSchenner-2013}}
-
+\glt	`It is said that supposedly Jacek was elected chief, but I don't believe that.' \nquelle{\citealt[14]{JedrzejowskiSchenner-2013}}
+\z
 In this respect, Polish \emph{jakoby} patterns with the English phrase \emph{according to} as well as with the reportative suffix \emph{=si} in Cuzco Quechua. The speaker using the reportative morpheme \emph{=si} has the possibility of not having any opinion on the truth of \emph{p} (for more details see \textcite{Faller2011}):\footnote{
 This sharply contrasts with the reportative morpheme \emph{ku7} in St'át'imcets, as reported by \textcite{Lisa-Matthewson-Davis2017}. Accordingly, \emph{ku7} patterns with English \emph{given that}.  
 }
 
-\exg.		Pay-kuna\textbf{=s} ñoqa-man=qa qulqi-ta muntu-ntin-pi saqiy-wa-n, mana-má riki riku-sqa-yki ni un sol-ta centavo-ta=pis saqi-sha-wa-n=chu. \\
+\ea \gll Pay-kuna\textbf{=s} ñoqa-man=qa qulqi-ta muntu-ntin-pi saqiy-wa-n, mana-má riki riku-sqa-yki ni un sol-ta centavo-ta=pis saqi-sha-wa-n=chu. \\
 		(s)he-{\pl}={\rep} I-{\illa}={\topi} money-{\acc} lot-{\incl}-{\loc} leave-{\firstperson}{\object}-{\thirdperson} not-{\impr} right see-{\ptcp}-{\secondperson} not one Sol-{\acc} cent-{\acc}={\add} leave-{\prog}-{\firstperson}{\object}-{\thirdperson}={\negation} \\
-		 `They left me a lot of money, (but) that's not true, as you have seen, they didn't leave me one sol, not one cent.' \nquelle{\citealt[679, ex. 37]{Faller2011}}
-
+\glt	 `They left me a lot of money, (but) that's not true, as you have seen, they didn't leave me one sol, not one cent.' \nquelle{\citealt[679, ex. 37]{Faller2011}}
+\z
 Following \textcite{Kratzer2012} and \textcite{Faller2011}, I construct a modal base based on the contents of relevant reports giving rise to an \emph{informational} conversational background. Such conversational backgrounds represent the information conveyed by reports and other sources of information:
 
-\ex.	  \emph{f\textsubscript{r}(w)} = \{\emph{p} $ \mid $ \emph{p} is the content of what is said in \emph{w}\}
+\ea  \emph{f\textsubscript{r}(w)} = \{\emph{p} $ \mid $ \emph{p} is the content of what is said in \emph{w}\} \z
  
- \emph{Dubitativity}: \emph{Jakoby} contributes a dubitative component. There is a clear difference between \emph{jakoby}-clauses and regular conditional / subjunctive \emph{że}-clauses as complements to speech verbs. If the speaker wants to distance herself / himself from the content of the reported proposition, \emph{jakoby} has to be used instead of a regular complement clause: 
+ \emph{Dubitativity}: \emph{Jakoby} contributes a dubitative component. There is a clear difference between \emph{jakoby}-clauses and regular conditional\slash subjunctive \emph{że}-clauses as complements to speech verbs. If the speaker wants to distance herself\slash himself from the content of the reported proposition, \emph{jakoby} has to be used instead of a regular complement clause: 
 
-\ex.	\ag.	Anna twierdzi, \textbf{jakoby} wygrała w lotka. \\
+\ea \ea \gll	Anna twierdzi, \textbf{jakoby} wygrała w lotka. \\
 		Anna claim.{\thirdperson}{\sg} jakoby win.{\lptcp}.{\sg}.{\fem} in lottery \\
-		`Anna claims to have won the lottery.'
-	\bg.	*Anna twierdzi, \textbf{że} wygrała-\textbf{by} w lotka. \\  
-		Anna claim.{\thirdperson}{\sg} that win.{\lptcp}.{\sg}.{\fem}-{\subj} in lottery \\
-		Intended meaning: `Anna claims that she would have won the lottery.' 
-		
+	\glt	`Anna claims to have won the lottery.'
+	\ex\gll	*Anna twierdzi, \textbf{że} wygrała-\textbf{by} w lotka. \\  
+            Anna claim.{\thirdperson}{\sg} that win.{\lptcp}.{\sg}.{\fem}-{\subj} in lottery \\
+	\glt	Intended meaning: `Anna claims that she would have won the lottery.' 
+\z\z		
 \emph{Negation}: Similar to other evidential expressions attested cross-linguistically, \emph{jakoby} cannot be under the scope of a negation marker. It takes a wide scope: 
 
-\exg.		Firma twierdziła, \textbf{jakoby} \textbf{nie} było zgłoszeń o wadliwych kartach. \\
+\ea \gll Firma twierdziła, \textbf{jakoby} \textbf{nie} było zgłoszeń o wadliwych kartach. \\
 		company claim.{\lptcp}.{\sg}.{\fem} jakoby {\negation} be.{\lptcp}.{\sg}.{\n} reports about faulty cards.{\loc} \\
 		`The company claimed that there supposedly weren't any reports about faulty prepaid cards.' \newline
-		a) The speaker has reportative evidence that there have not been any reports about faulty prepaid cards. \newline
-		b) \#The speaker does not have reportative evidence that there have not been any reports about faulty prepaid cards.
+\glt	a) The speaker has reportative evidence that there have not been any reports about faulty prepaid cards. \newline
+\glt	b) \#The speaker does not have reportative evidence that there have not been any reports about faulty prepaid cards.
+\z
+In this regard, \emph{jakoby} patterns with reportative expressions attested in Cheyenne, St'át'imcets or Cuzco Quechua; cf. \REF{cheyenne} for Cheyenne:
 
-In this regard, \emph{jakoby} patterns with reportative expressions attested in Cheyenne, St'át'imcets or Cuzco Quechua; cf. \ref{cheyenne} for Cheyenne:
-
-\exg.	 	É-sáa-némené-he-\textbf{sėstse} Annie. \label{cheyenne} \\
+\ea \gll	 	É-sáa-némené-he-\textbf{sėstse} Annie. \label{cheyenne} \\
 		{\thirdperson}-not-sing-{\negation}\textsubscript{{\an}}-{\rep}.{\thirdperson}{\sg}  Annie \\
-		a) `Annie didn't sing, they say.' \newline
-		b)  \#`I didn't hear that Annie sang.' \newline
-		c)  \#`Annie sang, they didn't say.' \nquelle{\citealt[29, ex. 2.56b]{Murray2017}}
-		
+	\glt	a) `Annie didn't sing, they say.' \newline
+	\glt	b)  \#`I didn't hear that Annie sang.' \newline
+	\glt	c)  \#`Annie sang, they didn't say.' \nquelle{\citealt[29, ex. 2.56b]{Murray2017}}
+\z		
 \subsection{Interim summary}
 
-What we have seen so far is that \emph{jakoby}-clauses radically differ from complement clauses introduced by the declarative complementizer \emph{że} `that' in Present-day Polish. The former are much more restricted than the latter, not only with respect to their licensing conditions but also with respect to their syntactic and semantic properties. As it turns out, these differences follow from the compositional meaning of the complementizers in question (cf. \cite{Moulton2009}). Table \ref{differences} furnishes the main differences between both clause types: 
+What we have seen so far is that \emph{jakoby}-clauses radically differ from complement clauses introduced by the declarative complementizer \emph{że} `that' in Present-day Polish. The former are much more restricted than the latter, not only with respect to their licensing conditions but also with respect to their syntactic and semantic properties. As it turns out, these differences follow from the compositional meaning of the complementizers in question (cf. \cite{Moulton2009}). \tabref{differences} furnishes the main differences between both clause types: 
 
-\begin{table}[h] \center
+\begin{table}[h] 
 \begin{tabular}{lcc} 
 \lsptoprule
  \textsc{property} & \emph{że}-clauses & \emph{jakoby}-clauses \\
@@ -603,16 +498,15 @@ dubitativity & - & + \\
 
 Based on \textcite{Klemensiewicz2009}, \textcite{Walczak1999}, and \textcite{Dziubalska-Koaczyk-Walczak2010}, I distinguish the following language stages in the history of Polish: 
 
-\pagebreak
 
-\begin{table}[h] \center
+\begin{table}[h]
 \begin{tabular}{lcc} 
 \lsptoprule
 Language period & Abbreviation & Time period  \\
 \midrule
  Old Polish & \textsc{op} & till 1543 \\
- Middle Polish & \textsc{mp} & 1543-1765  \\
- New Polish & \textsc{np} & 1765-1939 \\
+ Middle Polish & \textsc{mp} & 1543--1765  \\
+ New Polish & \textsc{np} & 1765--1939 \\
  Present-day Polish & \textsc{PdP} & since 1939 \\ 
 \lspbottomrule
 \end{tabular}
@@ -621,36 +515,36 @@ Language period & Abbreviation & Time period  \\
 
 \noindent \textcite[823]{Dziubalska-Koaczyk-Walczak2010} summarize the most important reasons for assuming this classification as follows:
 
-\begin{displayquote}
-The Old Polish period is assumed to have terminated in 1543 with the publication of all the bills of a parliamentary session for the first time in Polish. Thus, the year 1543 marks the introduction of Polish as an official language of documents beside Latin. Additionally, it was in the same year that the first popular literary piece written in Polish was published. It was \emph{Krótka rozprawa między trzema osobami: Panem, Wójtem i Plebanem} ("a short debate among three persons: a lord, a commune head and a pastor"), by Mikołaj Rej, who was the first Polish Renaissance writer writing exclusively in Polish. Middle Polish lasted till 1795 - the election year of king Stanislaus August Poniatowski and symbolic beginning of the period of Enlightenment. The outbreak of the World War II marks the end of the New Polish period and beginning of Modern Polish.
-\end{displayquote}
+\begin{quote}
+The Old Polish period is assumed to have terminated in 1543 with the publication of all the bills of a parliamentary session for the first time in Polish. Thus, the year 1543 marks the introduction of Polish as an official language of documents beside Latin. Additionally, it was in the same year that the first popular literary piece written in Polish was published. It was \emph{Krótka rozprawa między trzema osobami: Panem, Wójtem i Plebanem} (`a short debate among three persons: a lord, a commune head and a pastor'), by Mikołaj Rej, who was the first Polish Renaissance writer writing exclusively in Polish. Middle Polish lasted till 1795 - the election year of king Stanislaus August Poniatowski and symbolic beginning of the period of Enlightenment. The outbreak of the World War II marks the end of the New Polish period and beginning of Modern Polish.
+\end{quote}
 
 \noindent As it turns out, the proposed classification is to be traced back to historical events in the first instance. For major system-internal changes being distinctive of a particular language period, the interested reader is referred to the references cited above. 
 
 \subsection{Etymology}
 
-\emph{Jakoby} is a typical example of head adjunction. Its origin is traced back to the preposition \emph{jako} `as' and the conditional / subjunctive clitic \emph{by} $\approx$`would': 
+\emph{Jakoby} is a typical example of head adjunction. Its origin is traced back to the preposition \emph{jako} `as' and the conditional\slash subjunctive clitic \emph{by} $\approx$`would': 
 
-\ex.	\ag.	Od 18 lat pracuje \textbf{jako} księgowy. \\
+\ea \ea \gll	Od 18 lat pracuje \textbf{jako} księgowy. \\
 		from 18 years work.{\thirdperson}{\sg} as {public:servant} \\
-		`Has has been working as public servant for 18 years.' \nquelle{NKJP, \emph{Tygodnik Podhalański}, 31/1999}
-	\bg.	Zdecydowaliśmy, \textbf{by} zorganizować akcję wśród harcerzy. \label{pasek} \\
-		decide.{\lptcp}.{\vir}.{\firstperson}{\pl} {\subj} organize.{\infv} action.{\acc} among scours \\
-		 `We decided to organize an action among the scouts.' \nquelle{NKJP, \emph{Dziennik Zachodni}, 17/8/2002}
+		\glt	`Has has been working as public servant for 18 years.' \nquelle{NKJP, \emph{Tygodnik Podhalański}, 31/1999}
+		\ex\gll		Zdecydowaliśmy, \textbf{by} zorganizować akcję wśród harcerzy. \label{pasek} \\
+	            decide.{\lptcp}.{\vir}.{\firstperson}{\pl} {\subj} organize.{\infv} action.{\acc} among scours \\
+		\glt	 `We decided to organize an action among the scouts.' \nquelle{NKJP, \emph{Dziennik Zachodni}, 17/8/2002}
+    \z\z		
+The conditional\slash subjunctive clitic \emph{by}, in turn, is traced back to \*\emph{by}, i.e. 3rd person singular aorist of the Proto-Slavic predicate \*\emph{byti} `be'; for its diachrony, see in particular \citeauthor{Migdalski2016} (\citeyear{Migdalski2006, Migdalski2009, Migdalski2016}) and \textcite{Willis2000}. I analyze it in \REF{pasek} as a complementizer.\footnote{Berit Gehrke (pc.) pointed out to me that \emph{by} in Czech can never be used as a complementizer. This might explain why \REF{nogo} is ungrammatical. If neither \emph{jako} nor \emph{by} merge as C-heads, the development into a hearsay complementizer is blocked.
+}\textsuperscript{,}\footnote{One of the anonymous reviewers points out that ``\emph{by} is never a complementizer in Polish. It is a conditional\slash subjunctive auxiliary, and it may occur in the complementizer position only when it incorporates into true complementizers or conjunctions (e.g. \emph{aby} or \emph{żeby} `that'). So it is not only Czech that does not use \emph{by} as a complementizer, the same holds for Polish.'' It is not clear what syntactic position \emph{by} occupies in \REF{pasek}. Following \textcite{Migdalski2006}, \emph{by} originates in MoodP below TP. On the one hand, we can assume it to be base-generated in MoodP and to remain in-situ in \REF{pasek}. But on the other hand, there is no evidence showing that \emph{by} in  \REF{pasek} cannot be associated with the CP layer occupying the C-head position. According to  \textcite[171]{Migdalski2016}, ``[a]ll the examples that require encliticization of the auxiliary clitic \emph{by}, which may occur in second position immediately following the complementizer express some kind of non-indicative Force-related meaning, such as hypothetical counterfactual conditionality, potentiality, or optative mood.'' \citeauthor{Tomic2001} (\citeyear{Tomic2000}, \citeyear{Tomic2001}) treats such clitics as operator clitics, as they scope over the entire proposition. And this is what we observe in \REF{pasek}, too. The embedded clause is a complement clause of the perfective verb \emph{zdecydować} `take a decision' expressing purposiveness. This indicates that the declarative complementizer \emph{że} `that' may have been dropped, that the clitic \emph{by} took over its function and, finally, that it has frozen as a C-head:         
 
-The conditional / subjunctive clitic \emph{by}, in turn, is traced back to \*\emph{by}, i.e. 3rd person singular aorist of the Proto-Slavic predicate \*\emph{byti} `be'; for its diachrony, see in particular \citeauthor{Migdalski2016} (\citeyear{Migdalski2006, Migdalski2009, Migdalski2016}) and \textcite{Willis2000}. I analyze it in \ref{pasek} as a complementizer.\footnote{Berit Gehrke (pc.) pointed out to me that \emph{by} in Czech can never be used as a complementizer. This might explain why \ref{nogo} is ungrammatical. If neither \emph{jako} nor \emph{by} merge as C-heads, the development into a hearsay complementizer is blocked.
-}\textsuperscript{,}\footnote{One of the anonymous reviewers points out that ``\emph{by} is never a complementizer in Polish. It is a conditional / subjunctive auxiliary, and it may occur in the complementizer position only when it incorporates into true complementizers or conjunctions (e.g. \emph{aby} or \emph{żeby} `that'). So it is not only Czech that does not use \emph{by} as a complementizer, the same holds for Polish." It is not clear what syntactic position \emph{by} occupies in \ref{pasek}. Following \textcite{Migdalski2006}, \emph{by} originates in MoodP below TP. On the one hand, we can assume it to be base-generated in MoodP and to remain in-situ in \ref{pasek}. But on the other hand, there is no evidence showing that \emph{by} in  \ref{pasek} cannot be associated with the CP layer occupying the C-head position. According to  \textcite[171]{Migdalski2016}, ``[a]ll the examples that require encliticization of the auxiliary clitic \emph{by}, which may occur in second position immediately following the complementizer express some kind of non-indicative Force-related meaning, such as hypothetical counterfactual conditionality, potentiality, or optative mood." \citeauthor{Tomic2001} (\citeyear{Tomic2000}, \citeyear{Tomic2001}) treats such clitics as operator clitics, as they scope over the entire proposition. And this is what we observe in \ref{pasek}, too. The embedded clause is a complement clause of the perfective verb \emph{zdecydować} `take a decision' expressing purposiveness. This indicates that the declarative complementizer \emph{że} `that' may have been dropped, that the clitic \emph{by} took over its function and, finally, that it has frozen as a C-head:         
-
-\exg.		Zdecydowaliśmy, \textbf{\sout{że}by} zorganizować akcję wśród harcerzy. \\
+\ea \gll Zdecydowaliśmy, \textbf{\sout{że}by} zorganizować akcję wśród harcerzy. \\
 		decide.{\lptcp}.{\vir}.{\firstperson}{\pl} {\comp} organize.{\infv} action.{\acc} among scours \\
-		 `We decided to organize an action among the scouts.' 
+\glt	 `We decided to organize an action among the scouts.' 
+\z
+This scenario is not surprising at all in the history of Polish because \emph{by} incorporated into \emph{jako} forming together the hearsay complementizer \emph{jakoby} being a clear C-head. In other words, \emph{by} is eligible for the C-head position. At this moment, I am not aware of any arguments speaking against \emph{by} being base-generated as a C-head and establishing a subordinating relation between the matrix clause and the embedded clause. Notably, there is one strong counter argument against the view that \emph{by} cannot be used as a complementizer. In complement clauses under desiderative\slash volitional predicates \emph{by} has to occur adjacent to the declarative complementizer \emph{że} `that', i.e. it occurs within the CP-domain (see also footnote 2 above).  What is interesting in this context is the fact that \emph{że} `that' can be deleted. It is then \emph{by} which introduces the embedded clause and marks its illocutionary force as well its subordinate status:   
 
-This scenario is not surprising at all in the history of Polish because \emph{by} incorporated into \emph{jako} forming together the hearsay complementizer \emph{jakoby} being a clear C-head. In other words, \emph{by} is eligible for the C-head position. At this moment, I am not aware of any arguments speaking against \emph{by} being base-generated as a C-head and establishing a subordinating relation between the matrix clause and the embedded clause. Notably, there is one strong counter argument against the view that \emph{by} cannot be used as a complementizer. In complement clauses under desiderative / volitional predicates \emph{by} has to occur adjacent to the declarative complementizer \emph{że} `that', i.e. it occurs within the CP-domain (see also footnote 2 above).  What is interesting in this context is the fact that \emph{że} `that' can be deleted. It is then \emph{by} which introduces the embedded clause and marks its illocutionary force as well its subordinate status:   
-
-\exg.		Każda matka chce, {\textbf{\sout{że}by}} jej syn chodził do przedszkola. \\
+\ea \gll Każda matka chce, {\textbf{\sout{że}by}} jej syn chodził do przedszkola. \\
 		every mother want.{\thirdperson}{\sg} {\comp} her son go.{\lptcp}.{\sg}.{\masc} to kindergarten.{\gen} \\
-		`Every mother wants her son to go to the kindergarten.'
-
+\glt	`Every mother wants her son to go to the kindergarten.'
+\z
 Concretely, the view that \emph{by} is disallowed from being a C-head introducing embedded clauses in Polish is not correct.
 }
 
@@ -661,9 +555,9 @@ Already in \textsc{op}, \emph{jakoby}\footnote{Two alternative orthographic vari
  fulfills miscellaneous functions. To determine its polyfunctionality, I extracted and analyzed 262 examples containing \emph{jakoby} from the \emph{PolDi} corpus.\footnote{\emph{PolDi} is a collection of texts from Polish language history. 40 texts, both from Old and Middle Polish, are supposed to be annotated and integrated into the ANNIS search engine. Unfortunately, I was not able to find any information about how large the corpus is in terms of word counts. According to my understanding, 22 texts are currently searchable. The 262 examples stem from these 22 texts. However, in this section I elaborate only on cases from \textsc{op}.   
 
 }
-Its distribution is given in Table \ref{staropolski_statystka}:  
+Its distribution is given in \tabref{staropolski_statystka}:  
 
-\begin{table}[h] \center \begin{tabular}{ccccc} 
+\begin{table}[h]  \begin{tabular}{ccccc} 
  \lsptoprule
 adverb & XP \emph{jakoby} XP & DP complement  & \newline adverbial clause & argument clause \\
 \midrule
@@ -673,60 +567,60 @@ adverb & XP \emph{jakoby} XP & DP complement  & \newline adverbial clause & argu
 \caption{The use of \emph{jakoby} in the \emph{PolDi} corpus} \label{staropolski_statystka}
 \end{table}
 
-\noindent The label `adverb' refers to all cases in which \emph{jakoby} is used as an adverb, see also the example in \ref{adverb} above. The question of whether it could have different meanings in \textsc{op} still needs to be addressed. I am not concerned with this use of \emph{jakoby} in this chapter. In 93 cases \emph{jakoby} combines and compares two phrases, for example two DPs, two PPs or a DP with a PP. In this function, \emph{jakoby} is comparable with English \emph{like}. The next example shows a combination of two DPs: 
+\noindent The label `adverb' refers to all cases in which \emph{jakoby} is used as an adverb, see also the example in \REF{adverb} above. The question of whether it could have different meanings in \textsc{op} still needs to be addressed. I am not concerned with this use of \emph{jakoby} in this chapter. In 93 cases \emph{jakoby} combines and compares two phrases, for example two DPs, two PPs or a DP with a PP. In this function, \emph{jakoby} is comparable with English \emph{like}. The next example shows a combination of two DPs: 
 
-\exg.		widziałem [\textsubscript{DP} Ducha zstępującego] \textbf{jakoby} [\textsubscript{DP} gołębicę s nieba] \label{pingwin} \\
+\ea \gll widziałem [\textsubscript{DP} Ducha zstępującego] \textbf{jakoby} [\textsubscript{DP} gołębicę s nieba] \label{pingwin} \\
 		see.{\lptcp}.{\masc}.{\firstperson}{\sg} {} {Holy:Spirit} descending jakoby {} dove from heaven \\
-		`I saw the Holy Spirit descending from heaven like a dove' \nquelle{EZ, 6r: 7}	
-
+\glt	`I saw the Holy Spirit descending from heaven like a dove' \nquelle{EZ, 6r: 7}	
+\z
 \textsc{PdP} \emph{jakoby} cannot compare one DP with another DP. Instead, \emph{jakby} `as if' has to be used:
 
-\ex.	\ag.	Urządzili tam sobie [\textsubscript{DP} coś] \textbf{jakby} \hspace{1,0cm} [\textsubscript{DP} klub]. \\
+\ea \ea \gll	Urządzili tam sobie [\textsubscript{DP} coś] \textbf{jakby} \hspace{1,0cm} [\textsubscript{DP} klub]. \\
 		set:up.{\lptcp}.{\vir}.{\thirdperson}{\pl} there {\refl}.{\dat} {} something jakby {} {} club \\ 
-		`There, they have set up something like a club.' \nquelle{NKJP, \emph{Dziennik Zachodni}, 30/12/2009}    
-	\bg.	*Urządzili tam sobie [\textsubscript{DP} coś] \textbf{jakoby} \hspace{1,0cm} [\textsubscript{DP} klub]. \\
-		set:up.{\lptcp}.{\vir}.{\thirdperson}{\pl} there {\refl}.{\dat} {} something jakoby {} {} club \\ 
-		Intended meaning:`There, they have set up something like a club.'	       
-
-When and under what circumstances \emph{jakby} replaced \emph{jakoby} in the history of Polish still needs to be investigated. \\ The next label – `DP complement' – includes all cases in which a DP is modified by a \emph{jakoby}-clause. In all three attested cases the modified DP is related to a verb of speech: \emph{wzmianka} `mention', \emph{rada} `advise', and \emph{krzyk} `scream', see also the example given in \ref{DP} and the discussion in Section \ref{licensing_conditions}. The first example I came across includes the DP \emph{wzmianka} `mention' and stems from \textsc{mp}. I will not discuss it here. The last two examples come from late \textsc{op} (around 1500) from \emph{Rozmyślania przemyskie} `The Przemyśl Meditation':\footnote{The example \ref{adjunct_argument} is ambiguous. Out of the blue, it can be interpreted either as an adjunct clause or as an argument clause. A further context, however, disambiguates its interpretation.
+	\glt	`There, they have set up something like a club.' \nquelle{NKJP, \emph{Dziennik Zachodni}, 30/12/2009}    
+	\ex\gll		*Urządzili tam sobie [\textsubscript{DP} coś] \textbf{jakoby} \hspace{1,0cm} [\textsubscript{DP} klub]. \\
+            set:up.{\lptcp}.{\vir}.{\thirdperson}{\pl} there {\refl}.{\dat} {} something jakoby {} {} club \\ 
+	\glt	Intended meaning:`There, they have set up something like a club.'	       
+    \z\z		
+When and under what circumstances \emph{jakby} replaced \emph{jakoby} in the history of Polish still needs to be investigated. \\ The next label – `DP complement' – includes all cases in which a DP is modified by a \emph{jakoby}-clause. In all three attested cases the modified DP is related to a verb of speech: \emph{wzmianka} `mention', \emph{rada} `advise', and \emph{krzyk} `scream', see also the example given in \REF{DP} and the discussion in \sectref{licensing_conditions}. The first example I came across includes the DP \emph{wzmianka} `mention' and stems from \textsc{mp}. I will not discuss it here. The last two examples come from late \textsc{op} (around 1500) from \emph{Rozmyślania przemyskie} `The Przemyśl Meditation':\footnote{The example \REF{adjunct_argument} is ambiguous. Out of the blue, it can be interpreted either as an adjunct clause or as an argument clause. A further context, however, disambiguates its interpretation.
 }          
 
-\ex.	\ag.	a zatem [\textsubscript{DP} krzyk] wielki pobudził wszytek dwor, \textbf{jakoby} krol jż umarł \label{adjunct_argument} \\
+\ea \ea \gll	a zatem [\textsubscript{DP} krzyk] wielki pobudził wszytek dwor, \textbf{jakoby} krol jż umarł \label{adjunct_argument} \\
 		and thus {} scream huge wake.up.{\lptcp}.{\sg}.{\masc} all court jakoby king already die.{\lptcp}.{\sg}.{\masc} \\
-		`and thus a loud scream woke up all the court that  the king supposedly died already' \nquelle{\emph{PolDi}, \emph{Rozmyślania przemyskie}, $\approx$1500, 92} 
-	\bg.	jako licemiernicy Żydowie z biskupy uczynili \hspace{1,0cm} [\textsubscript{DP} radę], \textbf{jakoby} umęczyli Jesukrysta \\
-		as duplicitous Jews from bishop.{\gen} do.{\lptcp}.{\vir} {} {} advise.{\acc} jakoby harass.{\lptcp}.{\vir} {Jesus Christ} \\   
-		 `as duplicitous Jews they followed the bishop's advice by supposedly killing Jesus Christ'  \nquelle{\emph{PolDi}, \emph{Rozmyślania przemyskie}, $\approx$1500, 298}
+	\glt	`and thus a loud scream woke up all the court that  the king supposedly died already' \nquelle{\emph{PolDi}, \emph{Rozmyślania przemyskie}, $\approx$1500, 92} 
+	\ex\gll		jako licemiernicy Żydowie z biskupy uczynili \hspace{1,0cm} [\textsubscript{DP} radę], \textbf{jakoby} umęczyli Jesukrysta \\
+            as duplicitous Jews from bishop.{\gen} do.{\lptcp}.{\vir} {} {} advise.{\acc} jakoby harass.{\lptcp}.{\vir} {Jesus Christ} \\   
+	\glt	 `as duplicitous Jews they followed the bishop's advice by supposedly killing Jesus Christ'  \nquelle{\emph{PolDi}, \emph{Rozmyślania przemyskie}, $\approx$1500, 298}
+    \z\z		
+In addition, \emph{jakoby} could also introduce comparative hypothetical adverbial clauses (= `adverbial clause' in \tabref{staropolski_statystka}):
 
-In addition, \emph{jakoby} could also introduce comparative hypothetical adverbial clauses (= `adverbial clause' in Table \ref{staropolski_statystka}):
-
-\exg.		ja na tem świecie \textbf{tako} tobie służył, \textbf{jakoby}-ch ci swoje duszy nalazł zbawienie \label{adjunct-jakoby} \\
+\ea \gll ja na tem świecie \textbf{tako} tobie służył, \textbf{jakoby}-ch ci swoje duszy nalazł zbawienie \label{adjunct-jakoby} \\
 		I on this world so you.{\dat} serve.{\lptcp}.{\sg}.{\masc} jakoby-{\aor} you.{\dat} my soul find.{\lptcp}.{\sg}.{\masc} salvation \\
-		`I was serving you in this world to the extent that my soul would find salvation' \nquelle{KG, \emph{Kazanie I: Na Boże Narodzenie}, 20-21} 
+\glt	`I was serving you in this world to the extent that my soul would find salvation' \nquelle{KG, \emph{Kazanie I: Na Boże Narodzenie}, 20--21} 
+\z
+As \REF{adjunct-jakoby} exemplifies, \textsc{op} \emph{jakoby}-clauses could modify the matrix clause without being an argument of the matrix verb. Concretely, they could merge as modal adjunct clauses being often linked with a degree correlate occurring in the matrix clause, cf. \emph{tako} `so' in \REF{adjunct-jakoby}. In \textsc{PdP}, this clause type is headed by the complementizer \emph{jakby} `as if':
 
-As \ref{adjunct-jakoby} exemplifies, \textsc{op} \emph{jakoby}-clauses could modify the matrix clause without being an argument of the matrix verb. Concretely, they could merge as modal adjunct clauses being often linked with a degree correlate occurring in the matrix clause, cf. \emph{tako} `so' in \ref{adjunct-jakoby}. In \textsc{PdP}, this clause type is headed by the complementizer \emph{jakby} `as if':
-
-\exg.		Wszyscy zachowują się \textbf{tak}, \textbf{jakby} chodziło o napad na bank. \\
+\ea \gll Wszyscy zachowują się \textbf{tak}, \textbf{jakby} chodziło o napad na bank. \\
 		all behave.{\thirdperson}{\pl} {\refl} so {as if} go.{\lptcp}.{\sg}.{\n} about assault on bank \\
-		`Everyone is behaving as if it were a bank robbery.' \nquelle{NKJP, \emph{Samo życie}, episode 237} 
-
+\glt	`Everyone is behaving as if it were a bank robbery.' \nquelle{NKJP, \emph{Samo życie}, episode 237} 
+\z
 The use of \emph{jakoby} in such contexts is not possible any longer: 
 
-\exg.		*Wszyscy zachowują się \textbf{tak}, \textbf{jakoby} chodziło o napad na bank. \\
+\ea \gll *Wszyscy zachowują się \textbf{tak}, \textbf{jakoby} chodziło o napad na bank. \\
 		all behave.{\thirdperson}{\pl} {\refl} so jakoby go.{\lptcp}.{\sg}.{\n} about assault on bank \\
-		Intended meaning: `Everyone is behaving as if it were a bank robbery.'
+\glt	Intended meaning: `Everyone is behaving as if it were a bank robbery.'
+\z
+Finally, as has been illustrated in \sectref{intro}, \emph{jakoby} could introduce comparative hypothetical argument clauses after verbs of seeming. For the sake of convenience, I repeat the example given in \REF{tee} as \REF{tee2} below:  
 
-Finally, as has been illustrated in Section \ref{intro}, \emph{jakoby} could introduce comparative hypothetical argument clauses after verbs of seeming. For the sake of convenience, I repeat the example given in \ref{tee} as \ref{tee2} below:  
-
-\exg.		iżeć się jest ludziem na ziemi tako było widziało, \textbf{jakoby} się ono na nie obalić było chciało \label{tee2} \\
+\ea \gll iżeć się jest ludziem na ziemi tako było widziało, \textbf{jakoby} się ono na nie obalić było chciało \label{tee2} \\
 			that {\refl} be.{\thirdperson}{\sg} people.{\dat} on earth.{\loc} so be.{\lptcp}.{\sg}.{\n} seem.{\lptcp}.{\sg}.{\n} jakoby {\refl} it on them.{\acc} slay.{\infv} be.{\lptcp}.{\sg}.{\n} want.{\lptcp}.{\sg}.{\n} \\
-		`that it seemed to the people on earth as if it wanted to slay all of them' \nquelle{KG, \emph{Kazanie I: Na Boże Naordzenie}, 26-27}	
+\glt	`that it seemed to the people on earth as if it wanted to slay all of them' \nquelle{KG, \emph{Kazanie I: Na Boże Naordzenie}, 26--27}	
+\z
+In \tabref{staropolski_statystka}, I refer to cases like in \REF{tee2}  as `argument clauses'. What is important here is that \REF{tee2} is one of the oldest examples stemming from early \textsc{op}. In late \textsc{op} \emph{jakoby}-clauses began to be embedded under other clause-embedding verbs. An overview is given in \tabref{staropolski_statystka_argument}: 
 
-In Table \ref{staropolski_statystka}, I refer to cases like in \ref{tee2}  as `argument clauses'. What is important here is that \ref{tee2} is one of the oldest examples stemming from early \textsc{op}. In late \textsc{op} \emph{jakoby}-clauses began to be embedded under other clause-embedding verbs. An overview is given in Table \ref{staropolski_statystka_argument}: 
-
- \begin{table}[h] \center \begin{tabular}{ccc} 
+ \begin{table}[h]  \begin{tabular}{ccc} 
  \lsptoprule
-verbs of seeming & verbs of thinking & verbs of speech / report \\
+verbs of seeming & verbs of thinking & verbs of speech\slash report \\
 \midrule
 3 & 5 & 2  \\
  \lspbottomrule
@@ -734,42 +628,42 @@ verbs of seeming & verbs of thinking & verbs of speech / report \\
 \caption{The distribution of \emph{jakoby}-clauses as argument clauses in \textsc{op} based on the data extracted from the \emph{PolDi} corpus} \label{staropolski_statystka_argument}
 \end{table}
 
-\noindent The occurrences with verbs of seeming are the oldest ones. Around 1500, verbs of thinking and verbs of speech / report started to occur with \emph{jakoby}-clauses:
+\noindent The occurrences with verbs of seeming are the oldest ones. Around 1500, verbs of thinking and verbs of speech\slash report started to occur with \emph{jakoby}-clauses:
 
-\exg.		od tego dnia myślił, \textbf{jakoby} ji za trzydzieści pieniędzy przedał \\
+\ea \gll od tego dnia myślił, \textbf{jakoby} ji za trzydzieści pieniędzy przedał \\
 		from this day think.{\lptcp}.{\sg}.{\masc} jakoby him.{\acc} for thirty money sell.{\lptcp}.{\sg}.{\masc} \\
-		`from this day on he thought that he would have sold him for 30 silver coins' \nquelle{\emph{PolDi}, \emph{Rozmyślania przemyskie}, $\approx$1500, 479}
+\glt	`from this day on he thought that he would have sold him for 30 silver coins' \nquelle{\emph{PolDi}, \emph{Rozmyślania przemyskie}, $\approx$1500, 479}
+\z
 
-
-\ex.	\ag.	powiadał przed nim, \textbf{jakoby} od Cesarza uciekł \\
+\ea \ea \gll	powiadał przed nim, \textbf{jakoby} od Cesarza uciekł \\
 		say.{\lptcp}.{\sg}.{\masc}.{\hab} before him.{\dat} jakoby from Emperor run:away.{\lptcp}.{\sg}.{\masc} \label{op_1} \\
-		`he used to tell him that he had supposedly run away from the Emperor' \nquelle{\emph{PolDi}, \emph{Pamiętniki janczara}, 1496-1501, 100:3} 
-	\bg.	  już Żydowie wielką nieprzyjaźń przeciw jemu mieli smawiając się, \textbf{jakoby} go ubili \label{op_2} \\
-		already Jews huge inhospitableness against him.{\dat} have.{\lptcp}.{\vir} conspiring {\refl} jakoby him.{\acc} kill.{\lptcp}.{\vir} \\
-		`already Jews had a hostile attitude against him and conspired that they would supposedly kill him' \nquelle{\emph{PolDi}, \emph{Rozmyślania przemyskie}, $\approx$1500, 379}        
+	\glt	`he used to tell him that he had supposedly run away from the Emperor' \nquelle{\emph{PolDi}, \emph{Pamiętniki janczara}, 1496--1501, 100:3} 
+	\ex\gll		  już Żydowie wielką nieprzyjaźń przeciw jemu mieli smawiając się, \textbf{jakoby} go ubili \label{op_2} \\
+            already Jews huge inhospitableness against him.{\dat} have.{\lptcp}.{\vir} conspiring {\refl} jakoby him.{\acc} kill.{\lptcp}.{\vir} \\
+	\glt	`already Jews had a hostile attitude against him and conspired that they would supposedly kill him' \nquelle{\emph{PolDi}, \emph{Rozmyślania przemyskie}, $\approx$1500, 379}        
+    \z\z		
+Remarkably, in \textsc{PdP} \emph{myśleć} `think' is not inclined to occur with \emph{jakoby}-clauses, as it is not a classical verb of speech. Though, there is one specific context in which someone renders someone else's thoughts reporting on what other persons (might) think. Although I was not able to find any appropriate corpus example, the following sentence sounds well-formed but marked a bit:\footnote{One of the anonymous reviewers remarks that \REF{portugal} improves when the speaker objects to what the matrix subject claims:
 
-Remarkably, in \textsc{PdP} \emph{myśleć} `think' is not inclined to occur with \emph{jakoby}-clauses, as it is not a classical verb of speech. Though, there is one specific context in which someone renders someone else's thoughts reporting on what other persons (might) think. Although I was not able to find any appropriate corpus example, the following sentence sounds well-formed but marked a bit:\footnote{One of the anonymous reviewers remarks that \ref{portugal} improves when the speaker objects to what the matrix subject claims:
-
-\exg.		Myśli, \textbf{jakoby} jest najlepszy, ale ja w to nie wierzę. \\
+\ea \gll Myśli, \textbf{jakoby} jest najlepszy, ale ja w to nie wierzę. \\
 		think.{\thirdperson}{\sg} jakoby be.{\thirdperson}{\sg} best but I in this {\negation} believe.{\firstperson}{\sg} \\
-		 `He thinks that he would be the best, but I don't believe this.'
-
+\glt	 `He thinks that he would be the best, but I don't believe this.'
+\z
 I agree with this view and share the same intuition.
 } 
 
-\exg.		?Myśli, \textbf{jakoby} jest najlepszy. \label{portugal} \\
+\ea \gll ?Myśli, \textbf{jakoby} jest najlepszy. \label{portugal} \\
 		think.{\thirdperson}{\sg} jakoby be.{\thirdperson}{\sg} best \\
-		 `He think that he would be the best.'
+\glt	 `He think that he would be the best.'
+\z
+Another possibility to interpret the five cases with verbs of thinking would be to analyze them as verbs of seeming in a broader sense. This would explain the expansion of \emph{jakoby}-clauses after verbs of seeming to other clause-embedding verb classes. To what extent both classes are related and whether this link is conceptually reasonable remains an open issue. What is more striking with regard to the development of \emph{jakoby}-clauses is their use after verbs of speech, \emph{powiadać} `keep saying' in \REF{op_1} and \emph{smawiać się} `conspire' in \REF{op_2}. In this respect, late \textsc{op} does not deviate from \textsc{PdP}. As it turns out, not much changed in \textsc{mp}.        
 
-Another possibility to interpret the five cases with verbs of thinking would be to analyze them as verbs of seeming in a broader sense. This would explain the expansion of \emph{jakoby}-clauses after verbs of seeming to other clause-embedding verb classes. To what extent both classes are related and whether this link is conceptually reasonable remains an open issue. What is more striking with regard to the development of \emph{jakoby}-clauses is their use after verbs of speech, \emph{powiadać} `keep saying' in \ref{op_1} and \emph{smawiać się} `conspire' in \ref{op_2}. In this respect, late \textsc{op} does not deviate from \textsc{PdP}. As it turns out, not much changed in \textsc{mp}.        
-
-\subsection{Middle Polish (1543-1765)}
+\subsection{Middle Polish (1543--1765)}
 
 The situation in \textsc{mp} resembles the picture of how \emph{jakoby} was used in \textsc{op}. In general, I extracted 162 cases from the \emph{KorBa} corpus, also known as \emph{The Baroque Corpus of Polish}.\footnote{\emph{KorBa} contains historical texts from the 17th and 18th centuries, consists of 718 texts, counts over 10 million word forms, and is available for free. 
 }    
-An overview of how \emph{jakoby} was used in \textsc{mp} is given in Table \ref{mlodopolski_statystka}:
+An overview of how \emph{jakoby} was used in \textsc{mp} is given in \tabref{mlodopolski_statystka}:
 
-\begin{table}[h] \center \begin{tabular}{ccccc} 
+\begin{table}[h]  \begin{tabular}{ccccc} 
 \lsptoprule
 adverb & XP \emph{jakoby} XP & DP complement  & \newline adverbial clause & argument clause \\
 \midrule
@@ -783,17 +677,17 @@ adverb & XP \emph{jakoby} XP & DP complement  & \newline adverbial clause & argu
 
 Firstly, the use of \emph{jakoby} as a comparative particle decreases (37\% in \textsc{op} vs. 17\% in \textsc{mp}), whereas as an adverbial clause complementizer it is still often used. What should be kept in mind, though, is that \emph{jakoby} does not always introduce hypothetical comparative clauses; in some cases, it can also introduce purpose clauses: 
 
-\exg.		Tak trzeba Rzemień ciągnąć / \textbf{jakoby} się nie zerwał \\
+\ea \gll Tak trzeba Rzemień ciągnąć / \textbf{jakoby} się nie zerwał \\
 		so need belt.{\acc} pull.{\infv} / jakoby {\refl} {\negation} peter:away.{\lptcp}.{\sg}.{\masc} \\
-		`One needs to pull the belt in such a way as to not break it off' \nquelle{\emph{KorBa}, \emph{Proverbium polonicorum}, 1618} 	     
-
+\glt	`One needs to pull the belt in such a way as to not break it off' \nquelle{\emph{KorBa}, \emph{Proverbium polonicorum}, 1618} 	     
+\z
 I leave it as an open question here what kinds of adverbial clauses \emph{jakoby} could introduce in older stages of Polish. 
 
 Secondly – and more importantly – the use of \emph{jakoby}-clauses as argument clauses increases (4\% in \textsc{op} vs. 12\% in \textsc{mp}). Among 20 examples, different classes of clause-embedding verbs can be attested: 
 
- \begin{table}[h] \center \begin{tabular}{ccc} 
+ \begin{table}[h]  \begin{tabular}{ccc} 
 \lsptoprule
-verbs of seeming & verbs of thinking & verbs of speech / report \\
+verbs of seeming & verbs of thinking & verbs of speech\slash report \\
 \midrule
 2 & 1 & 17  \\
  \lspbottomrule
@@ -801,31 +695,31 @@ verbs of seeming & verbs of thinking & verbs of speech / report \\
 \caption{The distribution of \emph{jakoby}-clauses as argument clauses in \textsc{mp} based on the data extracted from the \emph{KorBa} corpus}
 \end{table}
 
-\noindent Selected examples follows; \ref{korba_seem} for \emph{zdać się} `seem', \ref{korba_think} for \emph{myślić} `think' and \ref{korba_suppose} for \emph{mniemać} 'suppose':     
+\noindent Selected examples follows; \REF{korba_seem} for \emph{zdać się} `seem', \REF{korba_think} for \emph{myślić} `think' and \REF{korba_suppose} for \emph{mniemać} 'suppose':     
 
-\ex.	\ag.	zdało się im / \textbf{jakoby} się wielkie wzruszenie na morzu było stało; \label{korba_seem} \\ 
+\ea \ea \gll	zdało się im / \textbf{jakoby} się wielkie wzruszenie na morzu było stało; \label{korba_seem} \\ 
 		seem.{\lptcp}.{\sg}.{\n} {\refl} them.{\dat} / jakoby {\refl} huge move on sea.{\loc} be.{\lptcp}.{\sg}.{\n} happen.{\lptcp}.{\sg}.{\n} \\
-		`it seemed to them as if something huge would have moved on the sea;' \nquelle{\emph{KorBa}, \emph{Dyszkursu o pijaństwie kontynuacja}, 1681} 	 
-	\bg.	począł myślić / \textbf{jakoby} siebie i towarzystwo z niewoli wyrwać \label{korba_think} \\
+	\glt	`it seemed to them as if something huge would have moved on the sea;' \nquelle{\emph{KorBa}, \emph{Dyszkursu o pijaństwie kontynuacja}, 1681} 	 
+	\ex\gll	począł myślić / \textbf{jakoby} siebie i towarzystwo z niewoli wyrwać \label{korba_think} \\
 		begin.{\lptcp}.{\sg}.{\masc} think.{\infv} / jakoby {\refl}.{\acc} and company.{\acc} from bondage.{\gen} take:away.{\infv} \\
-		`[he] began to think as if he would have the intention to rescue himself and the company' \nquelle{\emph{KorBa}, \emph{Opisanie krótkie zdobycia galery przedniejszej aleksandryjskiej}, 1628} 	   
-	\cg.	iż mniemali / \textbf{jakoby} Zona torrida miała być dla zbytniego gorąca \label{korba_suppose} \\
+	\glt	`[he] began to think as if he would have the intention to rescue himself and the company' \nquelle{\emph{KorBa}, \emph{Opisanie krótkie zdobycia galery przedniejszej aleksandryjskiej}, 1628} 	   
+	\ex\gll	iż mniemali / \textbf{jakoby} Zona torrida miała być dla zbytniego gorąca \label{korba_suppose} \\
 		that suppose.{\lptcp}.{\vir} / jakoby Zona torrida have.{\lptcp}.{\sg}.{\fem} be.{\infv} for {too:him} hot \\
-		`that [they] supposed that supposedly Zona torrida would be too hot for him' \nquelle{\emph{KorBa}, \emph{Relacje powszechne}, part I, 1609} 
-		
+	\glt	`that [they] supposed that supposedly Zona torrida would be too hot for him' \nquelle{\emph{KorBa}, \emph{Relacje powszechne}, part I, 1609} 
+\z\z
 Similar to the situation in the late \textsc{op} period, \emph{jakoby} can be used as a hearsay complementizer in \textsc{mp}. As for embedding verbs, verbs of speech or report definitely outnumber verbs of seeming. What is different in \textsc{mp} in comparison to what we have observed in \textsc{op} is the expansion of argument \emph{jakoby}-clauses to other verb classes. In the next example, the internal argument of the transitive verb \emph{czytać} `read' is occupied by a \emph{jakoby}-clause:
 
-\exg.		listy (...), w których czytał, \textbf{jakoby} (...) W.Ks.L. miał się już ożenić w Śląsku \label{nic} \\
+\ea \gll listy (...), w których czytał, \textbf{jakoby} (...) W.Ks.L. miał się już ożenić w Śląsku \label{nic} \\
 		letters (...) in which read.{\lptcp}.{\sg}.{\masc} jakoby (...) W.Ks.L have.{\lptcp}.{\sg}.{\masc} {\refl} already {get:married}.{\infv} in Silesia \\
-		 `letters in which he could read that supposedly W.Ks.L would have already gotten married in Silesia' \nquelle{\emph{KorBa}, \emph{Pamiętnik z czasów Jana Sobieskiego}, between 1690 and 1696} 
+\glt	 `letters in which he could read that supposedly W.Ks.L would have already gotten married in Silesia' \nquelle{\emph{KorBa}, \emph{Pamiętnik z czasów Jana Sobieskiego}, between 1690 and 1696} 
+\z
+Uttering \REF{nic} the speaker is reporting on what the clause subject was reading. This context enables the speaker to turn the verb \emph{czytać} `read' into a verb of report. At the same time, the speaker may question either the claim that someone got married or the observation that the clause subject was reading this claim. Both interpretations are conceivable. 
 
-Uttering \ref{nic} the speaker is reporting on what the clause subject was reading. This context enables the speaker to turn the verb \emph{czytać} `read' into a verb of report. At the same time, the speaker may question either the claim that someone got married or the observation that the clause subject was reading this claim. Both interpretations are conceivable. 
+To test for statistical reliability, statistical tests were run. The two language change processes described above were analyzed by means of generalized linear modeling using the package \emph{lme4} \citep{Bates-Maechler-etal2012} in R \citep{Team2012}. \tabref{static} shows the results and the last column lists the \emph{p}-values.
 
-To test for statistical reliability, statistical tests were run. The two language change processes described above were analyzed by means of generalized linear modeling using the package \emph{lme4} \citep{Bates-Maechler-etal2012} in R \citep{Team2012}. Table \ref{static} shows the results and the last column lists the \emph{p}-values.
-
- \begin{table}[h] \center \begin{tabular}{ccccc} 
+ \begin{table}[h] \begin{tabular}{l*{3}{S[table-format=-1.5]}S[table-format=1.2e4]} 
 \lsptoprule
-{} & Estimate & Std. Error & \emph{z} value & Pr(>$\mid$\emph{z}$\mid$) \\
+{} & {Estimate} & {Std. Error} & {\emph{z} value} & {Pr(>$\mid$\emph{z}$\mid$)} \\
 \midrule
 (Intercept) & -1.6094 & 0.2108 & -7.634 & 2.27e-14 \\  
 XP \emph{jakoby} XP & 1.0121 & 0.2472 & 4.094 & 4.24e-05 \\
@@ -839,11 +733,11 @@ argument clause & -1.2667 & 0.4013 & -3.157 & 0.00159 \\
 \noindent  The relevant factors, i.e. language period as an independent variable and complement type as a dependent variable, were coded to test whether differences between both language periods are significant. As it turned out, the tests statistically confirmed the diachronic observations.\footnote{I thank Frederike Weeber who helped me with the statistics.
 }
  
-\subsection{New Polish (1765-1939)}
+\subsection{New Polish (1765--1939)}
 
-The use of \emph{jakoby} in \textsc{np} remains constant. Its all main functions attested in \textsc{op} and \textsc{mp} still occur in the 19th century. I extracted and analyzed a sample of 85 \emph{jakoby}-cases from \emph{NewCor}, a \emph{Corpus of 1830-1918 Polish}. Table \ref{nowopolski_statystka} portrays the picture of how \emph{jakoby} is used:       
+The use of \emph{jakoby} in \textsc{np} remains constant. Its all main functions attested in \textsc{op} and \textsc{mp} still occur in the 19th century. I extracted and analyzed a sample of 85 \emph{jakoby}-cases from \emph{NewCor}, a \emph{Corpus of 1830--1918 Polish}. \tabref{nowopolski_statystka} portrays the picture of how \emph{jakoby} is used:       
 
-\begin{table}[h] \center
+\begin{table}[h] 
 \begin{tabular}{ccccc} 
  \lsptoprule
 adverb & XP \emph{jakoby} XP & DP complement  & adverbial clause & argument clause \\
@@ -854,11 +748,11 @@ adverb & XP \emph{jakoby} XP & DP complement  & adverbial clause & argument clau
 \caption{The use of \emph{jakoby} in the \emph{NewCor} corpus} \label{nowopolski_statystka}
 \end{table}
 
-\noindent  Interestingly enough, \emph{jakoby}-clauses modifying DPs dominate. They usually modify such DPs as \emph{pogłoska} `rumour', \emph{wieść} `news', \emph{wiadomość} `message', \emph{twierdzenie} `claim' , \emph{mniemanie} `opinion' or \emph{zarzut} `accusation'. All of the DPs are related to verbs of speech / report. \emph{Jakoby} can still occur as a hypothetical comparative element, either comparing two phrases or introducing adverbial \emph{as-if}-clauses. In eight cases, \emph{jakoby}-clauses occupy an argument of a clause-embedding predicate:       
+\noindent  Interestingly enough, \emph{jakoby}-clauses modifying DPs dominate. They usually modify such DPs as \emph{pogłoska} `rumour', \emph{wieść} `news', \emph{wiadomość} `message', \emph{twierdzenie} `claim' , \emph{mniemanie} `opinion' or \emph{zarzut} `accusation'. All of the DPs are related to verbs of speech\slash report. \emph{Jakoby} can still occur as a hypothetical comparative element, either comparing two phrases or introducing adverbial \emph{as-if}-clauses. In eight cases, \emph{jakoby}-clauses occupy an argument of a clause-embedding predicate:       
 
- \begin{table}[h] \center \begin{tabular}{ccc} 
+ \begin{table}[h]  \begin{tabular}{ccc} 
 \lsptoprule
-verbs of seeming & verbs of thinking & verbs of speech / report \\
+verbs of seeming & verbs of thinking & verbs of speech\slash report \\
 \midrule
 2 & 0 & 6  \\
 \lspbottomrule
@@ -868,32 +762,32 @@ verbs of seeming & verbs of thinking & verbs of speech / report \\
 
 \noindent  I could not find any examples with verbs of thinking. Of course, more data needs to be analyzed in order to be able to exclude this class altogether. In two cases, the \emph{jakoby}-clause is an argument of a \emph{seem}-verb, as the next example shows:
 
-\exg.		zdaje się nam, \textbf{jakoby} wzory te były mędrsze od nas \\
+\ea \gll zdaje się nam, \textbf{jakoby} wzory te były mędrsze od nas \\
 		seem.{\thirdperson}{\sg} {\refl} us.{\dat} jakoby	patterns these be.{\lptcp}.{\nvir} smarter from us \\
-		`it seems to us as if these patterns would be smarter than us' \nquelle{\emph{NewCor}, \emph{O związku pomiędzy światłem i elektrycznością}, 1890} 
+\glt	`it seems to us as if these patterns would be smarter than us' \nquelle{\emph{NewCor}, \emph{O związku pomiędzy światłem i elektrycznością}, 1890} 
+\z
+The other cases illustrate the use of \emph{jakoby}-clauses after verbs of speech\slash report, known from \textsc{PdP}:
 
-The other cases illustrate the use of \emph{jakoby}-clauses after verbs of speech / report, known from \textsc{PdP}:
-
-\exg.		i nie można też było twierdzić, \textbf{jakoby} łacińscy biskupi stróżami byli Kościoła ruskiego \\
+\ea \gll i nie można też było twierdzić, \textbf{jakoby} łacińscy biskupi stróżami byli Kościoła ruskiego \\
 		and {\negation} can.{\pred} also be.{\lptcp}.{\sg}.{\n} claim.{\infv} jakoby Latin bishops guards.{\ins} be.{\lptcp}.{\vir} Church.{\gen} Ruthenian \\
-		`and one couldn't claim either that supposedly Latin bishops would have been guards of the Ruthenian Church' \nquelle{\emph{NewCor}, \emph{Sprawa ruska na Sejmie Czteroletnim}, 1884}
-
+\glt	`and one couldn't claim either that supposedly Latin bishops would have been guards of the Ruthenian Church' \nquelle{\emph{NewCor}, \emph{Sprawa ruska na Sejmie Czteroletnim}, 1884}
+\z
 The availability of \emph{jakoby}-clauses after of verbs of seeming in \textsc{np} might account for why \textcite{ojasiewicz1992}, \textcite{Wiemer2005} and \textcite{Taborek2008} still cite their occurrence in \textsc{PdP}. Since their incompatibility appears to be a very young development in the history of Polish, one would not be surprised to come across similar examples from the beginning of the 20th century. 
 
 \subsection{Interim summary}
 
-In this section, we have seen that \emph{jakoby} developed its main functions already during the \textsc{op} period. As far as argument \emph{jakoby}-clauses are concerned, they started to occur after verbs of speech / report in late Old Polish and ceased to be used after verbs of seeming in Present-day Polish:   
+In this section, we have seen that \emph{jakoby} developed its main functions already during the \textsc{op} period. As far as argument \emph{jakoby}-clauses are concerned, they started to occur after verbs of speech\slash report in late Old Polish and ceased to be used after verbs of seeming in Present-day Polish:   
 
-\begin{table}[h] \center
+\begin{table}[h] 
 \begin{tabular}{lcc} 
  \lsptoprule
-Language period & \vtop{\hbox{\strut argument clauses} \hbox{\strut(verbs of seeming)}} & \vtop{\hbox{\strut argument clauses} \hbox{\strut(verbs of speech / report)}}  \\
+Language period & \vtop{\hbox{\strut argument clauses} \hbox{\strut(verbs of seeming)}} & \vtop{\hbox{\strut argument clauses} \hbox{\strut(verbs of speech\slash report)}}  \\
 \midrule
- early Old Polish (until 1450) & + & - \\
- late Old Polish (1450-1543) & + & + \\
- Middle Polish (1543-1765) & + & + \\
- New Polish (1765-1939) & + & + \\
- Present-day Polish (since 1939) & -  & + \\ 
+ early Old Polish (until 1450) & + & \textminus \\
+ late Old Polish (1450--1543) & + & + \\
+ Middle Polish (1543--1765) & + & + \\
+ New Polish (1765--1939) & + & + \\
+ Present-day Polish (since 1939) & \textminus  & + \\ 
 \lspbottomrule
 \end{tabular}
 \caption{The development of \emph{jakoby}-argument clauses in the history of Polish}
@@ -903,57 +797,61 @@ Language period & \vtop{\hbox{\strut argument clauses} \hbox{\strut(verbs of see
 
 \section{Reanalysis}
 
-The main objective of this section is to reanalyze the development of \emph{jakoby} in the history of Polish. The main focus is on \emph{jakoby}-clauses being used after verbs of seeming and after verbs of speech / report. I aim at identifying constant factors in the lexical meaning of \emph{jakoby} over time and, at the same time, at locating the aspects responsible for the semantic change that \emph{jakoby} underwent. 
+The main objective of this section is to reanalyze the development of \emph{jakoby} in the history of Polish. The main focus is on \emph{jakoby}-clauses being used after verbs of seeming and after verbs of speech\slash report. I aim at identifying constant factors in the lexical meaning of \emph{jakoby} over time and, at the same time, at locating the aspects responsible for the semantic change that \emph{jakoby} underwent. 
 
-As detailed in Section \ref{diachrony}, \emph{jakoby} can be traced back to the fusion of the comparative preposition \emph{jako} and the conditional / subjunctive clitic \emph{by}. I argue that these components contributed two semantic seeds that determined the further development of \emph{jakoby}: i) equative comparison, ii) non-factivity. I take \emph{jako} `as' to be lexical anchor for an equivalence relation – along the lines proposed by \textcite{Umbach-Gust2014} – between the matrix clause and the embedded clause. The role of \emph{by} is to mark non-factivity giving rise to a counterfactual reading, as defined in \textcite[988]{Bucking2017}\footnote{\textcite{Bucking2017} examines hypothetical comparative clauses in German and distinguishes four different readings: i) extensional, ii) generic, iii) counterfactual, and iv) epistemic. All of them were available with \emph{jakoby} in Old Polish, though it was the counterfactual reading that gave rise to the development of \emph{jakoby} into a hearsay complementizer. 
+As detailed in \sectref{diachrony}, \emph{jakoby} can be traced back to the fusion of the comparative preposition \emph{jako} and the conditional\slash subjunctive clitic \emph{by}. I argue that these components contributed two semantic seeds that determined the further development of \emph{jakoby}: i) equative comparison, ii) non-factivity. I take \emph{jako} `as' to be lexical anchor for an equivalence relation – along the lines proposed by \textcite{Umbach-Gust2014} – between the matrix clause and the embedded clause. The role of \emph{by} is to mark non-factivity giving rise to a counterfactual reading, as defined in \textcite[988]{Bucking2017}\footnote{\textcite{Bucking2017} examines hypothetical comparative clauses in German and distinguishes four different readings: i) extensional, ii) generic, iii) counterfactual, and iv) epistemic. All of them were available with \emph{jakoby} in Old Polish, though it was the counterfactual reading that gave rise to the development of \emph{jakoby} into a hearsay complementizer. 
 }:  
 
-\begin{table}[h] \center
+\begin{table}[h] 
 \begin{tabular}{cc} 
  \lsptoprule
  \emph{jako} `as' & \emph{by} \\
 \midrule
-equative meaning & subjunctive / non-factive meaning \\
+equative meaning & subjunctive\slash non-factive meaning \\
  \lspbottomrule
 \end{tabular}
 \caption{Etymological composition of \emph{jakoby}}
 \end{table}
   
-\noindent For Old Polish, the combination of these two elements is sufficient to explain the semantic contribution of \emph{jakoby} itself. While component i) enabled the use of \emph{jakoby} in adjunct clauses, component ii) paved the way for the dubitative meaning that \emph{jakoby} contributes in complement clauses of verbs of speech / report.\footnote{One of the anonymous reviewers objects that the reanalysis concerns conditionality and does not involve subjunctive meaning as proposed here.  As \emph{by} can express both conditionality and subjunctive meaning, it is not surprising that the anonymous reviewer argues for one of the categories. What \emph{by} does is that it introduces a set of alternative worlds, a hallmark of both conditionality and of subjunctive meaning. It is conditionality in Old Polish \emph{jakoby}-complements embedded under verbs of seeming that is crucial for interpretative purposes (cf. \textcite{Stalnaker1968}, \textcite{Lewis1973}, \textcite{Fintel2011}, and in particular \textcite{Bucking2017}). But if \emph{jakoby}-clauses are complements to verbs of saying or reporting, it is rather a subjunctive meaning of \emph{by} absorbing the illocutionary force in the sense claimed by \textcite{Truckenbrodt2006}. It has been cross-linguistically observed that embedded clauses in reporting contexts are usually marked by subjunctive mood; for an overview, see \textcite{Becker-Remberger2010}, \textcite{Fabricius-Hansen-Saebo2004}, \citeauthor{Portner1997} (\citeyear{Portner1997}, \citeyear{Portner2018}), \textcite{Sode2014}, among many others. \emph{Jakoby}-complements in Present-day Polish ought to be treated as cases of reportive mood, and not as cases of conditionality. 
+\noindent For Old Polish, the combination of these two elements is sufficient to explain the semantic contribution of \emph{jakoby} itself. While component i) enabled the use of \emph{jakoby} in adjunct clauses, component ii) paved the way for the dubitative meaning that \emph{jakoby} contributes in complement clauses of verbs of speech\slash report.\footnote{One of the anonymous reviewers objects that the reanalysis concerns conditionality and does not involve subjunctive meaning as proposed here.  As \emph{by} can express both conditionality and subjunctive meaning, it is not surprising that the anonymous reviewer argues for one of the categories. What \emph{by} does is that it introduces a set of alternative worlds, a hallmark of both conditionality and of subjunctive meaning. It is conditionality in Old Polish \emph{jakoby}-complements embedded under verbs of seeming that is crucial for interpretative purposes (cf. \textcite{Stalnaker1968}, \textcite{Lewis1973}, \textcite{Fintel2011}, and in particular \textcite{Bucking2017}). But if \emph{jakoby}-clauses are complements to verbs of saying or reporting, it is rather a subjunctive meaning of \emph{by} absorbing the illocutionary force in the sense claimed by \textcite{Truckenbrodt2006}. It has been cross-linguistically observed that embedded clauses in reporting contexts are usually marked by subjunctive mood; for an overview, see \textcite{Becker-Remberger2010}, \textcite{Fabricius-Hansen-Saebo2004}, \citeauthor{Portner1997} (\citeyear{Portner1997}, \citeyear{Portner2018}), \textcite{Sode2014}, among many others. \emph{Jakoby}-complements in Present-day Polish ought to be treated as cases of reportive mood, and not as cases of conditionality. 
 } 
 
 \noindent In early Old Polish, \emph{jakoby} heads complement clauses of \emph{seem}-type verbs that express indirect inferential evidence. The logical structure of these sentences is as follows, where \emph{p} represents the proposition expressed by the embedded clause:
 
-\ex.	[\emph{seem} [\emph{jakoby} \emph{p}]] 
+\ea\relax [\emph{seem} [\emph{jakoby} \emph{p}]]  \z
 
 The central question to be asked here is how these three elements, i.e. the clause-embedding verb, the complementizer, and the embedded proposition play together to yield the final meaning `it seems as if \emph{p}'. The clause-embedding verb \emph{seem} expresses indirect evidence, indicating that the speaker has some body of evidence X from which it follows – or which at least strongly suggests – that \emph{p} is true. The general idea for the case of \emph{seem} can be thus expressed as follows: 
 
-\ex.	\([\![seem]\!]^{c,w}\) =  \( \lambda p . \) speaker(\( c \)) has in \( w \) inferential evidence that \( p \) is true in \( w \) 
+\ea	\([\![seem]\!]^{c,w}\) =  \( \lambda p . \) speaker(\( c \)) has in \( w \) inferential evidence that \( p \) is true in \( w \) \z
 
 which can be modeled in the Kratzerian style along the lines of \textcite{Faller2011} as follows:
 
-\ex.	\([\![seem]\!]^{c,w}\) =  \( \lambda p . \) the content(\( c \)) provides a perceptual or epistemic modal base \( B \) and a doxastic ordering source \( S \) such that for all worlds \( v \) in \( min_{S(w)} (\cap B(w))\) it holds that \( p \) is true in \( v \)       
+\ea	\([\![seem]\!]^{c,w}\) =  \( \lambda p . \) the content(\( c \)) provides a perceptual or epistemic modal base \( B \) and a doxastic ordering source \( S \) such that for all worlds \( v \) in \( min_{S(w)} (\cap B(w))\) it holds that \( p \) is true in \( v \)       \z
 
 If the matrix verb already expresses indirect evidence, what is the contribution of \emph{jakoby}? Confer the following examples: 
 
-\ex.	\a.	Donald seems to be in Singapore. \label{Donald3}
-	\b.	It seems that Donald is in Singapore. \label{Donald}
-	\c.	It seems as if Donald is in Singapore.
-	\d.	It seems as if Donald were in Singapore. \label{Donald2}
+\ea	\ea	Donald seems to be in Singapore. \label{Donald3}
+	\ex	It seems that Donald is in Singapore. \label{Donald}
+	\ex	It seems as if Donald is in Singapore.
+	\ex	It seems as if Donald were in Singapore. \label{Donald2}
+\z
+\z
 
-In a nutshell, the contribution of \emph{jakoby} is to map \ref{Donald}-type meanings to \ref{Donald2}-type meanings, whereas  \ref{Donald2} uncovers the two original components of \emph{jakoby} pointed out above, i.e. equative comparison and counter-factual meaning. The basic idea is stated as follows: 
+In a nutshell, the contribution of \emph{jakoby} is to map \REF{Donald}-type meanings to \REF{Donald2}-type meanings, whereas  \REF{Donald2} uncovers the two original components of \emph{jakoby} pointed out above, i.e. equative comparison and counter-factual meaning. The basic idea is stated as follows: 
 
-\ex.	\([\![seem \; as \; if]\!]^{c,w}\) =  \( \lambda p . \) the information (evidence) that speaker(\( c \)) has in \( w \) is \textbf{just like} the information that speaker(\( c \)) \textbf{would have} if \( p \) were the case \label{counter}
+\ea\([\![seem \; as \; if]\!]^{c,w}\) =  \( \lambda p . \) the information (evidence) that speaker(\( c \)) has in \( w \) is \textbf{just like} the information that speaker(\( c \)) \textbf{would have} if \( p \) were the case \label{counter}\z
 
-\noindent Let's make \ref{counter} more concrete by examining two explicit scenarios: 
+\noindent Let's make \REF{counter} more concrete by examining two explicit scenarios: 
 
-\ex.	\a.	I believe that if Donald is in Singapore, he is excited. Donald is talking to Kim at the Capella Hotel on Singapore's Sentosa island. Donald is excited. \\
-	\b.	I believe that if Donald is in Singapore, he is excited. Donald is flying to Helsinki to meet Vladimir. I believe Donald is bored. Donald is excited. \\ 
+\ea \ea I believe that if Donald is in Singapore, he is excited. Donald is talking to Kim at the Capella Hotel on Singapore's Sentosa island. Donald is excited. 
+	\ex	I believe that if Donald is in Singapore, he is excited. Donald is flying to Helsinki to meet Vladimir. I believe Donald is bored. Donald is excited. 
+\z
+\z
 
-\begin{table}[h] \center
+\begin{table}[h] 
 \begin{tabular}{ccc} 
 \lsptoprule
-{} & \vtop{\hbox{\strut modal base} \hbox{\strut(perceptual / epistemic)}} & \vtop{\hbox{\strut ordering source} \hbox{\strut(doxastic)}} \\
+{} & \vtop{\hbox{\strut modal base} \hbox{\strut(perceptual\slash epistemic)}} & \vtop{\hbox{\strut ordering source} \hbox{\strut(doxastic)}} \\
 \midrule
  Scenario 1 & Donald is excited & if Donald is in Singapore, he is excited  \\
  Scenario 2 & Donald is excited & \vtop{\hbox{\strut if Donald is in Singapore, he is excited} \hbox{\strut Donald is bored}} \\
@@ -962,65 +860,100 @@ In a nutshell, the contribution of \emph{jakoby} is to map \ref{Donald}-type mea
 \caption{Modal bases and ordering sources for the two scenarios}
 \end{table}
 
-\noindent In scenario 1 it is natural to assert \ref{Donald3} or \ref{Donald}. In scenario 2, in turn, it is natural to assert \ref{Donald2}. The latter case gives rise to conflicting beliefs and  \ref{Donald2} is one way to express a certain reluctance to embrace the proposition for which there is indirect evidence. Accordingly, \emph{seem as if p} is used instead of \emph{seem that p} if what the available evidence suggests is somehow in conflict with what the speaker (used to) believe. If one looks at the relevant properties of the actual reference world, one can see that they look the same as the properties of the possible worlds where Donald is in Singapore. To put it differently: \emph{As if} introduces the accessibility relation by way of an explicit comparison between two classes of worlds. The accessibility  relation simply relates two sets of words. What \emph{jakoby} does after verbs of seeming is compare them, or rather equivalence as to some relevant properties.\footnote{I would like to thank Radek Šimík (pc.) for pointing this out to me.
+\noindent In scenario 1 it is natural to assert \REF{Donald3} or \REF{Donald}. In scenario 2, in turn, it is natural to assert \REF{Donald2}. The latter case gives rise to conflicting beliefs and  \REF{Donald2} is one way to express a certain reluctance to embrace the proposition for which there is indirect evidence. Accordingly, \emph{seem as if p} is used instead of \emph{seem that p} if what the available evidence suggests is somehow in conflict with what the speaker (used to) believe. If one looks at the relevant properties of the actual reference world, one can see that they look the same as the properties of the possible worlds where Donald is in Singapore. To put it differently: \emph{As if} introduces the accessibility relation by way of an explicit comparison between two classes of worlds. The accessibility  relation simply relates two sets of words. What \emph{jakoby} does after verbs of seeming is compare them, or rather equivalence as to some relevant properties.\footnote{I would like to thank Radek Šimík (pc.) for pointing this out to me.
 } 
 This corresponds to \textcite[988]{Bucking2017}'s counterfactual reading of hypothetical comparative clauses, according to which only those worlds are taken into account that are as similar as possible to the actual world, given of course that the conditional's antecedent is true.   
 
-In sum, the contribution of \emph{jakoby} in \textsc{op} does not seem to be genuinely evidential. Rather, it arises from the meaning of the two elements it is composed of: equative comparison and counter-factual meaning. If this is this case, the following question automatically arises: How did the inferential meaning of \emph{jakoby} change to a reportative one specified in \ref{reportative}? 
+In sum, the contribution of \emph{jakoby} in \textsc{op} does not seem to be genuinely evidential. Rather, it arises from the meaning of the two elements it is composed of: equative comparison and counter-factual meaning. If this is this case, the following question automatically arises: How did the inferential meaning of \emph{jakoby} change to a reportative one specified in \REF{reportative}? 
 
-\ex.	\([\![jakoby(p)]\!]^{c,w}\) = 1 iff there exists a non-empty reportative informational modal base \( f_{r}(w) \) such that for all \( w' \in \cap f_{r}(w), [[p]]^{w',c}\) = 1 \label{reportative}
+\ea	\([\![jakoby(p)]\!]^{c,w}\) = 1 iff there exists a non-empty reportative informational modal base \( f_{r}(w) \) such that for all \( w' \in \cap f_{r}(w), [[p]]^{w',c}\) = 1 \label{reportative}\z
 
 \noindent Intuitively, \emph{it seems that p} expresses that there is some body of information X which entails that \emph{p} is the case. What kind of information is X? Verbs of seeming are surprisingly flexible and are definitely not limited to expressing inferential evidence:
 
-\ex.	\a.	from \emph{perceptual} information X -> infer p (= inferred);
-	\b.	 from \emph{conceptual} information X -> infer p (= assumed);
-	\c.	 from \emph{reportative} -> infer p (-).
+\ea \ea from \emph{perceptual} information X -> infer p (= inferred);
+	\ex	 from \emph{conceptual} information X -> infer p (= assumed);
+	\ex	 from \emph{reportative} -> infer p (-).
+\z
+\z
 
-\noindent The last case is usually not registered as an \emph{inferential} evidential. However, in practice reportative strategies often involve a fair amount of inference from the original utterance to its reported version. \textcite{Haan2007} and \textcite{Grimm2010} notice that English \emph{seem} is capable of expressing both direct and indirect evidence. A similar observation has been made by \textcite{Reis2007} with respect to German \emph{scheinen} `seem'. Its Dutch counterpart \emph{schijnen} developed into a marker of reportative evidence and is joined by \emph{lijken} for expressing visual evidence, see \textcite{Koring2013}. For Cuzco Quechua \textcite[53-55]{Faller2001} claims that by using the reportative morpheme \emph{=si}, the speaker does not necessarily deny having inferential evidentials.  
+\noindent The last case is usually not registered as an \emph{inferential} evidential. However, in practice reportative strategies often involve a fair amount of inference from the original utterance to its reported version. \textcite{Haan2007} and \textcite{Grimm2010} notice that English \emph{seem} is capable of expressing both direct and indirect evidence. A similar observation has been made by \textcite{Reis2007} with respect to German \emph{scheinen} `seem'. Its Dutch counterpart \emph{schijnen} developed into a marker of reportative evidence and is joined by \emph{lijken} for expressing visual evidence, see \textcite{Koring2013}. For Cuzco Quechua \textcite[53--55]{Faller2001} claims that by using the reportative morpheme \emph{=si}, the speaker does not necessarily deny having inferential evidentials.  
 
 Using the idea from \textcite{Faller2011} that inferential evidentials involve a non-empty ordering source whereas (informational) reportative evidentials make no reference to an ordering source at all, we can picture the development of \emph{jakoby} as follows:
 
-\begin{table}[h] \center
+\begin{table}[h] 
 \begin{tabular}{ccc} 
 \lsptoprule
 {} & Modal Base & Ordering Source \\
 \midrule
-early Old Polish & perceptual / conceptual & doxastic \\
-late Old Polish & perceptual / conceputal / reportative & doxastic \\
+early Old Polish & perceptual\slash conceptual & doxastic \\
+late Old Polish & perceptual\slash conceputal\slash reportative & doxastic \\
 Present-day Polish & reportative & - \\
 \lspbottomrule
 \end{tabular}
 \caption{Diachrony of \emph{jakoby} in terms of admissible information types in the modal base}
 \end{table}
 
-\noindent The semantic shift of \emph{jakoby} involved two main developments. First, the meaning of \emph{jakoby} was broadened to allow for inferences from reportative information (compatible with but not enforced by its \emph{seem}-type embedding verbs). Second, the reportative flavor acquired by \emph{jakoby} licensed its use in complements of speech / report verbs. Since these new contexts were no longer compatible with the original inferential meaning, they ultimately lead to the inability to use \emph{jakoby} in its original contexts. 
+\noindent The semantic shift of \emph{jakoby} involved two main developments. First, the meaning of \emph{jakoby} was broadened to allow for inferences from reportative information (compatible with but not enforced by its \emph{seem}-type embedding verbs). Second, the reportative flavor acquired by \emph{jakoby} licensed its use in complements of speech\slash report verbs. Since these new contexts were no longer compatible with the original inferential meaning, they ultimately lead to the inability to use \emph{jakoby} in its original contexts. 
 
 \section{Conclusion}
 
-The main aim of this chapter has been to examine the development and the semantic change of the evidential complementizer \emph{jakoby} in the history of Polish with the main focus on argument clauses. It has been shown that \emph{jakoby} developed a hearsay meaning in the late Old Polish period (1450-1543) and that it  ceased to be selected by verbs of seeming in Present-day Polish (1939-present). The semantic shift outlined above corresponds to the evidential hierarchy proposed by \textcite{Haan1999} according to which inferential evidentials can give rise to reportative evidentials.     
+The main aim of this chapter has been to examine the development and the semantic change of the evidential complementizer \emph{jakoby} in the history of Polish with the main focus on argument clauses. It has been shown that \emph{jakoby} developed a hearsay meaning in the late Old Polish period (1450--1543) and that it  ceased to be selected by verbs of seeming in Present-day Polish (1939-present). The semantic shift outlined above corresponds to the evidential hierarchy proposed by \textcite{Haan1999} according to which inferential evidentials can give rise to reportative evidentials.     
 
 As for emergence scenarios of complementizers, \textcite[433]{Willis2007} argues that the emergence of a new complementizer may involve three scenarios: i) reanalysis of main-clause phrasal elements as complementizer heads, ii) reanalysis of main-clause heads (e.g. verbs, prepositions) as complementizer heads, iii) reanalysis of embedded phrases (e.g. specifiers of CP) as complementizer heads. The development of \emph{jakoby} instantiates a fourth scenario: reanalysis of a complementizer head as another complementizer head. 
 
-Finally, the question of where evidentials come from has been addressed in different studies so far, cf. \textcite{Willett1988}, \textcite{Lazard2001}, \textcite[271-302]{Aikhenvald2004}, \textcite{Aikhenvald2011}, \textcite{Jalava2017}, \textcite{Friedman2018}, to name but a few. Various development patterns have been attested cross-linguistically. \textcite{Aikhenvald2011} points out two major sources for the development of evidentials. They can either evolve from open classes (e.g. verbs) and from closed classes (e.g. pronouns) or emerge out of an evidential  strategy as an inherent marker of the grammatical category of evidentiality. The case of \emph{jakoby} illustrates the former scenario, in which a complementizer develops into another complementizer. However, not much attention has been paid to the pattern described in this chapter and fine-grained analyses depicting individual micro-steps of how evidential expressions come into being and develop still require further research.      
+Finally, the question of where evidentials come from has been addressed in different studies so far, cf. \textcite{Willett1988}, \textcite{Lazard2001}, \textcite[271--302]{Aikhenvald2004}, \textcite{Aikhenvald2011}, \textcite{Jalava2017}, \textcite{Friedman2018}, to name but a few. Various development patterns have been attested cross-linguistically. \textcite{Aikhenvald2011} points out two major sources for the development of evidentials. They can either evolve from open classes (e.g. verbs) and from closed classes (e.g. pronouns) or emerge out of an evidential  strategy as an inherent marker of the grammatical category of evidentiality. The case of \emph{jakoby} illustrates the former scenario, in which a complementizer develops into another complementizer. However, not much attention has been paid to the pattern described in this chapter and fine-grained analyses depicting individual micro-steps of how evidential expressions come into being and develop still require further research.      
 
 \section*{Primary sources}
 
-\noindent\begin{tabular}{ l c p{10 cm}}
-	EZ & - & \emph{Ewangeliarz Zamoyskich} [`The Zamoyskich' Gospel'], 2nd h. 15th c. \\
-	FP & - & Sebastian Koperski (2015): \emph{Fałszywy prorok} [`The Deceitful Prophet']. Poznań: Zysk i S-ka Wydawnictwo. \\
-	KG & - &  \emph{Kazania Gnieźnieńskie} [`The Sermons of Gniezno'], 1st h. 15th c. \\
-	KorBa & - & \href{http://korba.edu.pl/query_corpus/} {\emph{Elektroniczny korpus tekstów polskich z XVII i XVII w. (do 1772 r.)}} [`Electronic corpus of 17th and 18th century Polish texts (up to 1772)' also known as `The Baroque Corpus of Polish']. \\
-	NewCor & - & \href{https://szukajwslownikach.uw.edu.pl/f19/} {Korpus tekstów z lat 1830-1918} [`Corpus of 1830-1918 Polish']. \\
-  	NKJP & - & \href{http://nkjp.pl/} {\emph{Narodowy Korpus Języka Polskiego}} [`National Corpus of Polish']. \\
-	PolDi & - & \href{http://rhssl1.uni-regensburg.de/SlavKo/korpus/poldi} {A Polish Diachronic Online Corpus}. \\
-\end{tabular}
+\noindent\begin{tabularx}{\textwidth}{@{}lX@{}}
+	EZ & \emph{Ewangeliarz Zamoyskich} [`The Zamoyskich' Gospel'], 2nd h. 15th c. \\
+	FP & Sebastian Koperski (2015): \emph{Fałszywy prorok} [`The Deceitful Prophet']. Poznań: Zysk i S-ka Wydawnictwo. \\
+	KG &  \emph{Kazania Gnieźnieńskie} [`The Sermons of Gniezno'], 1st h. 15th c. \\
+	KorBa & \href{http://korba.edu.pl/query_corpus/} {\emph{Elektroniczny korpus tekstów polskich z XVII i XVII w. (do 1772 r.)}} [`Electronic corpus of 17th and 18th century Polish texts (up to 1772)' also known as `The Baroque Corpus of Polish']. \\
+	NewCor & \href{https://szukajwslownikach.uw.edu.pl/f19/} {Korpus tekstów z lat 1830--1918} [`Corpus of 1830--1918 Polish']. \\
+  	NKJP & \href{http://nkjp.pl/} {\emph{Narodowy Korpus Języka Polskiego}} [`National Corpus of Polish']. \\
+	PolDi & \href{http://rhssl1.uni-regensburg.de/SlavKo/korpus/poldi} {A Polish Diachronic Online Corpus}. \\
+\end{tabularx}
 
-\section*{Abbreviations} {\firstperson}/{\secondperson}/{\thirdperson} - 1st/2nd/3rd person, {\acc} - accusative, {\add} - additive, {\an} - animate, {\aor} - aorist, {\comp} - complementizer, {\dat} - dative, {\fem} - feminine, {\gen} - genitive, {\hab} - habitual, {\illa} - illative, {\impr} - impressive, {\incl} - inclusive, {\infv} - infinitive, {\loc} - locative, {\lptcp} - \emph{l}-participle (inflected for number and gender), {\masc} - masculine, {\n} - neuter, {\negation} - negation, {\nvir} - non-virile, {\pl} - plural, {\pred} - predicative, {\prog} - progressive, {\pst} - past tense, {\refl} - reflexive, {\rep} - reportative, {\sg} - singular, {\subj} - subjunctive mood, {\topi} - topic, {\vir} - virile.
+\section*{Abbreviations} 
+\begin{multicols}{2}
+\begin{tabbing}
+negation \= complementizer\kill
+ {\firstperson}/{\secondperson}/{\thirdperson} \> 1st/2nd/3rd person\\
+ {\acc} \> accusative\\
+ {\add} \> additive\\
+ {\an} \> animate\\
+ {\aor} \> aorist\\
+ {\comp} \> complementizer\\
+ {\dat} \> dative\\
+ {\fem} \> feminine\\
+ {\gen} \> genitive\\
+ {\hab} \> habitual\\
+ {\illa} \> illative\\
+ {\impr} \> impressive\\
+ {\incl} \> inclusive\\
+ {\infv} \> infinitive\\
+ {\loc} \> locative\\
+ {\lptcp} \> \emph{l}-participle \\ \> (inflected for number and gender)\\
+ {\masc} \> masculine\\
+ {\n} \> neuter\\
+ {\negation} \> negation\\
+ {\nvir} \> non-virile\\
+ {\pl} \> plural\\
+ {\pred} \> predicative\\
+ {\prog} \> progressive\\
+ {\pst} \> past tense\\
+ {\refl} \> reflexive\\
+ {\rep} \> reportative\\
+ {\sg} \> singular\\
+ {\subj} \> subjunctive mood\\
+ {\topi} \> topic\\
+ {\vir} \> virile
+\end{tabbing}
+\end{multicols}
 
 \section*{Acknowledgements} This chapter emerged out of a collaboration with Mathias Schenner at the Leibniz-Center General Linguistics in Berlin (ZAS) in 2013, and resulted in a joint talk presented at the workshop \emph{New Insights into the Syntax and Semantics of Complementation} at the 21st International Conference on Historical Linguistics at the University of Oslo (September 2013), cf. \textcite{JedrzejowskiSchenner-2013}. Mathias Schenner was responsible for the semantic analysis. I, in turn, was responsible for the syntactic analysis and provided substantial data from older stages of Polish. With Mathias'  kind approval, I seized on selected issues we raised in our earlier work, developed them further, and presented new results at the colloquium \emph{Semantics-Pragmatics Exchange} at the University of Düsseldorf (June 2017), at the conference \emph{Formal Diachronic Semantics} 2 (FoDS 2) at the Saarland University (November 2017), at the conference \emph{Formal Description of Slavic Languages} 12.5 (FDSL 12.5) at the University of Nova Gorica (December 2017), as well as at the colloquium \emph{Slawistische Linguistik} at the Humboldt University of Berlin (June 2018). I am grateful to the audiences for the inspiring feedback. For thought-provoking questions and comments, I would like to thank in particular (in alphabetical order): Nora Boneh, Ashwini Deo, Edit Doron, Hana Filip, Berit Gehrke, Remus Gergel, Chiara Gianollo, Julie Goncharov, Wojciech Guz, Verena Hehl, Vera Hohaus, Uwe Junghanns, Todor Koev, Martin Kopf-Giammanco, Roland Meyer, Roumyana Pancheva, Andreas Pankau, Radek Šimík, Peter Sutton, Luka Szucsich, Carla Umbach, Jonathan Watkins, Frederike Weeber, Henk Zeevat, and Karolina Zuchewicz. I am also indebted to two anonymous referees for their helpful feedback and genuinely interesting suggestions. Last but not least, my special thanks go to Clare Patterson and Benjamin Lowell Sluckin for proofreading. Of course, all remaining errors are my own.         
    
 
-{\sloppy
-\printbibliography[heading=subbibliography,notkeyword=this]
-}
+{\sloppy\printbibliography[heading=subbibliography,notkeyword=this]}
 \end{document}

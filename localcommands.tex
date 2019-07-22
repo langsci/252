@@ -1,5 +1,6 @@
-\newcommand{\appref}[1]{Appendix \ref{#1}}
-\newcommand{\fnref}[1]{Footnote \ref{#1}} 
+\newcommand{\appref}[1]{Appendix~\ref{#1}}
+\newcommand{\fnref}[1]{Footnote~\ref{#1}} 
+\renewcommand{\sectref}[1]{Section~\ref{#1}} 
 
 \newenvironment{langscibars}{\begin{axis}[ybar,xtick=data, xticklabels from table={\mydata}{pos}, 
         width  = \textwidth,
@@ -46,17 +47,14 @@
 
 % \newcommand{\noop}[1]{}
 
-\newcommand{\exemph}[1]{\textbf{#1}} % BeispeilÃŒberschrift
-	\newcommand{\exhead}[1]{\textbf{#1}} % Hervorhebung bei Beispielen
-	\newcommand{\gcat}[1]{\textsc{#1}}   % Kategorien in Glossen
-
-
 	\newcommand{\glossformat}[1]{\textsc{#1}}
 
 	\newcommand{\firstperson}{\glossformat{1}\xspace}
 	\newcommand{\secondperson}{\glossformat{2}\xspace}
 	\newcommand{\thirdperson}{\glossformat{3}\xspace}
+	\newcommand{\an}{\glossformat{an}\xspace}	
 	\newcommand{\acc}{\glossformat{acc}\xspace}
+	\newcommand{\add}{\glossformat{add}\xspace}
 	\newcommand{\adj}{\glossformat{adj}\xspace}
 	\newcommand{\aor}{\glossformat{aor}\xspace}
 	\newcommand{\correl}{\glossformat{correl}\xspace}
@@ -66,7 +64,10 @@
 	\newcommand{\gen}{\glossformat{gen}\xspace}
 	\newcommand{\gerund}{\glossformat{gerund}\xspace}
 	\newcommand{\hab}{\glossformat{hab}\xspace}
+	\newcommand{\illa}{\glossformat{illa}\xspace}	
 	\newcommand{\imp}{\glossformat{imp}\xspace}
+	\newcommand{\impr}{\glossformat{impr}\xspace}	
+	\newcommand{\incl}{\glossformat{incl}\xspace}	
 	\newcommand{\infv}{\glossformat{inf}\xspace}
 	\newcommand{\ins}{\glossformat{ins}\xspace}
 	\newcommand{\intenp}{\glossformat{intenp}\xspace}
@@ -79,14 +80,22 @@
 	\newcommand{\masc}{\glossformat{m}\xspace}
 	\newcommand{\n}{\glossformat{n}\xspace}
 	\newcommand{\nvir}{\glossformat{n-vir}\xspace}
+	\newcommand{\object}{\glossformat{o}\xspace}	
 	\newcommand{\passaux}{\glossformat{pass.aux}\xspace}
 	\newcommand{\purcomp}{\glossformat{pur.comp}\xspace}
+	\newcommand{\pred}{\glossformat{pred}\xspace}	
+	\newcommand{\prog}{\glossformat{prog}\xspace}	
 	\newcommand{\pst}{\glossformat{pst}\xspace}
 	\newcommand{\ptcp}{\glossformat{ptcp}\xspace}
 	\newcommand{\pfv}{\glossformat{pfv}\xspace}
 	\newcommand{\pl}{\glossformat{pl}\xspace}
+% 	\newcommand{\prog}{\glossformat{prog}\xspace}	
 	\newcommand{\refl}{\glossformat{refl}\xspace}
+    \newcommand{\rep}{\glossformat{rep}\xspace}
+	\newcommand{\comp}{\glossformat{comp}\xspace}	
+	\newcommand{\subj}{\glossformat{subj}\xspace}	
 	\newcommand{\sg}{\glossformat{sg}\xspace}
+	\newcommand{\topi}{\glossformat{top}\xspace}	
 	\newcommand{\vir}{\glossformat{vir}\xspace}
 	\newcommand{\vptcl}{\glossformat{vptcl}\xspace}
 
@@ -98,3 +107,25 @@
 	\usetikzlibrary{calc}
 	\newcommand{\movesquare}[4][-1]{\draw [thick,black,->] let \p{E} = (#2), \p{D} = (#3), \p{M} = ($(#2) + (0,#1)$) in (#2) -- (\x{M},\y{M}) -- node [label,above] {#4} (\x{D},\y{M}) -- (#3)} 
 
+% Eigene Befehle
+\newcommand{\exemph}[1]{\textbf{#1}} % BeispeilÃŒberschrift
+\newcommand{\exhead}[1]{\textbf{#1}} % Hervorhebung bei Beispielen
+\newcommand{\gcat}[1]{\textsc{#1}}   % Kategorien in Glossen
+
+
+% semantic brackets
+\newsavebox{\sembox}
+\newlength{\semwidth}
+\newlength{\boxwidth}
+
+\newcommand{\Sem}[1]{%
+\sbox{\sembox}{\ensuremath{#1}}%
+\settowidth{\semwidth}{\usebox{\sembox}}%
+\sbox{\sembox}{\ensuremath{\left[\usebox{\sembox}\right]}}%
+\settowidth{\boxwidth}{\usebox{\sembox}}%
+\addtolength{\boxwidth}{-\semwidth}%
+\left[\hspace{-0.3\boxwidth}%
+\usebox{\sembox}%
+\hspace{-0.3\boxwidth}\right]%
+}
+%end semantic brackets

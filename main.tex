@@ -9,7 +9,8 @@
 
 \documentclass[output=book,collection,collectionchapter,nonflat,modfonts
             ,colorlinks, citecolor=brown
-            ,multiauthors %% remove this line if only one editor
+            ,multiauthors 
+            ,draft%% remove this line if only one editor
             % ,draft,draftmode
 		  ]{langsci/langscibook}                                 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -22,7 +23,14 @@
 \input{localpackages.tex}
 \input{localhyphenation.tex}
 \input{localcommands.tex} 
-\bibliography{localbibliography}
+
+\addbibresource{chapters/doron.bib} 
+\addbibresource{chapters/gianollo.bib}
+\addbibresource{chapters/harris.bib}
+\addbibresource{chapters/jakoby.bib}
+\addbibresource{chapters/kellert.bib}
+\addbibresource{chapters/kopf.bib}
+\addbibresource{chapters/simonenko.bib}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Frontmatter                      %%%
@@ -46,18 +54,19 @@
 \lsCollectionPaperMainmatterMode % Leave the Frontmatter Mode 
 \setcounter{chapter}{0} % Reset the chapter counter so that preceding prefaces are not counted
 
+\mainmatter
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Chapters                         %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \includepaper{chapters/doron} %add a percentage sign in front of the line to exclude this chapter from book
-% \includepaper{chapters/gianollo}
-% \includepaper{chapters/harris}
-% \includepaper{chapters/jakoby}
-% \includepaper{chapters/kellert}
-% \includepaper{chapters/kopf}
-% \includepaper{chapters/simonenko}
+\includepaper{chapters/gianollo}
+\includepaper{chapters/harris}
+\includepaper{chapters/jakoby}
+\includepaper{chapters/kellert}
+\includepaper{chapters/kopf}
+\includepaper{chapters/simonenko}
 
 % copy the lines above and adapt as necessary
 

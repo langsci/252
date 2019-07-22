@@ -1,35 +1,7 @@
 \documentclass[output=paper,modfonts,nonflat]{langsci/langscibook} 
-%\bibliography{localbibliography}
-%\bibliography{/Users/alexandra/Documents/Bibliography/library} 
-\addbibresource{/Users/alexandra/Documents/Bibliography/library.bib}%use biber as BibTex engine
-\input{localpackages.tex}
-\input{localhyphenation.tex}
-\input{localcommands.tex} 
-\usepackage{tikz}
-\usepackage{tikz-qtree}
-\usepackage{multicol}
-%\bibliographystyle{linquiry2}
-% semantic brackets
-\newsavebox{\sembox}
-\newlength{\semwidth}
-\newlength{\boxwidth}
 
-\newcommand{\Sem}[1]{%
-\sbox{\sembox}{\ensuremath{#1}}%
-\settowidth{\semwidth}{\usebox{\sembox}}%
-\sbox{\sembox}{\ensuremath{\left[\usebox{\sembox}\right]}}%
-\settowidth{\boxwidth}{\usebox{\sembox}}%
-\addtolength{\boxwidth}{-\semwidth}%
-\left[\hspace{-0.3\boxwidth}%
-\usebox{\sembox}%
-\hspace{-0.3\boxwidth}\right]%
-}
-%end semantic brackets
-
-\title{Givenness marking in a mixed system:\\ Constituent order vs. determiners} 
-\author{%
-Alexandra Simonenko\affiliation{Research Foundation Flanders \& Ghent University}
-}
+\title{Givenness marking in a mixed system: Constituent order vs. determiners} 
+\author{Alexandra Simonenko\affiliation{Research Foundation Flanders \& Ghent University}\lastand Anna Carlier\affiliation{Université de Lille}}
 % \chapterDOI{} %will be filled in at production
 
 % \epigram{}
@@ -280,7 +252,7 @@ The counts in the table, which we extracted from MCVF \cite{MCVF} and Penn Suppl
 \begin{table}[H]
 \centering
 \begin{tabular}{lllllllllllllllll}
-  \toprule
+  \lsptoprule
  & OSV & OVS & SOV & SVO & VOS & VSO \\ 
   \midrule
 XI c. &  0.02 (2) & 0.13 (17) & 0.14 (18) & 0.62 (83) & 0.02 (3) & 0.05 (6) \\ 
@@ -289,7 +261,7 @@ XI c. &  0.02 (2) & 0.13 (17) & 0.14 (18) & 0.62 (83) & 0.02 (3) & 0.05 (6) \\
   XIV c. &  0.00 (3)  &  0.03 (37) & 0.03 (37) & 0.73 (1043) & 0.03 (47) &0.18 (255) \\ 
   XV c. &  0.00 (0) &  0.02 (11)  &  0.01 (8) & 0.88 (615) & 0.02 (13) & 0.07 (52) \\ 
   XVI c. &  0.00 (0) &  0.02 (5) & 0.00 (0) & 0.91 (286) &  0.02 (6) & 0.06 (18) \\ 
-\bottomrule
+\lspbottomrule
 \end{tabular}
 \caption{Constituent order in transitive clauses}\label{table:orders}
 \end{table}
@@ -299,7 +271,7 @@ We are specifically interested in the orderings between subjects and objects. Ig
 \begin{table}[H]
 \centering
 \begin{tabular}{lllllllllllllllll}
-  \toprule
+  \lsptoprule
 Period & OS & SO  \\ 
   \midrule
 XI c. &  0.17 (22) & 0.83 (107) \\ 
@@ -308,7 +280,7 @@ XIII c. & 0.06 (41)  & 0.94 (603) \\
 XIV c. & 0.06 (87) & 0.94 (1335) \\ 
 XV c. & 0.03 (24) & 0.97 (675) \\ 
 XVI c. & 0.03 (11) & 0.97 (304) \\ 
-\bottomrule
+\lspbottomrule
 \end{tabular}
 \caption{Nominal argument order in transitive clauses}\label{table:orders2}
 \end{table}
@@ -564,12 +536,12 @@ As an interim conclusion, in a transitive clauses with bare arguments we found n
  \begin{table}[H]
 \centering
 \begin{tabular}{lllllllllllllllll}
-  \toprule
+  \lsptoprule
  & SO & S def/dem O \\ 
  \midrule
 New $\succ$ Given	&	0	& 69	\\
 Other ({\scriptsize New $\succ$ New, Given $\succ$ New, Given $\succ$ Given}) 		&	283	&	79	\\
-   \bottomrule
+   \lspbottomrule
 \end{tabular}
 \caption{Rate of New $\succ$ Given in finite clauses}\label{table:orders}
 \end{table}
@@ -613,24 +585,24 @@ In our simulation, we assume the states of affairs as in table \ref{states} and 
 For the moment we assume that a priori all states of affairs and all utterances are equally likely. This means that, for instance, upon hearing ``S O'' a Literal Listener will end up with a uniform probability distribution over the states Given $\succ$ Given, Given $\succ$ New, and New $\succ$ New, as illustrated in figure \ref{figure:uniform1}.
 
 \begin{figure}[H]
-\includegraphics[scale = 0.4]{pictures/plotLiteralListenerSbjObjUniform}
+\includegraphics[scale = 0.4]{figures/plotLiteralListenerSbjObjUniform}
 \caption{Literal Listener with uniform priors interpreting ``S O''}\label{figure:uniform1}
 \end{figure}
 
 A Pragmatic Speaker model generates inferences about what constituent orders a speaker is likely to use in order to convey a certain target information state given the assumptions of the Literal Listener and with the goal of maximizing the chances for the target state to be recovered. Figures \ref{figure:uniform2}--\ref{figure:uniform4} illustrate the inferences of the Pragmatic Speaker with regard to the Given $\succ$ Given, Given $\succ$ New, and New $\succ$ New states, respectively. For instance, the model predicts that in order to convey Given $\succ$ Given a speaker is most likely to use the order ``{\sc det} S {\sc det} O'' or ``{\sc det} O {\sc det} S''. If we look again at table \ref{table:meanings}, we will see that among all the seven configurations eligible to convey a given Given $\succ$ Given information flow, these two are the least ambiguous in that they are associated with only one information state.
 
 \begin{figure}[H]
-\includegraphics[scale = 0.45]{pictures/plotPragmaticSpeakerGivenGivenUniform}
+\includegraphics[scale = 0.45]{figures/plotPragmaticSpeakerGivenGivenUniform}
 \caption{\small Pragmatic Speaker with uniform priors conveying Given $\succ$ Given}\label{figure:uniform2}
 \end{figure}
 
 \begin{figure}[H]
-\includegraphics[scale = 0.45]{pictures/plotPragmaticSpeakerGivenNewUniform}
+\includegraphics[scale = 0.45]{figures/plotPragmaticSpeakerGivenNewUniform}
 \caption{Pragmatic Speaker with uniform priors conveying Given $\succ$ New}\label{figure:uniform3}
 \end{figure}
 
 \begin{figure}[H]
-\includegraphics[scale = 0.45]{pictures/plotPragmaticSpeakerNewNewUniform}
+\includegraphics[scale = 0.45]{figures/plotPragmaticSpeakerNewNewUniform}
 \caption{Pragmatic Speaker with uniform priors conveying New $\succ$ New}\label{figure:uniform4}
 \end{figure}
 
@@ -639,7 +611,7 @@ The New $\succ$ Given state can only be conveyed by one configuration, S {\sc de
 A model of a Pragmatic Listener involves inferences with respect to the performance of a Pragmatic Speaker. That is, given a particular constituent order, this model makes inferences about most likely interpretations. Inferences for the ``S O'' configuration are shown in figure \ref{figure:uniform5} .
 
 \begin{figure}[H]
-\includegraphics[scale = 0.45]{pictures/plotPragmaticListenerSbjObjUniform}
+\includegraphics[scale = 0.45]{figures/plotPragmaticListenerSbjObjUniform}
 \caption{Pragmatic Listener with uniform priors interpreting ``S O''}\label{figure:uniform5}
 \end{figure}
 
@@ -648,7 +620,7 @@ We see that a Pragmatic Listener model predicts that ``S O'' configuration is mo
 Let us now see how the Pragmatic Listener model fares compared to the historical French data. We classified all bare noun ``S O'' configurations in the corpus as New $\succ$ New, New $\succ$ Given or Given $\succ$ New (recall that we did not find any bare noun ``S O'' corresponding to New $\succ$ Given information state). Figure \ref{figure:corpusSbjObj} shows the distribution of information states among ``S O'' sequences in the corpus.
 
 \begin{figure}[H]
-\includegraphics[scale = 0.45]{pictures/plotFrenchSbjObj}
+\includegraphics[scale = 0.45]{figures/plotFrenchSbjObj}
 \caption{Distribution of informations states among ``S O'' in French, X-XVI c.}\label{figure:corpusSbjObj}
 \end{figure}
 
@@ -657,14 +629,14 @@ Comparing these results with the predictions of our RSA Pragmatic Listener model
 Now, in our model we assumed that apriori all information states are equally likely (they had uniform priors). This is, however, most likely not the case (see \citet{Birner:2012} for references). We therefore need to make our information state priors more realistic. In order to do that, we used data from a syntactically annotated subcorpus of the Russian National Corpus, \citet{RNC}. We classified 430 Russian transitive sentences with bare (i.e. without demonstrative or possessive determiners) nominal arguments (both ``S O'' and ``O S'') according to their information state. The obtained distribution is plotted in figure \ref{figure:Russian}.
 
 \begin{figure}[H]
-\includegraphics[scale = 0.45]{pictures/plotRussianSbjObj}
+\includegraphics[scale = 0.45]{figures/plotRussianSbjObj}
 \caption{Distribution of informations states among transitive clauses with bare nominal arguments in the Russian National Corpus}\label{figure:Russian}
 \end{figure}
 
 We used these frequencies to set the priors for the information states in our RSA model. That is, instead of assuming that information states Given $\succ$ Given, Given $\succ$ New, New $\succ$ Given, and New $\succ$ New are equally likely, we set their probabilities to 0.35, 0.46, 0.02, and 0.16, respectively. We then reran our Pragmatic Listener model, which now generates inferences for interpreting ``S O'' configuration as in figure \ref{figure:models}, where it is plotted against the historical French data.
 
 \begin{figure}[H]
-\includegraphics[scale = 0.45]{pictures/plotModelComparison}
+\includegraphics[scale = 0.45]{figures/plotModelComparison}
 \caption{Distribution of informations states among ``S O'' as predicted by Pragmatic Listener model and in historical French corpus}\label{figure:models}
 \end{figure}
 
@@ -678,7 +650,7 @@ The core assumptions of the simulation are encoded in the morphological entries 
 In this section, we explore a connection between givenness marking and constituent order frequencies in historical French. Let us take another look at the constituent order distribution in table \ref{table:orders}. Orders involving O $\succ$ S are markedly more rare than those with S $\succ$ O, with one exception, namely, the OVS configuration. First, we suggest that the rarity of O $\succ$ S in medieval French, and thus the rarity of OSV and VOS, is a consequence of \#New $\succ$ Given on the assumption that subjects denote given information more frequently than objects. This assumption can be tested, at least at a first approximation, by looking at the distribution of determiners with subjects and objects. The rates of definite and possessive determiners and demonstratives with subjects and objects will be indicative of their respective tendencies to be associated with existential presupposition. Figure \ref{figure:determiners} shows the determiner distribution with subjects and objects per century.
 
 \begin{figure}[H]
-\includegraphics[scale = 0.45]{pictures/determiners.pdf}
+\includegraphics[scale = 0.45]{figures/determiners.pdf}
 \caption{Determiner distribution: subjects vs. objects}\label{figure:determiners}
 \end{figure}
 
@@ -689,7 +661,7 @@ Extrapolating this conclusion onto clauses with bare arguments, we expect that s
 We also observe that OVS order is more frequent than OSV and VOS. We suggest that OVS corresponds to a configuration of topic (situation) shift, where the preverbal position is associated with prosodic prominence. To probe into the properties of OVS, in figure \ref{figure:determinersOrders} we plotted distributions of determiners in the object position in finite clauses with different constituent order. We take all the clauses with nominal objects and any type of subject (i.e. either nominal or pronominal or null). 
 
 \begin{figure}[H]
-\includegraphics[scale = 0.55]{pictures/determinersOrders.pdf}
+\includegraphics[scale = 0.55]{figures/determinersOrders.pdf}
 \caption{Determiner distribution in object position}\label{figure:determinersOrders}
 \end{figure}
 
