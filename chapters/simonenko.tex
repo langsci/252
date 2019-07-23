@@ -114,12 +114,26 @@ b. otherwise, modulo $\exists$-type shifting, A entails the Existential F-closur
 
 \citet[14]{Kucerova:2012} derives this generalisation from the mechanism of givenness marking in natural language. Specifically, she proposes that a givenness presupposition can be triggered by a syncategorematic G(ivenness) operator that can be applied anywhere in a propositional domain, dividing the domain into given (higher) and new (lower) parts, as illustrated in figure \ref{fig:tree} from \citet[3]{Kucerova:2012}.\footnote{For the technical details of the recursive application of the G-operator which introduces restrictions on arguments' domains we refer the reader to \citet{Kucerova:2012} and (in even greater detail) \citet{SimikWierzba:2015}.}
 
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[sibling distance=-5pt]\scriptsize
-\tikzset{level distance=20pt}
-\Tree [.... [.{\bf given} ] [.... [. {\bf given} ] [.... [.G ] [.... [.new ] [.... [.new ] [ .... ] ] ] ] ] ] 
-\end{tikzpicture}
+\begin{figure}
+%\centering
+%\begin{tikzpicture}[sibling distance=-5pt]\scriptsize
+%\tikzset{level distance=20pt}
+%\Tree [.... [.{\bf given} ] [.... [. {\bf given} ] [.... [.G ] [.... [.new ] [.... [.new ] [ .... ] ] ] ] ] ] 
+%\end{tikzpicture}
+\begin{forest} nice empty nodes
+	[...
+	[\textbf{given}] [...
+	[ [\textbf{given}]] [...
+	[G] [...
+	[new] [...
+	[new] [...]
+	]
+	]
+	]
+	]
+	]
+\end{forest}
+\todo[inline]{Please check and confirm tree}
 \caption{Partitioning of a clause by the Givenness operator}\label{fig:tree}
 \end{figure}
 
@@ -158,12 +172,28 @@ In the absence of any other sources of values for situation variables, this deri
 
 With regard to the rationale behind the obviation conditions, the presence of a determiner introducing its own resource situation pronoun and triggering existential presupposition relative to that situation (as, we assume, possessive, demonstrative, and definite determiners do) makes $\sum$$_{G}$ qua the binding mechanism unnecessary (although the determiner's situation pronoun may co-refer with the topic situation, cf. \citet{Schwarz:2009}). As a result, a noun phrase interpreted with respect to some other situation may precede a noun phase with a presupposition-triggering determiner. This is illustrated in figure (\ref{fig:tree2}) where s$_{topic}$ is a topic situation pronoun, s$_{r}$ is a resource situation pronoun associated with a determiner, -s stands for a situation argument of a nominal predicate, and $\sum$$_{G}$ is the situation binder in question. In this configuration, the two upper NPs are interpreted with respect to the topic situation, whereas the situation argument of the lowest NP is valued by a separate resource situation introduced by a determiner.
 
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[sibling distance=-5pt]\scriptsize
-\tikzset{level distance=20pt}
-\Tree [.... [.s$_{topic}$ ] [.... [.$\sum$$_{G}$ ] [.... [.NP-s$_{topic}$ ] [.... [.NP-s$_{topic}$ ] [.... [.Det s$_{r}$ ] [ .... [.NP-s$_{r}$ ] [.... ] ] ] ] ] ] ] 
-\end{tikzpicture}
+\begin{figure}
+%\centering
+%\begin{tikzpicture}[sibling distance=-5pt]\scriptsize
+%\tikzset{level distance=20pt}
+%\Tree [.... [.s$_{topic}$ ] [.... [.$\sum$$_{G}$ ] [.... [.NP-s$_{topic}$ ] [.... [.NP-s$_{topic}$ ] [.... [.Det s$_{r}$ ] [ .... [.NP-s$_{r}$ ] [.... ] ] ] ] ] ] ] 
+%\end{tikzpicture}
+\begin{forest}
+	[...
+	[s\textsubscript{topic}] [...
+	[Σ\textsubscript{G}] [...
+	[NP-s\textsubscript{topic}] [...
+	[NP-s\textsubscript{topic}] [...
+	[Det [s\textsubscript{r}]] [...
+	[NP-s\textsubscript{r}] [...]
+	]
+	]
+	]	
+	]
+	]
+	]
+\end{forest}
+\todo[inline]{Please check and confirm tree}
 \caption{Givenness operator as a situation binder}\label{fig:tree2}
 \end{figure}
 

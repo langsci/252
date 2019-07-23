@@ -495,10 +495,28 @@ We suggest to derive Indifference of the variable use of \textit{equis} from von
 Let us assume the following syntax of the variable use of \textit{equis} represented as x in order to distinguish it from other uses such as the discourse adverb use. We assume that the postnominal x is represented as a reduced relative clause similar to postnominal adjectives in Romance and other languages (see \citealt{Cinque2010} and others):
 
 % BAUM 1
-\begin{center}
-\includegraphics[scale=0.5]{figures/tree1n.png}
- \captionof{figure}{Syntax of the variable \textit{equis}}
-\end{center}
+%\begin{center}
+%\includegraphics[scale=0.5]{figures/tree1n.png}
+% \captionof{figure}{Syntax of the variable \textit{equis}}
+%\end{center}
+
+\begin{figure}
+	\begin{forest}
+		[DP
+			[D\\\textit{un}\\`a'] [NP
+				[NP\\\textit{nombre}\\`name'] [CP
+					[C\\(\textit{que})\\`that'] [TP
+						[T\\(\textit{es})\\`is'] [VP
+							[~] [NP [$X$,roof]]
+						]
+					]
+				]
+			]
+		]
+	\end{forest}
+	\caption{Syntax of the variable \textit{equis}\label{fig:kellert:tree1n}}
+	\todo[inline]{Please check tree}
+\end{figure}
 
 The semantic relation between the two NPs is defined as follows: the DP as represented in Figure 1 denotes a property that is existentially quantified. Additionally, the variable x adds the information that x is a specific name, say Dora or Nora (see (39)b.). We represent the requirement that x is a specific name as a set of domain alternatives which is exhaustified, i.e. only one alternative can hold (see (39)c.): 
 
@@ -593,10 +611,23 @@ We assume that \textit{algo equis} in (44) is represented as a Small Clause (PrP
 \z
 
 % BAUM 2
-\begin{center}
-\includegraphics[scale=0.5]{figures/tree2.png}
- \captionof{figure}{Syntax of the degree predicate \textit{equis}}
-\end{center}
+%\begin{center}
+%\includegraphics[scale=0.5]{figures/tree2.png}
+% \captionof{figure}{Syntax of the degree predicate \textit{equis}}
+%\end{center}
+\begin{figure}
+	\caption{Syntax of the degree predicate \textit{equis}\label{fig:kellert:tree2}}
+	\begin{forest}
+		[PrP
+			[\textit{algo}\\`something'] [Pr'
+				[Pr\textsuperscript{0}] [DegP
+					[\textit{(muy) equis},roof]
+				]
+			]
+		]
+	\end{forest}
+\todo[inline]{Please check and confirm tree}
+\end{figure}
 
 The syntax of the adjectival use of \textit{equis} and the variable x (see Figure 1) are almost identical. They both represent predicative elements. However, they are semantically different. In the degree predicate use, the term \textit{equis} is interpreted as a degree predicate. In the variable use, \textit{equis} is a predicate that is identical with a specific element of the set denoted by the noun.
 
@@ -654,10 +685,24 @@ Here we assume that \textit{equis} scopes over the if-clause which generates two
 The following figure shows that the sentence adverb \textit{equis} adjoins to the whole CP representing the clause \textit{si me llama}. We assume that the whole clause is a DiscourseP because the CP \textit{si me llama} refers to some previous utterance in the discourse:
 
 % BAUM 3
-\begin{center}
-\includegraphics[scale=0.5]{figures/tree3.png}
- \captionof{figure}{\textit{Equis} in si-sentences}
-\end{center}
+%\begin{center}
+%\includegraphics[scale=0.5]{figures/tree3.png}
+% \captionof{figure}{\textit{Equis} in si-sentences}
+%\end{center}
+
+\begin{figure}
+	\caption{\textit{Equis} in si-sentences\label{fig:kellert:tree3}}
+	\begin{forest}
+		[DiscourseP
+			[\textit{Equis}] [CP
+				[C\textsuperscript{0}\\\textit{si}]
+			] [TP
+				[\textit{me llama},roof]
+			]
+		]
+	\end{forest}
+\todo[inline]{Please check and confirm tree}
+\end{figure}
 
 The focus sensitive operator \textit{if} generates the two alternatives he either will call me or he won’t and \textit{equis} operates on these alternatives in that it expresses indifference whether p or $¬$p is true:
 
@@ -752,10 +797,34 @@ This shift in scope of Indifference has been lexicalized into a new use of \text
 \z
 
 % Baum 4
-\begin{center}
-\includegraphics[scale=0.5]{figures/tree4n.png}
- \captionof{figure}{Diachronic shift of discourse adverb \textit{equis}}
-\end{center}
+%\begin{center}
+%\includegraphics[scale=0.5]{figures/tree4n.png}
+% \captionof{figure}{Diachronic shift of discourse adverb \textit{equis}}
+%\end{center}
+\begin{figure}
+	\caption{Diachronic shift of discourse adverb \textit{equis}\label{fig:kellert:tree4n}}
+	\begin{forest} nice empty nodes
+	[DiscourseP
+	[\textit{Equis},name=equis] [CP
+	[~] [TP
+	[~] [VP
+	[~] [NP
+	[NP] [CP
+	[~] [[~] [NP
+	[$X$,roof,name=X]
+	]
+	]
+	]
+	]
+	]
+	]
+	]
+	]
+	\node[left=of equis.base west,anchor=base] {Period 2};
+	\node[left=of X.base west,anchor=base] {Period 1};	
+\end{forest}
+\todo[inline]{Please check and confirm tree}
+\end{figure}
 
 % 4.3
 \subsection{Summing up and formulate predictions for corpus analysis}

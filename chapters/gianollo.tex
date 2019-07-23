@@ -343,17 +343,29 @@ The two basic semantic components of {\emph{nec}}, additivity and negation, corr
 
 The resulting structure is shown in (\ref{corestructurenec}). In (\ref{corestructurenec}), Op$\lnot$P is the syntactic projection of [Neg], the semantic feature proposed by \citet[]{Zeijlstra04, Zeijlstra14} to characterize intrinsically negative items in Double Negation systems. The projection of Op$\lnot$P amounts to the instruction `Insert operator' for the interface, and has no further role in the syntactic computation (i.e., it does not enter into syntactic dependencies). 
 
-{\begin{exe}
-\ex Structure for {\emph{n\u{e}c}} in all its functions \label{corestructurenec}
-\end{exe}}
+\begin{exe}
+\ex Structure for {\emph{n\u{e}c}} in all its functions \label{corestructurenec}\\
 
-
-{\Tree [.FocP {} 
-                     [.FocP [{-c / -que} ].Foc\0 
-                                       [.Op$\lnot$P {} !\qsetw{1in}
-                                                     [.Op$\lnot$P [ne- ].Op$\lnot$\0\\{\textbf{~$[$Neg$]$}} [ \qroof{~~~~~~~~}.XP  ] !\qsetw{1in} ] !\qsetw{1in} ] !\qsetw{1in} ]  ]}
-                                                     
-\vspace{1em}
+\begin{forest} nice empty nodes
+	[FocP
+	[] [FocP
+	[Foc\textsuperscript{0}
+	[-c\slash -que]
+	] [Op¬P
+	[] [Op¬P
+	[Op¬\textsuperscript{0}\\{[}\textbf{Neg}{]}
+	[ne-]]
+	[[XP [~~~~~~~~,roof]]]
+	]]
+	]
+	]
+\end{forest}
+\todo[inline]{Please check and confirm tree}
+%{\Tree [.FocP {} 
+%                     [.FocP [{-c / -que} ].Foc\0 
+%                                       [.Op$\lnot$P {} !\qsetw{1in}
+%                                                     [.Op$\lnot$P [ne- ].Op$\lnot$\0\\{\textbf{~$[$Neg$]$}} [ \qroof{~~~~~~~~}.XP  ] !\qsetw{1in} ] !\qsetw{1in} ] !\qsetw{1in} ]  ]}
+\end{exe}                                                     
 
 \noindent The FocP projection has a basic additive meaning: I adopt a presuppositional analysis, and assume accordingly that the particle contributes the presupposition that the predication about the element in focus {\emph{p}} also holds of at least one of its alternatives {\emph{q}} in context C:
 
@@ -403,19 +415,32 @@ I thus analyze correlative {\emph{nec}} as a focus particle introducing each of 
 
 \newpage
 
-{\begin{exe}
-\ex \label{treestructurecorrelation} Syntax of correlation by {\emph{nec}}
-\end{exe}}
-
-{\Tree
-[.JP [.FocP [{-c / -que} ].Foc\0 [.Op$\lnot$P [ne-\\$\textrm{[Neg]}$ ].Op$\lnot$\0 \qroof{~~~~{\emph{x}}~~~~}.XP
-] ] [.JP [$\wedge$ ].J\0 [.FocP [{-c / -que} ].Foc\0 [.Op$\lnot$P [ne-\\$\textrm{[Neg]}$ ].Op$\lnot$\0 \qroof{~~~~{\emph{y}}~~~~}.XP 
-] ] !\qsetw{2.5in} ] !\qsetw{1.5in} ]
-}
-
-
-
-\vspace{0.5em}
+\begin{exe}
+\ex \label{treestructurecorrelation} Syntax of correlation by {\emph{nec}}\\
+%{\Tree
+%[.JP [.FocP [{-c / -que} ].Foc\0 [.Op$\lnot$P [ne-\\$\textrm{[Neg]}$ ].Op$\lnot$\0 \qroof{~~~~{\emph{x}}~~~~}.XP
+%] ] [.JP [$\wedge$ ].J\0 [.FocP [{-c / -que} ].Foc\0 [.Op$\lnot$P [ne-\\$\textrm{[Neg]}$ ].Op$\lnot$\0 \qroof{~~~~{\emph{y}}~~~~}.XP 
+%] ] !\qsetw{2.5in} ] !\qsetw{1.5in} ]
+%}
+\begin{forest} for tree={fit=band}
+	[JP
+	[FocP
+	[Foc\textsuperscript{0}
+	[-c\slash -que]
+	] [Op¬P
+	[Op¬\textsuperscript{0}
+	[ne-\\{[}Neg{]}]]
+	[XP [~~~~$x$~~~~,roof]]
+	]][JP
+	[J\textsuperscript{0} [∧]] [FocP
+	[Foc\textsuperscript{0} [-c\slash -que]] [Op¬P [Op¬\textsuperscript{0}
+	[ne-\\{[}Neg{]}]] [XP [~~~~$y$~~~~,roof]]]
+	]
+	]
+	]
+\end{forest}
+\todo[inline]{Please check and confirm tree}
+\end{exe}
 
 \noindent Differently from the discourse-structuring function, the sentence topic does not change across conjuncts. Moreover, the conjuncts in correlative structures are subject to a parallelism constraint: they are parallel in terms of their organization into foreground and background (i.e., they have parallel foci, cf. \citealt[64]{Koenig91}) and, as we observed in section \ref{functioncorrelativeneg}, they are also parallel in terms of their syntactic structure.
 
