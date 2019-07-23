@@ -108,11 +108,12 @@ The generalization captures the range of possible interpretations for utterances
 
 \ea\label{givenness}
 An utterance U counts as Given iff it has a salient antecedent A and\\
-a. if U's type is e, then A and U corefer;\\
-b. otherwise, modulo $\exists$-type shifting, A entails the Existential F-closure of U.\footnote{Existential F-closure involves replacing focused expression by existentially closed variables.}
+\ea if U's type is e, then A and U corefer;\\
+\ex otherwise, modulo $\exists$-type shifting, A entails the Existential F-closure of U.\footnote{Existential F-closure involves replacing focused expression by existentially closed variables.}
+\z
 \z
 
-\citet[14]{Kucerova:2012} derives this generalisation from the mechanism of givenness marking in natural language. Specifically, she proposes that a givenness presupposition can be triggered by a syncategorematic G(ivenness) operator that can be applied anywhere in a propositional domain, dividing the domain into given (higher) and new (lower) parts, as illustrated in figure \ref{fig:tree} from \citet[3]{Kucerova:2012}.\footnote{For the technical details of the recursive application of the G-operator which introduces restrictions on arguments' domains we refer the reader to \citet{Kucerova:2012} and (in even greater detail) \citet{SimikWierzba:2015}.}
+\citet[14]{Kucerova:2012} derives this generalisation from the mechanism of givenness marking in natural language. Specifically, she proposes that a givenness presupposition can be triggered by a syncategorematic G(ivenness) operator that can be applied anywhere in a propositional domain, dividing the domain into given (higher) and new (lower) parts, as illustrated in \figref{fig:tree} from \citet[3]{Kucerova:2012}.\footnote{For the technical details of the recursive application of the G-operator which introduces restrictions on arguments' domains we refer the reader to \citet{Kucerova:2012} and (in even greater detail) \citet{SimikWierzba:2015}.}
 
 \begin{figure}
 %\centering
@@ -563,7 +564,7 @@ As an interim conclusion, in a transitive clauses with bare arguments we found n
 %IDIOM ``prendre bataille''
 %http://atilf.atilf.fr/scripts/dect.exe?BASE_LEXIQUE;VED=prendre;ISIS=isis_dect.txt;OO1=-1;OO2=-1;s=s076207dc;LANGUE=FR;AFFICHAGE=2;;MARQUAGE=1X9ZZZZ;FERMER;SANS_MENU;BACK;
 
- \begin{table}[H]
+ \begin{table}
 \centering
 \begin{tabular}{lllllllllllllllll}
   \lsptoprule
@@ -591,56 +592,60 @@ To do the simulations we use Rational Speech Act model (RSA, \citet{FrankGoodman
 
 In our simulation, we assume the states of affairs as in table \ref{states} and possible utterances and correspondences between the two (literal meanings) as in table \ref{table:meanings}. We use {\sc det} here as a cover label for definite, demonstrative, possessive, and partitive determiners.
 
-\begin{table}[H]
+\begin{table}
 \begin{tabular}{llllllllll}
-{\sc state} & Given $\succ$ New & New $\succ$ Given & Given $\succ$ Given & New $\succ$ New \\
+\lsptoprule
+{\scshape state} & Given $\succ$ New & New $\succ$ Given & Given $\succ$ Given & New $\succ$ New \\
+\lspbottomrule
 \end{tabular}
 \caption{States in RSA simulation}\label{states}
 \end{table}
 
-\begin{table}[H]
+\begin{table}
 \begin{tabular}{llllllllll}
-{\sc utterance} & {\sc information state} \\
-``{\sc det} O {\sc det} S'' & Given $\succ$ Given\\ 
-``{\sc det} O S'' & Given $\succ$ Given, Given $\succ$ New\\
-``{\sc det} S {\sc det} O'' & Given $\succ$ Given\\
-``{\sc det} S O'' & Given $\succ$ Given, Given $\succ$ New\\
+\lsptoprule
+{\scshape utterance} & {\scshape information state} \\\midrule
+``{\scshape det} O {\scshape det} S'' & Given $\succ$ Given\\ 
+``{\scshape det} O S'' & Given $\succ$ Given, Given $\succ$ New\\
+``{\scshape det} S {\scshape det} O'' & Given $\succ$ Given\\
+``{\scshape det} S O'' & Given $\succ$ Given, Given $\succ$ New\\
 ``O S'' & Given $\succ$ Given, Given $\succ$ New, New $\succ$ New\\
-``S {\sc det} O'' & Given $\succ$ Given, Given $\succ$ New, New $\succ$ New\\
+``S {\scshape det} O'' & Given $\succ$ Given, Given $\succ$ New, New $\succ$ New\\
 ``S O'' & Given $\succ$ Given, Given $\succ$ New, New $\succ$ New\\
+\lspbottomrule
 \end{tabular}
 \caption{Literal meaning: utterances and corresponding information states}\label{table:meanings}
 \end{table}
 
-For the moment we assume that a priori all states of affairs and all utterances are equally likely. This means that, for instance, upon hearing ``S O'' a Literal Listener will end up with a uniform probability distribution over the states Given $\succ$ Given, Given $\succ$ New, and New $\succ$ New, as illustrated in figure \ref{figure:uniform1}.
+For the moment we assume that a priori all states of affairs and all utterances are equally likely. This means that, for instance, upon hearing ``S O'' a Literal Listener will end up with a uniform probability distribution over the states Given $\succ$ Given, Given $\succ$ New, and New $\succ$ New, as illustrated in \figref{figure:uniform1}.
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale = 0.4]{figures/plotLiteralListenerSbjObjUniform}
 \caption{Literal Listener with uniform priors interpreting ``S O''}\label{figure:uniform1}
 \end{figure}
 
 A Pragmatic Speaker model generates inferences about what constituent orders a speaker is likely to use in order to convey a certain target information state given the assumptions of the Literal Listener and with the goal of maximizing the chances for the target state to be recovered. Figures \ref{figure:uniform2}--\ref{figure:uniform4} illustrate the inferences of the Pragmatic Speaker with regard to the Given $\succ$ Given, Given $\succ$ New, and New $\succ$ New states, respectively. For instance, the model predicts that in order to convey Given $\succ$ Given a speaker is most likely to use the order ``{\sc det} S {\sc det} O'' or ``{\sc det} O {\sc det} S''. If we look again at table \ref{table:meanings}, we will see that among all the seven configurations eligible to convey a given Given $\succ$ Given information flow, these two are the least ambiguous in that they are associated with only one information state.
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale = 0.45]{figures/plotPragmaticSpeakerGivenGivenUniform}
 \caption{\small Pragmatic Speaker with uniform priors conveying Given $\succ$ Given}\label{figure:uniform2}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale = 0.45]{figures/plotPragmaticSpeakerGivenNewUniform}
 \caption{Pragmatic Speaker with uniform priors conveying Given $\succ$ New}\label{figure:uniform3}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale = 0.45]{figures/plotPragmaticSpeakerNewNewUniform}
 \caption{Pragmatic Speaker with uniform priors conveying New $\succ$ New}\label{figure:uniform4}
 \end{figure}
 
 The New $\succ$ Given state can only be conveyed by one configuration, S {\sc det} O (O {\sc det} S order is not attested in the corpus and therefore is not part of our model).
 
-A model of a Pragmatic Listener involves inferences with respect to the performance of a Pragmatic Speaker. That is, given a particular constituent order, this model makes inferences about most likely interpretations. Inferences for the ``S O'' configuration are shown in figure \ref{figure:uniform5} .
+A model of a Pragmatic Listener involves inferences with respect to the performance of a Pragmatic Speaker. That is, given a particular constituent order, this model makes inferences about most likely interpretations. Inferences for the ``S O'' configuration are shown in \figref{figure:uniform5} .
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale = 0.45]{figures/plotPragmaticListenerSbjObjUniform}
 \caption{Pragmatic Listener with uniform priors interpreting ``S O''}\label{figure:uniform5}
 \end{figure}
@@ -649,37 +654,37 @@ We see that a Pragmatic Listener model predicts that ``S O'' configuration is mo
 
 Let us now see how the Pragmatic Listener model fares compared to the historical French data. We classified all bare noun ``S O'' configurations in the corpus as New $\succ$ New, New $\succ$ Given or Given $\succ$ New (recall that we did not find any bare noun ``S O'' corresponding to New $\succ$ Given information state). Figure \ref{figure:corpusSbjObj} shows the distribution of information states among ``S O'' sequences in the corpus.
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale = 0.45]{figures/plotFrenchSbjObj}
 \caption{Distribution of informations states among ``S O'' in French, X-XVI c.}\label{figure:corpusSbjObj}
 \end{figure}
 
-Comparing these results with the predictions of our RSA Pragmatic Listener model in figure \ref{figure:uniform5}, we see that in the actual data the frequency of Given $\succ$ New is higher than predicted, while the frequency of New $\succ$ New is lower. 
+Comparing these results with the predictions of our RSA Pragmatic Listener model in \figref{figure:uniform5}, we see that in the actual data the frequency of Given $\succ$ New is higher than predicted, while the frequency of New $\succ$ New is lower. 
 
-Now, in our model we assumed that apriori all information states are equally likely (they had uniform priors). This is, however, most likely not the case (see \citet{Birner:2012} for references). We therefore need to make our information state priors more realistic. In order to do that, we used data from a syntactically annotated subcorpus of the Russian National Corpus, \citet{RNC}. We classified 430 Russian transitive sentences with bare (i.e. without demonstrative or possessive determiners) nominal arguments (both ``S O'' and ``O S'') according to their information state. The obtained distribution is plotted in figure \ref{figure:Russian}.
+Now, in our model we assumed that apriori all information states are equally likely (they had uniform priors). This is, however, most likely not the case (see \citet{Birner:2012} for references). We therefore need to make our information state priors more realistic. In order to do that, we used data from a syntactically annotated subcorpus of the Russian National Corpus, \citet{RNC}. We classified 430 Russian transitive sentences with bare (i.e. without demonstrative or possessive determiners) nominal arguments (both ``S O'' and ``O S'') according to their information state. The obtained distribution is plotted in \figref{figure:Russian}.
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale = 0.45]{figures/plotRussianSbjObj}
 \caption{Distribution of informations states among transitive clauses with bare nominal arguments in the Russian National Corpus}\label{figure:Russian}
 \end{figure}
 
-We used these frequencies to set the priors for the information states in our RSA model. That is, instead of assuming that information states Given $\succ$ Given, Given $\succ$ New, New $\succ$ Given, and New $\succ$ New are equally likely, we set their probabilities to 0.35, 0.46, 0.02, and 0.16, respectively. We then reran our Pragmatic Listener model, which now generates inferences for interpreting ``S O'' configuration as in figure \ref{figure:models}, where it is plotted against the historical French data.
+We used these frequencies to set the priors for the information states in our RSA model. That is, instead of assuming that information states Given $\succ$ Given, Given $\succ$ New, New $\succ$ Given, and New $\succ$ New are equally likely, we set their probabilities to 0.35, 0.46, 0.02, and 0.16, respectively. We then reran our Pragmatic Listener model, which now generates inferences for interpreting ``S O'' configuration as in \figref{figure:models}, where it is plotted against the historical French data.
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale = 0.45]{figures/plotModelComparison}
 \caption{Distribution of informations states among ``S O'' as predicted by Pragmatic Listener model and in historical French corpus}\label{figure:models}
 \end{figure}
 
 As the figure shows, the shapes of the two distributions are remarkably similar, which means that our RSA Pragmatic Listener is a successful simulation of the pragmatic reasoning behind the historical French data. 
 
-The core assumptions of the simulation are encoded in the morphological entries in table \ref{table:meanings}, where the strings with presupposition-triggering determiners are less ambiguous than strings with bare NPs only and where New $\succ$ Given information state cannot be conveyed by utterances involving bare nouns. This has the effect of predicting that, first, whenever there is a choice, speakers will be more likely to use strings with determiners than strings without, as this maximizes their chance to be understood (see figures \ref{figure:uniform2} and \ref{figure:uniform3}), and, second, that pragmatically reasoning listeners will tend to interpret bare nouns as conveying information states which could not have been conveyed using presupposition-triggering determiners, such as New $\succ$ New (see figure \ref{figure:uniform5}). The simulation results match historical French data very closely, while they contrast with the data we took from the Russian National Corpus where Given $\succ$ Given is the second frequent information state of a transitive clause with bare nouns (see figure \ref{figure:Russian}). We suggest that the differences is due precisely to the lack of definite determiners in Russian, which means that there is no better alternative for conveying Given $\succ$ Given than bare NPs, while in French ``{\sc det} S {\sc det} O'' is the best option (see figure \ref{figure:uniform2}). 
+The core assumptions of the simulation are encoded in the morphological entries in table \ref{table:meanings}, where the strings with presupposition-triggering determiners are less ambiguous than strings with bare NPs only and where New $\succ$ Given information state cannot be conveyed by utterances involving bare nouns. This has the effect of predicting that, first, whenever there is a choice, speakers will be more likely to use strings with determiners than strings without, as this maximizes their chance to be understood (see figures \ref{figure:uniform2} and \ref{figure:uniform3}), and, second, that pragmatically reasoning listeners will tend to interpret bare nouns as conveying information states which could not have been conveyed using presupposition-triggering determiners, such as New $\succ$ New (see \figref{figure:uniform5}). The simulation results match historical French data very closely, while they contrast with the data we took from the Russian National Corpus where Given $\succ$ Given is the second frequent information state of a transitive clause with bare nouns (see \figref{figure:Russian}). We suggest that the differences is due precisely to the lack of definite determiners in Russian, which means that there is no better alternative for conveying Given $\succ$ Given than bare NPs, while in French ``{\sc det} S {\sc det} O'' is the best option (see \figref{figure:uniform2}). 
 
 \section{Givenness marking and constituent order frequencies}
 \label{section:orders}
 
 In this section, we explore a connection between givenness marking and constituent order frequencies in historical French. Let us take another look at the constituent order distribution in table \ref{table:orders}. Orders involving O $\succ$ S are markedly more rare than those with S $\succ$ O, with one exception, namely, the OVS configuration. First, we suggest that the rarity of O $\succ$ S in medieval French, and thus the rarity of OSV and VOS, is a consequence of \#New $\succ$ Given on the assumption that subjects denote given information more frequently than objects. This assumption can be tested, at least at a first approximation, by looking at the distribution of determiners with subjects and objects. The rates of definite and possessive determiners and demonstratives with subjects and objects will be indicative of their respective tendencies to be associated with existential presupposition. Figure \ref{figure:determiners} shows the determiner distribution with subjects and objects per century.
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale = 0.45]{figures/determiners.pdf}
 \caption{Determiner distribution: subjects vs. objects}\label{figure:determiners}
 \end{figure}
@@ -688,9 +693,9 @@ Based on this approximation, we can estimate that during all periods subjects ar
 
 Extrapolating this conclusion onto clauses with bare arguments, we expect that subject noun phrases denote properties whose extension is entailed by the Common Ground to be non-empty much more frequently than objects. This, in turn, means that the order S $\succ$ O is expected to align with the (licit) information state Given $\succ$ New much more frequently than the order O $\succ$ S. We suggest that this is at least in part responsible for the very low frequency of OSV and VOS orders in historical French.\footnote{According to \citet{wals-81}, in a sample of 1188 languages where a dominant constituent order can be established, there are only 40 languages (or $\approx$ 3\%) where the dominant order involves O $\succ$ S.}
 
-We also observe that OVS order is more frequent than OSV and VOS. We suggest that OVS corresponds to a configuration of topic (situation) shift, where the preverbal position is associated with prosodic prominence. To probe into the properties of OVS, in figure \ref{figure:determinersOrders} we plotted distributions of determiners in the object position in finite clauses with different constituent order. We take all the clauses with nominal objects and any type of subject (i.e. either nominal or pronominal or null). 
+We also observe that OVS order is more frequent than OSV and VOS. We suggest that OVS corresponds to a configuration of topic (situation) shift, where the preverbal position is associated with prosodic prominence. To probe into the properties of OVS, in \figref{figure:determinersOrders} we plotted distributions of determiners in the object position in finite clauses with different constituent order. We take all the clauses with nominal objects and any type of subject (i.e. either nominal or pronominal or null). 
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[scale = 0.55]{figures/determinersOrders.pdf}
 \caption{Determiner distribution in object position}\label{figure:determinersOrders}
 \end{figure}
@@ -752,7 +757,7 @@ Based on such considerations, \citet{BoschEtAl:2003} formulate a Complementary H
 	
 % assuming its resource situation becomes a topic situation wrt which the whole proposition is evaluated (\citealt{Kratzer:1989}, \citealt{Elbourne:2008}, \citealt{Schwarz:2009}).
 
-%\begin{figure}[H]
+%\begin{figure}
 %\centering
 %\begin{tikzpicture}[sibling distance=-5pt]\scriptsize
 %\tikzset{level distance=25pt}
