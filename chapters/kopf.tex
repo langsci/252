@@ -166,7 +166,7 @@ What \citeauthor{Hofstetter2013} does provide is judgment on the following sente
 
 \ea\gll *Paul ist noch größer als Peter, aber Peter ist nicht groß.\\
        Paul is still tall.COMP than Peter but Peter is not tall\\
-\glt   Intended as: {`*Paul is still taller than Peter, but Peter is not tall.'} \\ (taken and adapted from \citealt[p.27]{Hofstetter2013}; his (2/49)) \label{hofstetter_ABER_peter_nicht_gross}
+\glt   Intended as: {`*Paul is still taller than Peter, but Peter is not tall.'} \\ (taken and adapted from \textcite[p.27]{Hofstetter2013}; his (2/49)) \label{hofstetter_ABER_peter_nicht_gross}
 \z
 %(1) Peter ist noch größer Paul.
 %(2a) Peter ist nicht noch größer als Paul.
@@ -175,7 +175,7 @@ What \citeauthor{Hofstetter2013} does provide is judgment on the following sente
 %(4) Wenn Peter noch größer als Paul ist, dann können wir mit der Achterbahn fahren.
 %(5) Vielleicht ist Peter noch größer als Paul.
 
-\noindent The judgment in \REF{hofstetter_ABER_peter_nicht_gross}, (*), is in line with \citeauthor{umbach2009a_comp}'s \citeyearpar{umbach2009a_comp} `out of the blue'-example \REF{umbach_21}. It presupposes an antecedent comparison of the form \textit{Peter is tall} and NRness arises. Consequentially, \citet{Hofstetter2013} sees his intuition confirmed since it is one the hallmark criteria for PSP that they are not cancelable. If we provide antecedents along the lines of \citeauthor{umbach2009a_comp} (cf. \ref{umbach_19} to \ref{umbach_21}), we can see that the PSP does not arise/can be canceled: 
+\noindent The judgement in \REF{hofstetter_ABER_peter_nicht_gross}, (*), is in line with \citeauthor{umbach2009a_comp}'s \citeyearpar{umbach2009a_comp} `out of the blue'-example \REF{umbach_21}. It presupposes an antecedent comparison of the form \textit{Peter is tall} and NRness arises. Consequentially, \citet{Hofstetter2013} sees his intuition \linebreak confirmed since it is one the hallmark criteria for PSP that they are not cancelable. If we provide antecedents along the lines of \citeauthor{umbach2009a_comp} (cf. \ref{umbach_19} to \ref{umbach_21}), we can see that the PSP does not arise/can be canceled: 
 
 \ea \label{ub_hs_all} \ea Peter ist größer als Phil. Paul ist noch größer als Peter, aber Peter ist nicht groß.\label{peter_taller_than_phil} \\ 
     \glt {`Peter is taller than Phil. Paul is still/even taller than Peter, but Peter is not tall.'} 
@@ -198,6 +198,7 @@ In order to get a clearer picture, an experiment was conducted. At the heart of 
 \tabref{tab:4_conds_material} shows one out of 16 token sets. Every token set consists of four target items which, in \tabref{tab:4_conds_material}, are spread out across the four lines/conditions (for details on the conditions, cf. \sectref{experimental_design_and_methods}). Every target item consists of both `condition' and `continuation'. The continuation is the same across all conditions.\footnote{In the questionnaires, condition and continuation were presented as one string, without the gaps in Table \REF{tab:4_conds_material}. They are included here for ease of representation.} 16 such token sets were created (cf. appendix, p. \pageref{tab:16_contexts}f. for an overview).
 
 \begin{table}\small
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{cll}
 \lsptoprule
 condition & condition & continuation \\
@@ -214,7 +215,7 @@ condition & condition & continuation \\
 4 & A ist größer als B \hspace{0.65pt} und C ist \hspace{16pt} größer als A. & Dabei ist A nicht groß.   \\
  & {`A is taller than B \hspace{2pt} and C is \hspace{19pt} taller than A.} & \textit{And yet A is not tall.'}  \\
 \lspbottomrule
-\end{tabular}
+\end{tabular}}
 \caption{4 conditions per token set}
 \label{tab:4_conds}
 \end{table}
@@ -258,6 +259,7 @@ As mentioned, condition 3 is the critical condition where \citeauthor{Hofstetter
 Table \REF{tab:4_conds_material} sums up the structure of items in all conditions and the respective predictions in terms of ratings:
 
 \begin{table}[H]\scriptsize
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{cllll}
 \lsptoprule
 cd\_\texttt{fac}\_\texttt{lev} & condition & continuation & Hs.\footnote{ Hofstetter's prediction} & Um.\footnote{ Umbach's prediction} \\
@@ -274,7 +276,7 @@ cd\_\texttt{fac}\_\texttt{lev} & condition & continuation & Hs.\footnote{ Hofste
 4\_\texttt{com\_\footnotesize{--}n} & A ist größer als B \hspace{0.65pt} und C ist \hspace{16pt} größer als A. & Dabei ist A nicht groß. & good & good \\
  & {`A is taller than B \hspace{2pt} and C is \hspace{19pt} taller than A.} & \textit{And yet A is not tall.'} & & \\
 \lspbottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Experimental design; NR-ness; 4 conditions, 2x2}
 \label{tab:4_conds_material}
 \end{table}
@@ -358,6 +360,7 @@ Find the outpout for model $1$ in \REF{R_output_model_1}. Note, I have used the 
 
 
 \begin{table}
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{lS[table-format=-1.5]S[table-format=1.5]S[table-format=2.5]S[table-format=-2.3]S[table-format=<1.1e3]l}
 \lsptoprule
 Fixed effects:    & {Estimate} & {Std. Error} & {df}        & {t value}   & {Pr(>|t|)}  & \\\midrule
@@ -365,7 +368,7 @@ Fixed effects:    & {Estimate} & {Std. Error} & {df}        & {t value}   & {Pr(
 \texttt{fac\_1com}           & 1.36396  & 0.08936 & 45.32000 & 15.264   & <2e-16   & {***}\\
 \texttt{fac\_2+n}            & -0.01899 & 0.08184 & 21.78000 & -0.232   & 0.819     & \\
 \texttt{fac\_1com:fac\_2+n}  & -0.09008 & 0.10438 & 17.99000 & -0.863   & 0.399     & \\\lspbottomrule
-\end{tabular}
+\end{tabular}}
 \caption{R output for \texttt{lmer()} call on model $1$ \REF{LME_model_1}}
 \label{R_output_model_1}
 \end{table}
@@ -373,6 +376,7 @@ Fixed effects:    & {Estimate} & {Std. Error} & {df}        & {t value}   & {Pr(
 \noindent Factor 1, level 2 (com) has a significant effect with a t-value at 15.264 and a p-value below 2e-16. Most importantly, there is no significant effect of factor 2($+/-noch$), level 2 with a p-value of 0.819, cf. \REF{R_output_model_1}. Moreover, there is not interaction between factor $1$, level $2$ and factor $2$, level $2$. To be sure and test specifically for an interaction between factors $1$ and $2$ I calculated model $2$. Comparing models $1$ and $2$ (in R with the \texttt{anova()} call) gives the following output \citep[cf.][]{winter2013}:
 
 \begin{table}
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{lrrrrrrrr}
 \lsptoprule
                     & {DF} & {AIC}    & {BIC}    & {logLik}  & {deviance} & {Chisq Chi} & {Df} & {Pr(>Chisq)} \\\midrule
@@ -380,7 +384,7 @@ Fixed effects:    & {Estimate} & {Std. Error} & {df}        & {t value}   & {Pr(
 \texttt{mymodel 1}  & {25} & {1468.4} & {1583.7} & {-709.20} & {1418.4}   & {0.7649}    & {1}  & {0.3818}     \\\lspbottomrule
 \caption{R output for \texttt{anova()} call on models $1$ and $2$}
 \label{R_output_anova_model_1_and_2}
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 Model 2 has a slightly lower AIC and in the comparison of the two models the difference comes out as not significant. This suggests that there is no interaction between factors $1$ and $2$ ($\chi^{2}$(1)=0.7649, p=0.3818). There is an online repository containing the experimental data, statistics scripts, find the link in the footnote below\footnote{\url{https://github.com/M-K-G/noch_FoDS2}}\citet{github_website}.
@@ -522,7 +526,7 @@ OG2		& (66)  & 53 (6)    & 2 (2)     & 8 (6)     \\
 OG3		& (54)  & 21 (4)    & 3 (0)     & 4 (4)     \\
 \lspbottomrule
 \end{tabular}
-\caption{Subperiods and readings of \textit{noh}. These numbers do not straight forwardly match numbers in \tabref{tab:overview_subperiods_and_sources} since they account for ambiguities, only show \textit{noch} labelled as ADV, and are based on a smaller set of texts.\todo[inline]{You can't have footnotes in captions}}
+\caption{Subperiods and readings of \textit{noh}.}
 \label{tab:subperiods_and_readings}
 \end{table}
 
@@ -534,7 +538,9 @@ In the following, I want to discuss the most important aspects and examples of t
        If but in back place you.sit, and comes you `lower', says, who you to the dinner invited, sit still/even higher better, and is you then honorable\\
 \glt   {`But if you sit down somewhere in the less prominent places and the person who invited you for dinner tells you to sit in a more prominent place, then it is better to sit still higher and that is then honorable.'} \label{OG1_comp?_00} \\(MonsF-1,M.XIV,edition141-152)
 \z
-\REF{OG1_comp?_00} is problematic for a number of reasons. The most striking problem is that it could be a very early instance of \textit{noh}\textsubscript{comp}. Example \REF{OG1_comp?_00} is the reason that, in \tabref{tab:subperiods_and_readings}, the first line for \textit{noh}\textsubscript{comp} shows `1(1/0?)'. Let us look at it in more detail: The wider context is about humility and humbleness. \REF{OG1_comp?_00} is part of an allegory and the allegorical context is limited in potential to disambiguate. The preceding context talks about how shameful it is to take a prominent seat at a table when invited to dinner and then being told to take a less prominent seat.
+
+
+\REF{OG1_comp?_00} is problematic for a number of reasons. The most striking problem is that it could be a very early instance of \textit{noh}\textsubscript{comp}. Example \REF{OG1_comp?_00} is the reason that, in \tabref{tab:subperiods_and_readings},\footnote{These numbers do not straight forwardly match numbers in \tabref{tab:overview_subperiods_and_sources} since they account for ambiguities, only show \textit{noch} labelled as ADV, and are based on a smaller set of texts.} the first line for \textit{noh}\textsubscript{comp} shows `1(1/0?)'. Let us look at it in more detail: The wider context is about humility and humbleness. \REF{OG1_comp?_00} is part of an allegory and the allegorical context is limited in potential to disambiguate. The preceding context talks about how shameful it is to take a prominent seat at a table when invited to dinner and then being told to take a less prominent seat.
 
 The comparative reading doesn't have strong support as the expected action to attain humility (in a Christian world view) would be to turn down an offer to sit higher/take a more prominent seat. A temporal (further-to) interpretation runs into the problem that this is a hypothetical situation and there is no detectable temporal sequence aside from the salient time of mentioning. Moreover, in contrast to the majority of early uses of \textit{noch}, it lacks a temporal particle adjacent to it. A conjunctive, coordinating interpretation would require another negative constituent to be coordinated with. The example is from the Mondsee Fragments, it is in Bavarian dialect and dates from the early 9th century ($\sim$ 810AD)\citep{annis_og}. Thus, if \REF{OG1_comp?_00} constitutes an instance of \textit{noch}\textsubscript{comp}, it would (i) indicate that Southern dialects of German might have been more innovative and (ii) mean that the comparative reading has been available relatively soon.
 
