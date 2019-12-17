@@ -26,8 +26,8 @@
 \input{localcommands.tex} 
 
 %\addbibresource{chapters/doron.bib} 
-\addbibresource{chapters/prefaceEd.bib}
-%\addbibresource{chapters/gianollo.bib}
+%\addbibresource{chapters/prefaceEd.bib}
+\addbibresource{chapters/gianollo.bib}
 %\addbibresource{chapters/harris.bib}
 %\addbibresource{chapters/jakoby.bib}
 %\addbibresource{chapters/kellert.bib}
@@ -40,15 +40,15 @@
 
 \begin{document}         
 \maketitle                
-\frontmatter
+%\frontmatter
 % %% uncomment if you have preface and/or acknowledgements
 
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
 {\sloppy\tableofcontents}
 
 %% sections without authors
-\include{chapters/preface}
-\include{chapters/acknowledgments}
+%\include{chapters/preface}
+%\include{chapters/acknowledgments}
 
 % %% Additional prefaces and/or introductions that also have authors
 \lsCollectionPaperFrontmatterMode % Enter the Frontmatter Mode. 
@@ -63,7 +63,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\includepaper{chapters/doron} %add a percentage sign in front of the line to exclude this chapter from book
-%\includepaper{chapters/gianollo}
+\includepaper{chapters/gianollo}
 %\includepaper{chapters/harris}
 %\includepaper{chapters/jakoby}
 %\includepaper{chapters/kellert}
