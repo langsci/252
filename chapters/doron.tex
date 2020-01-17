@@ -440,22 +440,31 @@ As in the case of \textit{kol}, measurement is what guarantees maximality despit
 
 As was shown in section 3.1, \textit{kol} \textit{NP} is a predicate, hence there are two ways of combining it with the sentence predicate VP which is of the same type. One way, represented in \REF{ex:doron:33}a, is to type-shift \textit{kol} \textit{NP} to type \textit{e} by applying the definite type-shift. The other way, represented in \REF{ex:doron:33}b, involves combining \textit{kol} \textit{NP} with VP via predicate modification, followed by the application of the indefinite type-shift (existential closure).  
 
+\begin{multicols}{2}
 \ea%33
     \label{ex:doron:33}
-         a.            S\textsubscript{t}                  b            S\textsubscript{t}
-
-              2                2
-
-        NP\textsubscript{e}          VP\textsubscript{et}           ${\exists}$            S\textsubscript{et}
-
-             2                2
-
-           ι              NP\textsubscript{et}          NP\textsubscript{et}     VP\textsubscript{et}
-
-              2                 2
-
-           \textit{kol}       NP\textsubscript{et}             \textit{kol}       NP\textsubscript{et}
-\z\todo[inline]{Example needs work}
+    \ea
+    \begin{forest}
+    [S\textsubscript{t}
+        [NP\textsubscript{e} [ι] [NP\textsubscript{et}
+                [\textit{kol}] [NP\textsubscript{et}]
+            ]
+        ]
+        [VP\textsubscript{et}]
+    ]
+    \end{forest}
+    \ex
+    \begin{forest}
+    [S\textsubscript{t}
+        [$\exists$] [S\textsubscript{et}
+            [NP\textsubscript{et} [\textit{kol}] [NP\textsubscript{et}] ]
+            [VP\textsubscript{et}]
+        ]
+    ]
+    \end{forest}    
+    \z
+\z
+\end{multicols}
 
 In general, the stronger interpretation is the definite interpretation in \REF{ex:doron:33}a. But in a downward entailing environment, negation for example, \REF{ex:doron:33}b is stronger. If no element of NP satisfies VP, then neither does the maximal element. But if the maximal element of NP does not satisfy VP, this does not entail that no element of NP does. 
 
