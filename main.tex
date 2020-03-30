@@ -1,46 +1,47 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%     Language Science Press Master File       %%%
 %%%              edited volumes                  %%%
-%%%         follow the instructions below        %%% 
+%%%         follow the instructions below        %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
+
 % Everything following a % is ignored
 % Some lines start with %. Remove the % to include them
 
 \documentclass[output=book,collection,collectionchapter,nonflat,modfonts
             ,colorlinks
             , citecolor=brown
-            ,multiauthors 
+            ,multiauthors
             ,draftmode
             % ,draft
-		  ]{langsci/langscibook}                                 
+		  ]{langsci/langscibook}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% put all additional commands you need in the 
-% following files. If you do not know what this might 
-% mean, you can safely ignore this section
 
 \input{localmetadata.tex}
 \input{localpackages.tex}
 \input{localhyphenation.tex}
-\input{localcommands.tex} 
+\input{localcommands.tex}
 
-%\addbibresource{chapters/doron.bib} 
-%\addbibresource{chapters/prefaceEd.bib}
-%\addbibresource{chapters/gianollo.bib}
-%\addbibresource{chapters/harris.bib}
-%\addbibresource{chapters/jakoby.bib}
-%\addbibresource{chapters/kellert.bib}
-%\addbibresource{chapters/kopf.bib}
+\addbibresource{chapters/doron.bib}
+\addbibresource{chapters/prefaceEd.bib}
+\addbibresource{chapters/gianollo.bib}
+\addbibresource{chapters/harris.bib}
+\addbibresource{chapters/jakoby.bib}
+\addbibresource{chapters/kellert.bib}
+\addbibresource{chapters/kopf.bib}
 \addbibresource{chapters/simonenko.bib}
+\WarningsOff[microtype]
+\WarningFilter{microtype}{Unknown slot}
+\WarningFilter{scrbook}{package incompatibility detected}
 
+\providecommand{\LastRefSteppedCounter}{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Frontmatter                      %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{document}         
-%\maketitle                
-%\frontmatter
+\begin{document}
+\maketitle
+\frontmatter
 % %% uncomment if you have preface and/or acknowledgements
 
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
@@ -51,9 +52,9 @@
 %\include{chapters/acknowledgments}
 
 % %% Additional prefaces and/or introductions that also have authors
-\lsCollectionPaperFrontmatterMode % Enter the Frontmatter Mode. 
-%\includepaper{chapters/prefaceEd} 
-\lsCollectionPaperMainmatterMode % Leave the Frontmatter Mode 
+\lsCollectionPaperFrontmatterMode % Enter the Frontmatter Mode.
+%\includepaper{chapters/prefaceEd}
+\lsCollectionPaperMainmatterMode % Leave the Frontmatter Mode
 \setcounter{chapter}{0} % Reset the chapter counter so that preceding prefaces are not counted
 
 \mainmatter
@@ -62,19 +63,18 @@
 %%%             Chapters                         %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\includepaper{chapters/doron} %add a percentage sign in front of the line to exclude this chapter from book
-%\includepaper{chapters/gianollo}
-%\includepaper{chapters/harris}
-%\includepaper{chapters/jakoby}
+% \includepaper{chapters/doron} %add a percentage sign in front of the line to exclude this chapter from book
+% \includepaper{chapters/gianollo}
+% \includepaper{chapters/harris}
+% \includepaper{chapters/jakoby}
 %\includepaper{chapters/kellert}
-%\includepaper{chapters/kopf}
-\includepaper{chapters/simonenko}
-
-% copy the lines above and adapt as necessary
+% \includepaper{chapters/kopf}
+ \includepaper{chapters/simonenko}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Backmatter                       %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % There is normally no need to change the backmatter section
+\sloppy
 \input{backmatter.tex}
-\end{document} 
+\end{document}
