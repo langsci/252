@@ -41,7 +41,7 @@
 
 \begin{document}
 \maketitle
-\frontmatter
+%\frontmatter
 % %% uncomment if you have preface and/or acknowledgements
 
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
@@ -49,11 +49,11 @@
 
 %% sections without authors
 %\include{chapters/preface}
-%\include{chapters/acknowledgments}
+\include{chapters/acknowledgments}
 
 % %% Additional prefaces and/or introductions that also have authors
 \lsCollectionPaperFrontmatterMode % Enter the Frontmatter Mode.
-%\includepaper{chapters/prefaceEd}
+\includepaper{chapters/prefaceEd}
 \lsCollectionPaperMainmatterMode % Leave the Frontmatter Mode
 \setcounter{chapter}{0} % Reset the chapter counter so that preceding prefaces are not counted
 
@@ -63,18 +63,17 @@
 %%%             Chapters                         %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \includepaper{chapters/doron} %add a percentage sign in front of the line to exclude this chapter from book
-% \includepaper{chapters/gianollo}
-% \includepaper{chapters/harris}
-% \includepaper{chapters/jakoby}
+%\includepaper{chapters/doron}
+\includepaper{chapters/gianollo}
+%\includepaper{chapters/harris}
+%\includepaper{chapters/jakoby}
 %\includepaper{chapters/kellert}
- \includepaper{chapters/kopf}
-% \includepaper{chapters/simonenko}
+%\includepaper{chapters/kopf}
+%\includepaper{chapters/simonenko}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Backmatter                       %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% There is normally no need to change the backmatter section
 \sloppy
 \input{backmatter.tex}
 \end{document}
