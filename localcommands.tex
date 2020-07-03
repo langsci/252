@@ -4,50 +4,28 @@
 
 \newcommand{\0}{{\color{red}0}}
 
-\newenvironment{langscibars}{\begin{axis}[ybar,xtick=data, xticklabels from table={\mydata}{pos}, 
+\newenvironment{langscibars}{\begin{axis}[
+        ybar,
+        xtick = data, 
+        xticklabels from table = {\mydata}{pos}, 
         width  = \textwidth,
-	height = .3\textheight,
-    	nodes near coords, 
-	xtick=data,
-	x tick label style={},  
-	ymin=0,
-	cycle list name=langscicolors
-        ]}{\end{axis}}
+        height = .3\textheight,
+        nodes near coords, 
+        xtick=data,
+        x tick label style={},  
+        ymin=0,
+        cycle list name=langscicolors
+    ]}{\end{axis}}
         
 \newcommand{\langscibar}[1]{\addplot+ table [x=i, y=#1] {\mydata};\addlegendentry{#1};}
 
 \newcommand{\langscidata}[1]{\pgfplotstableread{#1}\mydata;}
 
-% \makeatletter
-% \let\thetitle\@title
-% \let\theauthor\@author 
-% \makeatother
-
-% \newcommand{\togglepaper}[1][0]{ 
-% %   \bibliography{../localbibliography}
-%   \papernote{\scriptsize\normalfont
-%     \theauthor.
-%     \thetitle. 
-%     To appear in: 
-%     Change Volume Editor \& in localcommands.tex 
-%     Change volume title in localcommands.tex
-%     Berlin: Language Science Press. [preliminary page numbering]
-%   }
-%   \pagenumbering{roman}
-%   \setcounter{chapter}{#1}
-%   \addtocounter{chapter}{-1}
-% }
-
-
-%add all your local new commands to this file
-
-\newcommand{\smiley}{:)}
 
 \renewbibmacro*{index:name}[5]{%
   \usebibmacro{index:entry}{#1}
     {\iffieldundef{usera}{}{\thefield{usera}\actualoperator}\mkbibindexname{#2}{#3}{#4}{#5}}}
 
-% \newcommand{\noop}[1]{}
 
 	\newcommand{\glossformat}[1]{\textsc{#1}}
 
