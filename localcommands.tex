@@ -93,3 +93,22 @@
 \newcommand{\gcat}[1]{\textsc{#1}}   % Kategorien in Glossen
 
 \newcommand{\Sem}[1]{\ensuremath{⟦#1⟧}}
+
+% TOC improvements
+ \DeclareTOCStyleEntry 
+   [   
+     entrynumberformat=\addfontfeature{Numbers={Monospaced,Lining}}, 
+     pagenumberformat=\addfontfeature{Numbers={Monospaced,Lining}}\bfseries, 
+     raggedentrytext=true 
+   ] 
+   {tocline} 
+   {chapter} 
+    
+ \DeclareTOCStyleEntries 
+   [ 
+     entrynumberformat=\addfontfeature{Numbers={Monospaced,Lining}}, 
+     pagenumberformat=\addfontfeature{Numbers={Monospaced,Lining}}, 
+     raggedentrytext=true 
+   ] 
+   {tocline} 
+   {section,subsection,subsubsection,paragraph,subparagraph} 
