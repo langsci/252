@@ -114,20 +114,4 @@
 \newcommand{\exhead}[1]{\textbf{#1}} % Hervorhebung bei Beispielen
 \newcommand{\gcat}[1]{\textsc{#1}}   % Kategorien in Glossen
 
-
-% semantic brackets
-\newsavebox{\sembox}
-\newlength{\semwidth}
-\newlength{\boxwidth}
-
-\newcommand{\Sem}[1]{%
-\sbox{\sembox}{\ensuremath{#1}}%
-\settowidth{\semwidth}{\usebox{\sembox}}%
-\sbox{\sembox}{\ensuremath{\left[\usebox{\sembox}\right]}}%
-\settowidth{\boxwidth}{\usebox{\sembox}}%
-\addtolength{\boxwidth}{-\semwidth}%
-\left[\hspace{-0.3\boxwidth}%
-\usebox{\sembox}%
-\hspace{-0.3\boxwidth}\right]%
-}
-%end semantic brackets
+\newcommand{\Sem}[1]{\ensuremath{⟦#1⟧}}
