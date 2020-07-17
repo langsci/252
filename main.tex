@@ -7,9 +7,13 @@
 % Everything following a % is ignored
 % Some lines start with %. Remove the % to include them
 
-\documentclass[output=book,collection,collectionchapter,nonflat,modfonts
-            ,colorlinks
-            ,citecolor=brown
+\documentclass[output=book
+            ,collection
+            ,collectionchapter
+            ,nonflat
+            ,modfonts
+% %             ,colorlinks
+% %             ,citecolor=brown
             ,multiauthors
             ,draftmode
             ,arseneau
@@ -26,6 +30,7 @@
 \addbibresource{localbibliography.bib}
 
 \providecommand{\LastRefSteppedCounter}{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Frontmatter                      %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -33,7 +38,6 @@
 \begin{document}
 \maketitle
 \frontmatter
-% %% uncomment if you have preface and/or acknowledgements
 
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
 {\sloppy\tableofcontents}
